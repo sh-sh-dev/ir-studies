@@ -1,0 +1,145 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    direction: ltr;
+    margin: 0;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    &:after, &:before{
+        box-sizing: border-box;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+    display: block
+}
+
+audio,canvas,progress,video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],template {
+    display: none
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+pre {
+    overflow: auto
+}
+
+code,kbd,pre,samp {
+    font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 1em
+}
+
+code{
+    font-size: 90%;
+    padding: .2rem .4rem;
+    vertical-align: middle;
+    display: inline;
+    border-radius: 2px;
+}
+
+pre, code{
+    background-color: $pink-50;
+    color: $pink-600
+}
+
+pre{
+    display: block;
+}
+
+button,input,optgroup,select,textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+hr{
+    border:none;
+    height: 1px;
+    width: 95;
+    background-color: currentColor
+}

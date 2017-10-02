@@ -1,0 +1,314 @@
+.pui-check{
+    font-size: 1rem !important;
+    //position: relative;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    label{
+        cursor: pointer;
+    }
+    label.checkbox{
+        position: relative;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .box{
+            height: 16px;
+            width: 16px;
+            border: 2px solid $toggle-off-bg;
+            transition: .175s ease;
+            color: inherit;
+            cursor: pointer;
+            border-radius: 12.5%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &::after{
+                display: block;
+                content: '';
+                height: 70%;
+                width: 35%;
+                left: -4px;
+                position: relative;
+                border: {
+                    right: 2px solid #fff;
+                    bottom: 2px solid #fff;
+                }
+                transform: rotate(45deg) scale(0,0);
+                box-sizing: content-box;
+                transform-origin: 100% 100%
+            }
+        }
+        .check-ripple{
+            display: block;
+            height: 4px;
+            width: 4px;
+            position: absolute;
+            background-color: rgba(#000, .5);
+            border-radius: 50%;
+            opacity: 0;
+            // transform: scale(10);
+            z-index: 2;
+            // transition: .15s ease-out;
+        }
+    }
+    input[type=checkbox]{
+        & + label.checkbox .box.pressed{
+            .check-ripple{
+                // transform: scale(10);
+                // opacity: .6
+            }
+        }
+        // & + label.checkbox .box:not(.pressed){
+        //     .check-ripple{
+                // animation: check-ripple-hide .15s ease-in forwards;
+        //     }
+        // }
+        &:enabled:checked + label.checkbox{
+            .box{
+                border-color: $toggle-bg;
+                background-color: $toggle-bg;
+                &::after{
+                    animation: checkmark-expand .175s ease-out forwards running;
+                }
+                .check-ripple{
+                    background-color: $toggle-bg;
+                    animation: check-ripple-show .3s ease-out forwards;
+                }
+            }
+        }
+        &:enabled:not(:checked) + label.checkbox{
+            .box{
+                .check-ripple{
+                    // animation: check-ripple-show .3s ease-out forwards;
+                }
+            }
+        }
+        &:disabled + label.checkbox{
+            .box{
+                border-color: $toggle-disabled-bg;
+                cursor: default;
+            }
+        }
+        &:disabled:checked + label.checkbox .box{
+            background-color: $toggle-disabled-bg;
+            &::after{
+                transform: rotate(45deg) scale(1,1);
+            }
+        }
+        height: 0;
+        width:0;
+        // visibility: hidden;
+    }
+    @keyframes checkmark-expand{
+        to{
+            transform: rotate(45deg) scale(1,1);
+        }
+    }
+
+    @keyframes check-ripple-show{
+        0%{
+            opacity: .4;
+        }
+        60%{
+            transform: scale(10);
+            opacity: .4
+        }
+        to{
+            opacity: 0;
+            transform: scale(10);
+        }
+    }
+
+    // @keyframes check-ripple-hide {
+    //     to{
+    //         opacity: 0;
+    //     }
+    // }
+
+    @keyframes pui-check {
+        0% {
+            width: 0;
+            height: 0;
+            border-color: currentColor;
+            transform: translate3d(0, 0, 0) rotate(45deg)
+        }
+
+        33% {
+            width: calc(.35rem + 1px);
+            height: 0;
+            transform: translate3d(0, 0, 0) rotate(45deg)
+        }
+
+        100% {
+            width: calc(.35rem + 1px);
+            height: calc(.7rem + 2px);
+            border-color: currentColor;
+            transform: translate3d(0, -.75125em, 0) rotate(45deg)
+        }
+    }
+}
+
+.pui-radio{
+    font-size: 1rem !important;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    label{
+        cursor: pointer;
+    }
+    label.radio{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 25px;
+        width: 25px;
+        .circle{
+            content: ' ';
+            visibility: visible;
+            border: 2px solid #888;
+            border-radius: 1000px;
+            height: 16px;
+            width: 16px;
+            position: absolute;
+            transition: all .3s, transform .1s;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            &::after{
+                content: ' ';
+                visibility: visible;
+                height: 16px;
+                width:16px;
+                position: absolute;
+                cursor: inherit;
+                opacity: 1;
+                transform: scale(1);
+                transition: .3s cubic-bezier(.4,0,.23,1);
+                border-radius: 1000px;
+                border: 0px solid $toggle-bg;
+            }
+        }
+    }
+    input:checked + label.radio{
+        .circle{
+            border-color: $toggle-bg;
+            &::after{
+                transform: scale(.575);
+                border-width: 8px;
+            }
+        }
+    }
+    input{
+        &:active:enabled{
+            & + label.radio .circle{
+                transform: scale3d(.75,.75,1)
+            }
+        }
+    }
+    input:disabled + label.radio{
+        .circle{
+            border-color: $toggle-disabled-bg;
+            cursor: default;
+            &::after{
+                border-color: $toggle-disabled-bg;
+            }
+        }
+    }
+    input{
+        visibility: hidden;
+        height:0;
+        width:0;
+        &:checked{
+            &::before{
+                border-color: $toggle-bg
+            }
+            &::after{
+                transform: scale(.575);
+                border: calc(.5rem + 1px) solid $toggle-bg
+            }
+        }
+    }
+}
+
+.pui-togglebtn{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem !important;
+    label{
+        cursor: pointer;
+    }
+    input[type=checkbox]{
+        height: 0;
+        width:0;
+        visibility: hidden;
+    }
+    .toggle{
+        display: inline-block;
+        position: relative;
+        width: 2rem;
+        height: .85rem;
+        cursor: pointer;
+        transition: .425s ease-in-out;
+        border-radius: 1000px;
+        background-color: rgba(0,0,0,.5);
+        content: ' ';
+        margin-right: 10px;
+        &::after{
+            position: absolute;
+            height: 1.25rem;
+            width: 1.25rem;
+            top: -.2rem;
+            left: -.2rem;
+            content: ' ';
+            border-radius: 1000px;
+            background-color: $raised-area-bg;
+            box-shadow: 0px 2px 5px -1px rgba(0,0,0,.5);
+            transition: transform .425s cubic-bezier(1,0,0,1),background-color .425s, box-shadow .1s ease;
+        }
+    }
+    input:checked + .toggle{
+        background-color: transparentize($toggle-bg, .6);
+        &::after{
+            background-color: $toggle-bg;
+            transform: translateX(1.15rem);
+        }
+    }
+    input:checked:active:not(:disabled) + .toggle::after{
+        box-shadow: 0px 2px 5px -1px rgba(0,0,0,.5), 0 0 0 15px transparentize($toggle-bg, .75);
+    }
+    input:not(:checked):active:not(:disabled) + .toggle::after{
+        box-shadow: 0px 2px 5px -1px rgba(0,0,0,.5), 0 0 0 15px rgba(0,0,0,.25);
+    }
+    //--------disabled state
+    input:disabled + .toggle{
+        background-color: #aaa;
+        cursor: default;
+        &::after{
+            background-color: #898989
+        }
+    }
+    input:checked:disabled + .toggle{
+        background-color: #aaa;
+        cursor: default;
+        &::after{
+            background-color: #898989;
+            transform: translateX(1.15rem);
+        }
+    }
+}

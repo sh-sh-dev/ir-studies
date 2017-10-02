@@ -1,0 +1,84 @@
+.pui-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // overflow-x: hidden;
+    // overflow-y: overlay;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+    z-index: 7000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(#000, .5);
+    &.open{
+        opacity: 1;
+        pointer-events: auto;
+        & > .inner{
+            transform: scale3d(1,1,1);
+        }
+    }
+    & > .inner{
+        margin: 30px 0;
+        display: flex;
+        max-height: 89vh;
+        flex-direction: column;
+        transition-duration: inherit;
+        transition-property: transform;
+        transition-timing-function: inherit;
+        background-color: $raised-area-bg;
+        @include y-shadow(9, .7);
+        border-radius: $basic-border-radius;
+        width: 60%;
+        transform: scale3d(.85, .85, 1);
+        & > .header{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            padding: 3px 8px;
+            // height: 70px;
+            flex-shrink: 0;
+            & > .close{
+                font-size: 10px;
+                padding: 20px;
+                background: 0;
+                border: 0;
+                position: relative;
+                cursor: pointer;
+                border-radius: 50%;
+                order: 1
+            }
+            & > .modal-title{
+                font-size: 25px;
+                display: block;
+                width: 100%;
+                // white-space: nowrap;
+                // max-width: 100%;
+                // overflow: hidden;
+                // text-overflow: ellipsis;
+                word-break: break-all;
+                word-wrap: break-word;
+            }
+        }
+        & > .body{
+            padding: 20px;
+            height: 100%;
+            overflow: overlay;
+            border-bottom: 1px solid #f1f1f1;
+            border-top: 1px solid #f1f1f1
+        }
+        & > .footer{
+            text-align: end;
+            padding: 5px 8px;
+            font-size: 85%;
+        }
+    }
+}
+
+.modal-is-open{
+    overflow-y: hidden !important;
+}

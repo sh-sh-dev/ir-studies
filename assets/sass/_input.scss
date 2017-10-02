@@ -1,0 +1,195 @@
+.pui-input{
+    $transition: 500;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    input{
+        width: 100%;
+        border: none;
+        padding: 0 0 8px;
+        font-size: 1rem;
+        position: relative;
+        background-color: transparent;
+        font-weight: 300;
+        &::-webkit-input-placeholder{
+            color:$input-underline-color;
+            opacity: 1
+        }
+        &::-moz-placeholder{
+            color:$input-underline-color;
+            opacity: 1
+        }
+        &:-ms-input-placeholder{
+            color:$input-underline-color;
+            opacity: 1
+        }
+        transition: #{$transition/2}ms cubic-bezier(.4,0,.2,1);
+        background-image: linear-gradient($input-color, $input-color), linear-gradient($input-underline-color, $input-underline-color);
+        background-size: 0 3px, 100% 1.5px;
+        background-repeat: no-repeat;
+        background-position: center bottom, center calc(100% - 1.5px);
+    }
+    &.focus{
+        input{
+            background-size: 100% 3px, 100% 1.5px;
+            background-image: linear-gradient($input-color, $input-color), linear-gradient($input-underline-color, $input-underline-color);
+        }
+    }
+    position: relative;
+    label.floater{
+        position: absolute;
+        color: $input-underline-color;
+        bottom: 0px;
+        font-size: 1rem;
+        font-weight: 300;
+        transition: #{$transition/4}ms cubic-bezier(.4,0,.2,1);
+        pointer-events: none;
+        margin-bottom: 8px;
+        transition-property: bottom, color, font-size;
+    }
+
+    @mixin input-trigger($class, $color: $input-color) {
+        &#{ $class } {
+            label.floater{
+                bottom: 25px;
+                font-size: 12px;
+                color: $color;
+            }
+        }
+    }
+    @include input-trigger('.focus');
+    @include input-trigger(':not(.empty):not(.focus)', $input-underline-color);
+}
+
+.input-table{
+    display: table;
+    margin: 35px 0 15px 0;
+    width: 100%;
+    .pui-input{
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0;
+    }
+    .addon{
+        vertical-align: middle;
+        display: table-cell;
+        text-align: center;
+        .input-addon{
+            display: inline-block;
+            margin: 0 4px;
+            &.material-icons, .material-icons{
+                @include md-icons(1em);
+            }
+        }
+    }
+}
+
+.pui-raised-input{
+    @include y-shadow(3, .4);
+    border-radius: $basic-border-radius;
+    padding: 8px 20px;
+    cursor: text;
+    input{
+        border: none;
+        background: none;
+        font-size: 1rem;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    &.sm{
+        input{
+            font-size: .675rem;
+            padding-bottom: $basic-border-radius;
+        }
+        padding: 4px 10px;
+    }
+    &.circle{
+        border-radius: 1000px;
+    }
+    &.light{
+        background-color: t(#fff, .1);
+        &, * {
+            color: #fff
+        }
+        input{
+            &::-webkit-input-placeholder{
+                color:rgba(255,255,255,.5);
+            }
+            &::-moz-placeholder{
+                color:rgba(255,255,255,.5);
+            }
+            &:-ms-input-placeholder{
+                color:rgba(255,255,255,.5);
+            }
+        }
+    }
+    &.dark{
+        background-color: t(#000, .1);
+        &, * {
+            color: #000;
+        }
+        input{
+            &::-webkit-input-placeholder{
+                color:rgba(0,0,0,.5);
+            }
+            &::-moz-placeholder{
+                color:rgba(0,0,0,.5);
+            }
+            &:-ms-input-placeholder{
+                color:rgba(0,0,0,.5);
+            }
+        }
+    }
+    .table{
+        display: table;
+        width: 100%;
+        .input{
+            display: table-cell;
+        }
+        .addon{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            .input-addon{
+                margin: 0 4px;
+                &.material-icons, .material-icons{
+                    @include md-icons(1em);
+                }
+            }
+        }
+    }
+}
+
+.pui-textarea{
+    display: block;
+    margin: 10px 5px;
+    position: relative;
+    textarea{
+        width: 100%;
+        resize: vertical;
+        border: none;
+        font-weight: 300;
+        background: none;
+        font-size: .8775em;
+        &::-webkit-input-placeholder{
+            color:$input-underline-color;
+            opacity: 1
+        }
+        &::-moz-placeholder{
+            color:$input-underline-color;
+            opacity: 1
+        }
+        &:-ms-input-placeholder{
+            color:$input-underline-color;
+            opacity: 1
+        }
+        transition: .375s cubic-bezier(.4,0,.2,1);
+        background-image: linear-gradient($input-color, $input-color), linear-gradient($input-underline-color, $input-underline-color);
+        background-size: 0 3px, 100% 1.5px;
+        background-repeat: no-repeat;
+        background-position: center bottom, center calc(100% - 1.5px);
+        &:focus{
+            background-image: linear-gradient($input-color, $input-color), linear-gradient($input-underline-color, $input-underline-color);
+            background-size: 100% 3px, 100% 1.5px;
+        }
+    }
+}

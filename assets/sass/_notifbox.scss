@@ -1,0 +1,57 @@
+.pui-notifbox{
+    padding: 15px 20px;
+    font-weight: 100;
+    line-height: 40px;
+    &.primary{
+        background-color: $primary
+    }
+    &.gray{
+      background-color: gray
+    }
+    &.blue{
+        background-color: $blue;
+    }
+    &.red{
+        background-color: $red;
+    }
+    &.green{
+        background-color: $green;
+    }
+    &.yellow{
+        background-color: $yellow;
+    }
+    &.secondary{
+        background-color: $secondary
+    }
+    margin: 5px 7.5px;
+    color: #fff;
+    border-radius: $basic-border-radius;
+    @include y-shadow(3.5, .35);
+    .main-icon{
+        display: inline-block;
+        float: left;
+        margin-left: .25em;
+        &.material-icons, .material-icons{
+            @include md-icons(1.25em);
+            line-height: 40px !important
+        }
+    }
+    .title{
+        display: inline;
+        float: left;
+        margin-left: .2em;
+        font-weight: bold
+    }
+    button.close[data-close]{
+        float: right;
+        background: none;
+        color: inherit;
+        border: none;
+        &.material-icons, .material-icons{
+            @include md-icons(1em);
+        }
+        font-size: 1em;
+        cursor: pointer;
+        line-height: 40px;
+    }
+}

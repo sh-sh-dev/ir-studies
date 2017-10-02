@@ -1,0 +1,48 @@
+.pui-progress{
+    width: 100%;
+    position: relative;
+    height: 3px;
+    margin: 6px 0;
+    &.primary{
+        background-color: rgba($primary, .3)
+    }
+    &.blue{
+        background-color: rgba($blue, .3)
+    }
+    &.gray{
+        background-color: rgba(gray, .3)
+    }
+    &.yellow{
+        background-color: rgba($yellow, .3)
+    }
+    &.green{
+        background-color: rgba($green, .3)
+    }
+    &.red{
+        background-color: rgba($red, .3)
+    }
+    .line{
+        float: left;
+        display: inline-block;
+        height: 100%;
+        transition: width .5s ease;
+        &.primary{
+            background-color: $primary
+        }
+        &.blue{
+            background-color: $blue
+        }
+        &.gray{
+            background-color: gray
+        }
+        &.yellow{
+            background-color: $yellow
+        }
+        &.green{
+            background-color: $green
+        }
+        &.red{
+            background-color: $red
+        }
+    }
+}

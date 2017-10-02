@@ -1,0 +1,67 @@
+ul.pui-pagination{
+    margin: 10px 0;
+    padding: 0;
+    &.primary{
+        li.active>a{
+            background-color: $primary;
+        }
+    }
+    &.gray{
+        li.active>a{
+            background-color: gray;
+        }
+    }
+    &.blue{
+        li.active>a{
+            background-color: $blue;
+        }
+    }
+    &.red{
+        li.active>a{
+            background-color: $red;
+        }
+    }
+    &.yellow{
+        li.active>a{
+            background-color: $yellow;
+        }
+    }
+    &.green{
+        li.active>a{
+            background-color: $green;
+        }
+    }
+    &.justified{
+        li{
+            @include equal-width;
+            text-align: center;
+            float: none
+        }
+    }
+    li{
+        display: inline-block;
+        float: left;
+        &.active>a{
+            box-shadow: 0px 2px 5px t(#000, .25);
+            color: #fff;
+        }
+        a{
+            position: relative;
+            color: #000;
+            min-width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            display: inline-block;
+            &.material-icons, .material-icons{
+                @include md-icons(12px);
+            }
+            margin: 0 3px;
+            padding: 0 11px;
+            cursor: pointer;
+            border-radius: 1000px;
+            transition: .3s ease;
+            color: #555
+        }
+    }
+}

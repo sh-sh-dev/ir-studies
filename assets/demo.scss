@@ -1,0 +1,170 @@
+@import "pui";
+@import "pui-rtl";
+
+*{
+    font-family: IRANsans
+}
+
+#navigation{
+    transition: .17s cubic-bezier(0,1,1,1);
+    &.transparent{
+        padding-bottom: 2em;
+        padding-top: 2em;
+        background: 0;
+        *{
+            color: #fff
+        };
+        box-shadow: none
+    }
+}
+
+.heroic-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    max-height: 550px;
+    background-color: rgba(#000, .35);
+    background-blend-mode: overlay;
+    color: #fff;
+    font-size: 1.3em;
+    text-shadow: 0 2px 5px rgba(#000, .5);
+    & > .content > h3{
+        font-size: 2em;
+        font-weight: bold;
+        & + span{
+            // opacity: .5;
+            font-weight: 100;
+        }
+    };
+    background-position: 50% 50%;
+    background-size: cover;
+    // background-attachment: fixed;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(#000, .5);
+    overflow: hidden;
+}
+
+main[role=main]{
+    padding: 25px;
+    // background-color: #fff;
+    // box-shadow: 0 8.1px 21px 2px rgba(#000, .5);
+    // border-radius: 5px;
+    // margin: -70px 30px 0 30px;
+    position: relative;
+    z-index: 3;
+    @include clearfixing;
+}
+
+.images{
+    .pui-col{
+        padding: 10px !important;
+        img{
+            width: 100%;
+            box-shadow: 0 8px 19px -3px rgba(#000, .5)
+        }
+    }
+}
+
+$light-colored-bg: lighten($primary, 40%);
+
+body#highlighted_document{
+    // background-color: $yellow-200+$brown-900;
+    cursor: default;
+    user-select: none;
+    background-image: url(img/test-bg.svg);
+    background-position: 18% 0;
+    background-size: cover;
+}
+
+.ui{
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    flex: 1;
+    & > .facts-container{
+        // overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%;
+        .fs-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            .fs{
+                width: calc(100% - 66px);
+                height: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .fs-indicators{
+                    position: absolute;
+                    direction: ltr;
+                    text-align: center;
+                    right:0;
+                    left: 0;
+                    bottom: 15px;
+                    z-index: 2;
+                    .item-link{
+                        &:first-child{
+                            margin-left: 0 !important
+                        }
+                        margin-left: 7.5px;
+                        height: 25px;
+                        width: 25px;
+                        position: relative;
+                        border-radius: 50%;
+                        background-color: rgba(#000, .12);
+                        border: 1px solid transparent;
+                        @include y-shadow(2, .8);
+                        display: inline-block;
+                        transition: all .125s ease, box-shadow .3s cubic-bezier(0,1,1,1);
+                        transform: scale(.45);
+                        color: $primary;
+                        cursor: pointer;
+                        &.active{
+                            border-color: rgba(#000, .5);
+                            transform: scale(1);
+                            color: #fff;
+                            background-color: $primary;
+                            box-shadow: 0 0 0 12px rgba($primary, .3), 0 11px 27.5px -5.5px rgba(#000, .95)
+                        }
+                    }
+                }
+                .fs-item{
+                    font-size: 13px;
+                    font-weight: bold;
+                    word-wrap: break-word;
+                    display: none;
+                    overflow: hidden;
+                    width: 100%;
+                    transition: .5s cubic-bezier(1,0,0,1);
+                    position: relative;
+                    &.active{
+                        display: block;
+                    }
+                    text-align: center;
+                    & > .material-icons{
+                        color: $secondary;
+                        font-size: 3.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn.fab{
+    overflow: hidden;
+}
+
+@for $i from 1 through 10{
+    .space-#{$i*20}{
+        height: #{$i*20}px;
+    }
+}

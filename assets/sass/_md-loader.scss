@@ -1,0 +1,67 @@
+svg.pui-md-loader{
+    g.loader{
+        &, *{
+            transform-origin: 50% 50%;
+        }
+        animation: rotate 1568.63ms linear infinite;
+        path.path{
+            stroke-dasharray: 32.4;
+            stroke-dashoffset: 32.4;
+            stroke: $loader-stroke-color;
+            &:not(.colorful){
+                animation: fillunfill 1333ms forwards infinite running cubic-bezier(.4, 0, .2, 1), rot 5332ms forwards infinite running steps(4)
+            }
+            &.colorful{
+                animation: fillunfill 1333ms forwards infinite running cubic-bezier(.4, 0, .2, 1), rot 5332ms forwards infinite running steps(4), colors 5332ms infinite forwards linear running
+            }
+        }
+    }
+
+    @keyframes rotate {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rot {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(-360deg);
+        }
+    }
+
+    @keyframes fillunfill {
+      from {
+        stroke-dashoffset: 32.3
+      }
+      50% {
+        stroke-dashoffset: 0;
+      }
+      to {
+        stroke-dashoffset: -31.9;
+      }
+    }
+
+    @keyframes colors {
+        from, to{
+            stroke: $loader-stroke-color
+        }
+        20%{
+            stroke: $red
+        }
+        40%{
+            stroke: $yellow
+        }
+        60%{
+            stroke: $green
+        }
+        80%{
+            stroke: $blue
+        }
+    }
+}

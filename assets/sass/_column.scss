@@ -1,0 +1,73 @@
+.container{
+    padding: 0 15px;
+    position: relative;
+    .row{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+.container, .row, .cf,ul.pui-pagination, .pui-col, .pui-nav, .pui-nav>.inner,
+.pui-nav .collapsible, .pui-nav ul.menu, .pui-nav ul.menu>li{
+    @include clearfixing;
+}
+
+.cf{
+    display: block;
+}
+
+.pui-col{
+    display: block;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    text-align: left;
+    padding-left: 15px;
+    float: left;
+    @for $i from 0 through $grid-system-number{
+        &.xs-#{$i} {
+            width: col( $i )
+        }
+    }
+    @for $i from 0 through $grid-system-number{
+        &.xs-offset-#{$i} {
+            left: col( $i )
+        }
+    }
+    @media only screen and (min-width: 600px){
+        @for $i from 0 through $grid-system-number{
+            &.sm-#{$i} {
+                width: col( $i )
+            }
+        }
+        @for $i from 0 through $grid-system-number{
+            &.sm-offset-#{$i} {
+                left: col( $i )
+            }
+        }
+    }
+    @media only screen and (min-width: 768px){
+        @for $i from 0 through $grid-system-number{
+            &.md-#{$i} {
+                width: col( $i )
+            }
+        }
+        @for $i from 0 through $grid-system-number{
+            &.md-offset-#{$i} {
+                left: col( $i )
+            }
+        }
+    }
+    @media only screen and (min-width: 1200px){
+        @for $i from 0 through $grid-system-number{
+            &.lg-#{$i} {
+                width: col( $i )
+            }
+        }
+        @for $i from 0 through $grid-system-number{
+            &.lg-offset-#{$i} {
+                left: col( $i )
+            }
+        }
+    }
+}

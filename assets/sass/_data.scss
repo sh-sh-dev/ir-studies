@@ -1,0 +1,21 @@
+@import "data/_functions";
+@import "data/_colors";
+//The Head variables: primary and secondary.
+//lime-A700, green-800, inputs: light-green-A700 ||//\\||
+$primary: $amber !default;
+$secondary: $indigo-900 !default;
+//Setting up our database:
+$navbar-bg: $primary !default;
+$input-color: $primary !default;
+$toggle-bg: $input-color !default;
+$toggle-off-bg: #999 !default;
+$toggle-disabled-bg: #cbcbcb !default;
+$input-underline-color: $toggle-off-bg !default;
+$loader-stroke-color: $secondary !default;
+$body-bg: #f1f1f1 !default;
+$body-color: #333 !default;
+$raised-area-bg: #fff !default;
+$popup-bg: $raised-area-bg !default;
+$popup-text-color: $body-color !default;
+$grid-system-number: 12 !default;
+$basic-border-radius: 2.5px !default;

@@ -1,0 +1,154 @@
+.btn, .pui-tab>ul.tab-head>li>button, ul.pui-pill>li>button{
+    @include no-select;
+}
+
+a{
+    text-decoration: none;
+}
+
+img.img{
+    &.responsive{
+        max-width: 100%;
+    }
+    &.rounded{
+        border-radius: $basic-border-radius;
+    }
+    &.circle{
+        border-radius: 10000px;
+    }
+    &.raised{
+        box-shadow: 0px 5px 10px -2.5px rgba(0,0,0,.5)
+    }
+}
+
+label.lbl{
+    font-size: 75%;
+    padding: 4px 15px;
+    border-radius: 1000px;
+    color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    margin: $basic-border-radius 5px;
+    font-weight: bold;
+    &.primary{
+        background-color: $primary;
+    }
+    &.gray{
+        background-color: gray;
+    }
+    &.blue{
+        background-color: $blue;
+    }
+    &.yellow{
+        background-color: $yellow;
+    }
+    &.green{
+        background-color: $green;
+    }
+    &.red{
+        background-color: $red;
+    }
+}
+
+.collapsible{
+    display: none;
+    &.collapsed{
+        display: block;
+    }
+}
+
+a.link{
+    position: relative;
+    color: $primary;
+    &:hover, &:focus{
+        color: darken($primary, 30%);
+    }
+}
+
+.btn-group{
+    .btn{
+        margin: 0;
+        border-radius: 0;
+        white-space: normal;
+        float: right;
+        &:first-child{
+            border-radius: 0 $basic-border-radius $basic-border-radius 0
+        }
+        &:last-child{
+            border-radius: $basic-border-radius 0 0 $basic-border-radius
+        }
+    }
+    &.circle{
+        .btn{
+            &:first-child{
+                border-radius: 0 1000px 1000px 0
+            }
+            &:last-child{
+                border-radius: 1000px 0 0 1000px
+            }
+        }
+    }
+    display: inline-block;
+}
+
+.badge{
+    font-size: .65em;
+    background-color: red;
+    height: 2em;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 1em;
+    line-height: 2em;
+    color: #fff;
+    border-radius: 1000px;
+    display: inline-block;
+    @include no-select;
+    &.raised{
+        //box-shadow: 0 .5em 1.7125em -.3425em rgba(0,0,0,0.5)
+        @include y-shadow(6.85, .45);
+    }
+}
+
+.btn{
+    &:not(.simple){
+        .badge{
+            background-color: #fff
+        }
+        &.primary{
+            .badge{
+                color: $primary
+            }
+        }
+        &.gray{
+            .badge{
+                color: gray
+            }
+        }
+        &.blue{
+            .badge{
+                color: $blue
+            }
+        }
+        &.yellow{
+            .badge{
+                color: $yellow
+            }
+        }
+        &.green{
+            .badge{
+                color: $green
+            }
+        }
+        &.red{
+            .badge{
+                color: $red
+            }
+        }
+        &.white{
+            .badge{
+                color: #fff;
+                background-color: #999 !important
+            }
+        }
+    }
+}

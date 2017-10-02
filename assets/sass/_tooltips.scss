@@ -1,0 +1,184 @@
+.pui-tooltip{
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .3s ease;
+    transition-property: transform;
+	&.speed-both{
+		transition-property: opacity, transform;
+	}
+    & > .inner{
+        border-radius: $basic-border-radius;
+        padding: 7px 35px;
+        font-size: 13px;
+        background-color: $popup-bg;
+        color: $popup-text-color;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 400px;
+        text-overflow: ellipsis;
+		@include y-shadow(8.658, .35);
+		z-index: 1;
+		position: relative;
+		font-weight:300;
+    }
+    & > .arrow{
+        position: absolute;
+        height: 0;
+        width: 0;
+		z-index: 2;
+    }
+    &.top{
+        & > .arrow{
+            top: 100%;
+            left: calc(50% - 6px);
+            border: {
+                top: 6px solid $popup-bg;
+                right: 6px solid transparent;
+                left: 6px solid transparent;
+            }
+        }
+    }
+    &.bottom{
+        & > .arrow{
+            bottom: 100%;
+            left: calc(50% - 6px);
+            border: {
+                bottom: 6px solid $popup-bg;
+                right: 6px solid transparent;
+                left: 6px solid transparent;
+            }
+        }
+    }
+    &.right{
+        & > .arrow{
+            bottom: calc(50% - 6px);
+            right: 100%;
+            border: {
+                bottom: 6px solid transparent;
+                right: 6px solid $popup-bg;
+                top: 6px solid transparent
+            }
+        }
+    }
+    &.left{
+        & > .arrow{
+            bottom: calc(50% - 6px);
+            left: 100%;
+            border: {
+                bottom: 6px solid transparent;
+                left: 6px solid $popup-bg;
+                top: 6px solid transparent
+            }
+        }
+    }
+    &:not(.on){
+        &.top{
+            transform: translate(0, 5px);
+        }
+        &.bottom{
+            transform: translate(0, -5px);
+        }
+        &.right{
+            transform: translate(-5px, 0);
+        }
+        &.left{
+            transform: translate(5px, 0);
+        }
+    }
+    &.on{
+        transition-timing-function: cubic-bezier(1,0,0,1);
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.pui-popover{
+    position: absolute;
+    z-index: 100;
+	opacity: 0;
+    & > .inner{
+        border-radius: $basic-border-radius;
+        padding: 8px 33px;
+        font-size: 15px;
+        background-color: $popup-bg;
+        color: $popup-text-color;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+		@include y-shadow(11.5, .35);
+		z-index: 1;
+		position: relative;
+		& > .title{
+			font-weight:300;
+			font-size: 1.2em;
+			margin: .25em 0;
+			display: block;
+			word-wrap: break-word;
+			word-break: break-all;
+            &:empty{
+                display: none;
+            }
+		}
+		& > p{
+			font-size: 1em;
+			font-weight: normal;
+			opacity: .75;
+            margin: .1em 0;
+            &:empty{
+                display: none;
+            }
+		}
+    }
+    & > .arrow{
+        position: absolute;
+        height: 0;
+        width: 0;
+		z-index: 2;
+    }
+    &.top{
+        & > .arrow{
+            top: 100%;
+            left: calc(50% - 8px);
+            border: {
+                top: 8px solid $popup-bg;
+                right: 8px solid transparent;
+                left: 8px solid transparent;
+            }
+        }
+    }
+    &.bottom{
+        & > .arrow{
+            bottom: 100%;
+            left: calc(50% - 8px);
+            border: {
+                bottom: 8px solid $popup-bg;
+                right: 8px solid transparent;
+                left: 8px solid transparent;
+            }
+        }
+    }
+    &.right{
+        & > .arrow{
+            bottom: calc(50% - 8px);
+            right: 100%;
+            border: {
+                bottom: 8px solid transparent;
+                right: 8px solid $popup-bg;
+                top: 8px solid transparent
+            }
+        }
+    }
+    &.left{
+        & > .arrow{
+            bottom: calc(50% - 8px);
+            left: 100%;
+            border: {
+                bottom: 8px solid transparent;
+                left: 8px solid $popup-bg;
+                top: 8px solid transparent
+            }
+        }
+    }
+}

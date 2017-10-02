@@ -1,0 +1,68 @@
+.pui-tab{
+    border-radius: $basic-border-radius;
+    overflow: hidden;
+    margin: 10px auto;
+    @include y-shadow(2, .5);
+    ul.tab-head{
+        margin: 0px;
+        position: relative;
+        padding: 0px;
+        @include y-shadow(3, .25);
+        .tab-line{
+            pointer-events: none;
+            background-color: #fff;
+            transition: .3s ease;
+            height: 2px;
+            position: absolute;
+            bottom: 0px;
+            display: block;
+        }
+        li{
+            @include equal-width;
+            button{
+                width: 100%;
+                text-align: center;
+                background: none;
+                cursor: pointer;
+                border: none;
+                user-select: none;
+                font-size: 85%;
+                padding: 20px 0;
+                color: #fff;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100%;
+                position: relative;
+            }
+        }
+    }
+    .tab-body{
+        padding: 25px;
+        background-color: $raised-area-bg;
+        overflow: auto;
+        .tab-part{
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+    }
+    &, &.primary{
+        & > ul.tab-head{
+            background-color: $primary
+        }
+    }
+    &.secondary{
+        & > ul.tab-head{
+            background-color: $secondary
+        }
+    }
+}
+
+.tab-part{
+    display: none;
+    &.active{
+        display: block;
+    }
+}

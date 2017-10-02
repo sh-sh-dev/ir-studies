@@ -1,0 +1,57 @@
+@function col($i) {
+    @return $i*100%/$grid-system-number;
+}
+
+@function color_rel-to_l($alt-color, $true-color, $target-color, $function-limit: 65) {
+    @if lightness($target-color) < $function-limit {
+        @return $true-color;
+    } @else {
+        @return $alt-color;
+    }
+}
+
+@function color-combine( $f, $s ) {
+    $red: red($f) + red($s);
+    $green: green($f) + green($s);
+    $blue: blue($f) + blue($s);
+    @return rgb($red, $green, $blue);
+}
+
+//Adding alpha to colors;
+@function t($c, $r) {
+    $i: 1 - $r;
+    @return transparentize($c, $i);
+}
+
+//Creating shadows
+
+@mixin y-shadow($depth, $alpha: 0.5) {
+    $y_offset: #{ $depth}px;
+    $blur: #{ $depth * 2 + $depth / 2}px;
+    $spread: #{-$depth/2}px;
+    box-shadow: 0 $y_offset $blur $spread t(#000, $alpha);
+}
+//Select-blocking elements
+@mixin no-select {
+    user-select: none;
+}
+//Clearfixing
+@mixin clearfixing {
+    &::after, &::before{
+        content: '';
+        clear: both;
+        display: table
+    }
+}
+//Equal width!
+@mixin equal-width {
+    display: table-cell;
+    width: 0.01%;
+}
+
+//material icons Fixing
+@mixin md-icons($f) {
+    vertical-align: middle;
+    font-size: $f !important;
+    line-height: inherit;
+}

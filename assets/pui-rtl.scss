@@ -1,0 +1,180 @@
+@import 'sass/_data';
+
+body{
+    direction: rtl !important;
+}
+
+.pui-col{
+    text-align: right;
+    float: right !important;
+    &.xs-offset-0,
+    &.xs-offset-1,
+    &.xs-offset-2,
+    &.xs-offset-3,
+    &.xs-offset-4,
+    &.xs-offset-5,
+    &.xs-offset-6,
+    &.xs-offset-7,
+    &.xs-offset-8,
+    &.xs-offset-9,
+    &.xs-offset-10,
+    &.xs-offset-11,
+    &.xs-offset-12{
+        left: auto !important
+    }
+    @for $i from 0 through $grid-system-number{
+        &.xs-offset-#{$i}{
+            right: col($i)
+        }
+    }
+    @media only screen and (min-width: 600px) {
+            &.sm-offset-0,
+    		&.sm-offset-1,
+    		&.sm-offset-2,
+    		&.sm-offset-3,
+    		&.sm-offset-4,
+    		&.sm-offset-5,
+    		&.sm-offset-6,
+    		&.sm-offset-7,
+    		&.sm-offset-8,
+    		&.sm-offset-9,
+    		&.sm-offset-10,
+    		&.sm-offset-11,
+    		&.sm-offset-12{
+    			left: auto !important
+    		}
+    		@for $i from 0 through $grid-system-number{
+    			&.sm-offset-#{$i}{
+    				right: col($i)
+    			}
+    		}
+    }
+    @media only screen and (min-width: 768px) {
+            &.md-offset-0,
+    		&.md-offset-1,
+    		&.md-offset-2,
+    		&.md-offset-3,
+    		&.md-offset-4,
+    		&.md-offset-5,
+    		&.md-offset-6,
+    		&.md-offset-7,
+    		&.md-offset-8,
+    		&.md-offset-9,
+    		&.md-offset-10,
+    		&.md-offset-11,
+    		&.md-offset-12{
+    			left: auto !important
+    		}
+    		@for $i from 0 through $grid-system-number{
+    			&.md-offset-#{$i}{
+    				right: col($i)
+    			}
+    		}
+    }
+    @media only screen and (min-width: 1200px) {
+            &.lg-offset-0,
+    		&.lg-offset-1,
+    		&.lg-offset-2,
+    		&.lg-offset-3,
+    		&.lg-offset-4,
+    		&.lg-offset-5,
+    		&.lg-offset-6,
+    		&.lg-offset-7,
+    		&.lg-offset-8,
+    		&.lg-offset-9,
+    		&.lg-offset-10,
+    		&.lg-offset-11,
+    		&.lg-offset-12{
+    			left: auto !important
+    		}
+    		@for $i from 0 through $grid-system-number{
+    			&.lg-offset-#{$i}{
+    				right: col($i)
+    			}
+    		}
+    }
+}
+
+.pui-togglebtn{
+    .toggle{
+        margin-right: 0 !important;
+        margin-left: 10px;
+    }
+}
+
+ul.pui-pagination{
+    li{
+        float: right
+    }
+}
+
+ul.pui-pill{
+    li{
+        float: right;
+    }
+}
+
+.pui-nav{
+    .quick-links{
+        float: left !important
+    }
+	.sidenav-toggle{
+		float: right !important
+	}
+}
+
+// @media only screen and (max-width: 768px) {
+//     .pui-nav{
+//         .title{
+//             top: 0
+//         }
+//     }
+// }
+
+.pui-notifbox{
+    .main-icon{
+        float: right !important;
+        margin-right: .25em;
+        margin-left: 0 !important
+    }
+    .title{
+        float: right!important;
+        margin-right: .2em;
+        margin-left: .2em
+    }
+    button.close[data-close]{
+        float: left !important;
+    }
+}
+
+.btn.pui-ftl{
+    right: auto;
+    left: 25px;
+}
+
+.pui-alert{
+    .content .header .close{
+        float: left !important;
+    }
+}
+
+.card footer{
+    text-align: left !important;
+}
+
+blockquote{
+    border-left: none !important;
+    border-right: 5px solid rgba(black, .15)
+}
+
+.pui-nav .inner .sidenav{
+    left: auto;
+    right: 0;
+    &:not(.active){
+        transform: translateX(120%);
+    }
+}
+
+.pui-progress .line{
+	float: right
+}

@@ -1,0 +1,25 @@
+.card{
+    @include y-shadow(2, .45);
+    border-radius: $basic-border-radius;
+    overflow: hidden;
+    margin: 5px 0px;
+    background-color: $raised-area-bg;
+    .head{
+        width: 100%;
+    }
+    .body{
+        padding: 15px;
+        position: relative;
+    }
+    .footer{
+        text-align: right;
+        padding: 5px 10px;
+        font-size: 80%;
+    }
+    &.hover-effect{
+        transition: box-shadow .3s ease;
+        &.--is-hovered{
+            @include y-shadow(8, .55);
+        }
+    }
+}

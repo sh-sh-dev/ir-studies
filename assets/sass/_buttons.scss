@@ -1,0 +1,144 @@
+.btn{
+    display: inline-block;
+    touch-action: manipulation;
+    &.block{
+        display: block;
+        width: calc(100% - 10px);
+    }
+    cursor: pointer;
+    //font-weight: bold;
+    &:not(.material-icons){
+        font-weight: bold;
+	}
+    .material-icons{
+        font-weight: normal !important;
+    }
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1.42857143;
+    user-select: none;
+    transition: .2s ease-out;
+    padding: .75em 1.875em;
+    &:disabled{
+        opacity: .75;
+        cursor: default;
+        filter: grayscale(.45);
+        .ripple-effect{
+            display: none !important
+        }
+        &:not(.simple){
+            &:hover, &:focus{
+                @include y-shadow(2,.2);
+            }
+        }
+    }
+    &.xs{
+        font-size: .5em;
+        &.fab{
+            height: 30px;
+            width: 30px;
+            font-size: 10px
+        }
+    }
+    &.sm{
+        font-size: .75em;
+        &.fab{
+            height: 45px;
+            width: 45px;
+            font-size: 15px;
+        }
+    }
+    &.lg{
+        font-size: 1.25em;
+        &.fab{
+            height: 75px;
+            width: 75px;
+            font-size: 27.5px;
+        }
+    }
+    &.fab{
+        border-radius: 1000vw;
+        height: 56px;
+        width: 56px;
+        padding: 0;
+        font-size: 18px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+    }
+    border: none;
+    font-size: 1em;
+    border-radius: $basic-border-radius;
+    margin: 7.5px 5px;
+    position: relative;
+    &:not(.fab) .material-icons{
+        @include md-icons(1.3em);
+    }
+    &.circle{
+        border-radius: 1000px;
+    }
+    &.simple{
+        background-color: transparent !important;
+    }
+    .fab .material-icons{
+        line-height: inherit;
+        font-size: inherit
+    }
+    &:not(.simple){
+        color: #fff;
+        @include y-shadow(2, .2);
+        &:hover, &:focus{
+            @include y-shadow(8.5, .45)
+        }
+    }
+    &.white{
+        background-color: #fff;
+        color: #999;
+        &.simple{
+            color: #fff;
+        }
+    }
+    &.primary{
+        background-color: $primary;
+        &.simple{
+            color: $primary;
+        }
+    }
+    &.secondary{
+        background-color: $secondary;
+        &.simple{
+            color: $secondary;
+        }
+    }
+    &.gray{
+        background-color: gray;
+        &.simple{
+            color: gray;
+        }
+    }
+    &.blue{
+        background-color: $blue;
+        &.simple{
+            color: $blue;
+        }
+    }
+    &.red{
+        background-color: $red;
+        &.simple{
+            color: $red;
+        }
+    }
+    &.yellow{
+        background-color: $yellow;
+        &.simple{
+            color: $yellow;
+        }
+    }
+    &.green{
+        background-color: $green;
+        &.simple{
+            color: $green;
+        }
+    }
+}

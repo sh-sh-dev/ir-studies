@@ -1,0 +1,86 @@
+ul.pui-pill{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &.primary{
+        .active{
+            background-color: $primary;
+        }
+    }
+    &.blue{
+        .active{
+            background-color: $blue;
+        }
+    }
+    &.green{
+        .active{
+            background-color: $green;
+        }
+    }
+    &.yellow{
+        .active{
+            background-color: $yellow;
+        }
+    }
+    &.red{
+        .active{
+            background-color: $red;
+        }
+    }
+	&.secondary{
+        .active{
+            background-color: $secondary;
+        }
+    }
+	
+    &.justified{
+        li{
+            @include equal-width;
+            float: none;
+            button{
+                width: 100%
+            }
+        }
+    }
+    &.stacked{
+        li{
+            display: block;
+            float: none;
+            button{
+                width: 100%;
+            }
+        }
+    }
+    li{
+        display: inline-block;
+        float: left;
+        padding: 2px;
+        button{
+            -webkit-appearance: none;
+            border: none;
+            color: #333;
+            padding: 10px 15px;
+            text-align: center;
+            font-weight: bold;
+            i{
+                font-size: 30px;
+                padding: 15px 0;
+                display: block;
+            }
+            position: relative;
+            transition: all .4s ease;
+            font-size: 12px;
+            overflow: hidden;
+            border-radius: $basic-border-radius;
+            cursor: pointer;
+            background-color: transparent;
+            &:hover, &:focus{
+                background-color: rgba(0,0,0,.08)
+            }
+            &.active{
+                color: white;
+                @include y-shadow(8, .525)
+            }
+        }
+    }
+}

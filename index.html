@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ایران شناسی</title>
+    <meta name="theme-color" content="#aeea00">
+    <link rel="stylesheet" href="assets/demo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="space-80"></div>
+            <div class="pui-col xs-12 center-align">
+                <h3>ایران شناسی</h3>
+                <div style="max-width: 280px; width: 100%; margin: 0 auto">
+                    <form action="" method="post">
+                        <div class="pui-datalist">
+                            <div class="pui-input">
+                                <input type="text" id="s" name="state_search" placeholder="استان مورد نظر خود را جستجو کنید...">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="space-80"></div>
+        </div>
+    </div>
+</body>
+<script src="assets/jquery-3.1.1.min.js"></script>
+<script src="assets/pui.min.js"></script>
+<script src="assets/demo.min.js"></script>
+<script type="text/javascript">
+    $('#s').dataList(['سفید', 'آبی', 'قرمز', 'سیاه'])
+</script>
+</html>

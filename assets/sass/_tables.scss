@@ -1,0 +1,36 @@
+table.pui-table{
+    &, *{
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+    width:100%;
+    thead{
+        font-weight: bold;
+        border-bottom: 2px solid #555
+    }
+    td, th{
+        padding: 5px 0
+    }
+    tbody{
+        tr{
+            border-top: 1px solid #777;
+            border-bottom: 1px solid #777;
+            &:last-child{
+                border-bottom: none !important
+            }
+        }
+    }
+    &.striped{
+        tr:not( thead > tr ):nth-child(odd){
+            background-color: rgba(#000, 0.035)
+        }
+    }
+    &.row-hover{
+        tr{
+            transition: .3s ease;
+            &:hover{
+                background-color: rgba(#000, .05)
+            }
+        }
+    }
+}

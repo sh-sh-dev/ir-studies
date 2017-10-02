@@ -1,0 +1,180 @@
+.pui-nav{
+    @mixin border-bottom($i) {
+        @if lightness($i) > 72 {
+            border-bottom: 1px solid darken($i, 15%)
+        }
+    };
+    &.primary{
+        @include border-bottom( $navbar-bg );
+        background-color: $navbar-bg;
+        .title, ul.quick-links>li>a, .sidenav-toggle>button{
+            color: color_rel-to_l( darken($navbar-bg, 35%), #fff, $navbar-bg, 70 )
+        }
+    }
+    @include y-shadow(5, .375);
+    &.fixed{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left:0;
+    }
+    @include no-select;
+    cursor: default;
+    padding: 13px 5px;
+    flex: 1;
+    z-index: 5000;
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    .inner{
+        width: 100%;
+        .title{
+            font-size: 20px;
+            position: relative;
+            display: inline-block;
+            font-weight: bold
+        }
+        ul.quick-links{
+            float: right;
+			display: inline-flex;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+			& > li{
+				display: inline-block;
+                padding: 0 $basic-border-radius;
+				& > a{
+					font-size: 13px;
+					display: inline-block;
+					padding: 8px 20px;
+					border-radius: $basic-border-radius;
+					position: relative;
+					vertical-align: middle;
+					&:not(.icon-only) .material-icons{
+						@include md-icons(1.3em);
+					}
+					&.icon-only{
+						padding:8px;
+					}
+					font-weight: 300;
+                    text-align: center;
+                    white-space: nowrap;
+                    word-wrap: break-word;
+				}
+			}
+            &.responsive{
+                @media only screen and ( max-width: 768px ){
+                    margin-top: 5px;
+                    display: block;
+                    & > li{
+                        display: table-cell;
+                        width: 0.01%;
+                        a{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+		.sidenav-toggle{
+			float: left;
+			margin-left: 7px;
+			& > button{
+				padding: 7px;
+				font-size: 20px;
+				border: 0;
+				height: 100%;
+				width: 100%;
+				border-radius: 50%;
+				transition: .125s ease;
+				background: 0;
+				cursor: pointer;
+				position: relative
+			}
+		}
+		.sidenav{
+			background: $raised-area-bg;
+			margin: 0;
+			padding: 0;
+			position: fixed;
+			top: 0;
+			bottom:0;
+			left: 0;
+            transform: translateX( -120% );
+            &.active{
+                transform: translate(0);
+            }
+			box-shadow: 0 0 10px 5px rgba(#000, .4);
+			width: 80vw;
+			max-width: 370px;
+			list-style: none;
+			overflow: auto;
+            transition: .6s ease;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+			& > .sidenav-title{
+				background-color: $secondary;
+				color: color_rel-to_l( #000, #fff, $secondary );
+				height: 220px;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-start;
+				font-size: 20px;
+				@include y-shadow(3, .25);
+				padding: 15px;
+				margin-bottom: 8px;
+                order: 1;
+                position: relative;
+			}
+			& > li{
+                &.navbar-form{
+                    order: 2;
+                    padding: 3px 7px;
+                    & > *{
+                        width: 100%;
+                    }
+                }
+                &:not(.navbar-form){
+                    order: 3;
+                    & > a{
+                        width: 100%
+                    }
+                };
+				display: block;
+				margin: 3px 0;
+				& > a{
+					display: block;
+					&, &:hover, &:focus, &:active, &:visited{
+						color: $body-color
+					}
+					font-size: 20px;
+					padding: 8px 15px;
+					white-space: nowrap;
+					max-width: 100%;
+                    overflow: hidden;
+					text-overflow: ellipsis;
+					position: relative
+				}
+			}
+            & + .sidenav-overlay{
+                background: rgba(#000, .5);
+                //height: 100vh;
+                z-index: 1;
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                transition: .6s ease;
+                opacity: 0;
+                pointer-events: none;
+            }
+            &.active + .sidenav-overlay{
+                opacity: 1;
+                pointer-events: all
+            }
+		}
+    }
+}
