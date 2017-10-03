@@ -18,20 +18,10 @@
     $('.fs').each(function () {
         var fs = $(this);
         function clearItem(item) {
-            item.animate({
-                'opacity': 0,
-                'top': 15
-            }, 0, function () {
-                $(this).removeClass('active')
-            })
+            item.removeClass('active');
         }
         function showItem(item) {
-            item.animate({
-                'opacity': 1,
-                'top': 0
-            }, 0, function () {
-                $(this).addClass('active')
-            })
+            item.addClass('active');
         }
         function __trg(e) {
             fs.parent().find('[data-fs-target=' + e +']').trigger('click')
@@ -63,9 +53,10 @@
                 __trg('next')
             } else if ( e.which == 37 ) {
                 __trg('prev')
-            } else if ( e.which > 96 && e.which < 106 && e.ctrlKey && e.altKey ) {
-                __trg( e.which - 97 )
             }
+            //  else if ( e.which > 96 && e.which < 106 && e.ctrlKey && e.altKey ) {
+            //     __trg( e.which - 98 )
+            // }
         })
         fs.parent().find('[data-fs-target]').click(function () {
             const button = $(this);

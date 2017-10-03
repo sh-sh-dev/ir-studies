@@ -97,7 +97,7 @@ body#_facts{
             height: 100%;
             width: 100%;
             .fs{
-                width: calc(100% - 66px);
+                width: calc(100% - 66px*2);
                 height: 100%;
                 position: relative;
                 display: flex;
@@ -141,18 +141,34 @@ body#_facts{
                     font-size: 13px;
                     font-weight: bold;
                     word-wrap: break-word;
-                    display: none;
+                    // display: none;
                     overflow: hidden;
+                    transition: .25s cubic-bezier(1,0,0,1);
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    height: 100%;
                     width: 100%;
-                    transition: .5s cubic-bezier(1,0,0,1);
-                    position: relative;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    transform: scale(.75);
+                    opacity: 0;
+                    pointer-events: none;
                     &.active{
-                        display: block;
+                        // display: block;
+                        opacity: 1;
+                        transform: translate(0);
+                        pointer-events: auto;
                     }
                     text-align: center;
                     & > .material-icons{
                         color: $secondary;
-                        font-size: 3.2em;
+                        font-size: 5em;
+                    }
+                    & > h5 .material-icons{
+                        @include md-icons(1.25em);
                     }
                 }
             }

@@ -4,9 +4,9 @@ A Project to know more about Iran, it's history and places
 ---
 
 ### Table Of Contents
-1. An article for every state, containing a paragraph about it, a list of the heroes of it, and some photos
+- An article for every state, containing a paragraph about it, a list of the heroes of it, and some photos
 - A page containing facts and wonders about cities of Iran
-
+<!-- - A Timeline, explaining the history of Iran  -->
 <small>_For now, just the foresaid things are almost done. Maybe, we add another things later._</small>
 
 ---
