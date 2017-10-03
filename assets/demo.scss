@@ -1,5 +1,5 @@
-@import "pui";
-@import "pui-rtl";
+@import "dist/pui";
+@import "dist/pui-rtl";
 
 *{
     font-family: IRANsans
@@ -14,7 +14,8 @@
         *{
             color: #fff
         };
-        box-shadow: none
+        box-shadow: none;
+        border-bottom-color: transparent
     }
 }
 
@@ -70,11 +71,11 @@ main[role=main]{
 
 $light-colored-bg: lighten($primary, 40%);
 
-body#highlighted_document{
+body#_facts{
     // background-color: $yellow-200+$brown-900;
     cursor: default;
     user-select: none;
-    background-image: url(img/test-bg.svg);
+    background-image: url(dist/img/test-bg.svg);
     background-position: 18% 0;
     background-size: cover;
 }
