@@ -1,3 +1,6 @@
+<?php
+if (empty($_GET["state"])) header('location:index.php');
+?>
 <!DOCTYPE html>
 <html lang="fa">
 <head>
