@@ -14,7 +14,7 @@
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  /*font-size: 24px;*/
+  font-size: 1.3em;
   display: inline-block;
   line-height: inherit;
   text-transform: none;
@@ -26,6 +26,7 @@
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+  vertical-align: middle;
 }
 
 /**

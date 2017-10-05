@@ -37,6 +37,19 @@ if (empty($_GET["state"])) header('location:index.php');
             <span>یه جمله قهرمانانه درباره استان!</span>
         </div>
     </div>
+    <div class="st-stats">
+        <!-- yes, "stats". AMAR!آمار! -->
+        <div class="pui-col xs-12 md-6">
+            <i class="material-icons">supervisor_account</i>
+            <b>جمعیت (در سال 1395)</b>
+            <span>n نفر</span>
+        </div>
+        <div class="pui-col xs-12 md-6">
+            <i class="material-icons">location_city</i>
+            <b>مرکز استان</b>
+            <span>فلان جا</span>
+        </div>
+    </div>
     <main role="main">
         <div class="pui-col xs-12 sm-10 sm-offset-1 md-8 md-offset-2">
             <div class="container">
