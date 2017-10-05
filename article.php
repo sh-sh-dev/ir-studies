@@ -41,8 +41,8 @@ if (empty($_GET["state"])) header('location:index.php');
         <!-- yes, "stats". AMAR!آمار! -->
         <div class="pui-col xs-12 md-6">
             <i class="material-icons">supervisor_account</i>
-            <b>جمعیت (در سال 1395)</b>
-            <span>n نفر</span>
+            <b id="ppl_title">جمعیت</b>
+            <span id="ppl_num">n</span>
         </div>
         <div class="pui-col xs-12 md-6">
             <i class="material-icons">location_city</i>
