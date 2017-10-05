@@ -305,3 +305,14 @@ body#_facts{
         }
     }
 }
+
+.flex-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body#page-404{
+    background-color: $secondary;
+    color: #fff
+}
