@@ -44,7 +44,7 @@
     background-size: cover;
     // background-attachment: fixed;
     position: relative;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
     box-shadow: 0 2px 6px rgba(#000, .5);
     overflow: hidden;
 }
@@ -276,6 +276,19 @@ body#_facts{
             p{
                 color: #888;
             }
+        }
+    }
+}
+
+.st-stats{
+    background-color: $secondary;
+    @include y-shadow(6, .3);
+    padding: 15px 0;
+    color: #fff;
+    @include clearfixing;
+    b{
+        &::after{
+            content: ': '
         }
     }
 }

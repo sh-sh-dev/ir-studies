@@ -91,40 +91,5 @@
                 fs.find('.fs-item.active').eq(0).removeClass('active')
             }
         })
-        // var items = fs.find('.fs-items');
-        // items = fs.find('.fs-item');
-        // for (var i = 0; i < fs.find('.fs-item').length; i++) {
-        //     fs.find('.fs-indicators').append('<div class="item-link" data-fs-target=' + i + ' />')
-        // }
-        // var __speed = 200;
-        // function clearItem(item) {
-        //     item.animate({
-        //         'top': 20,
-        //         'opacity': 0
-        //     }, __speed, function () {
-        //         $(this).removeClass('active')
-        //     })
-        // }
-        // function showItem(item) {
-        //     // item.animate({
-        //     //     'top': 0,
-        //     //     'opacity': 1
-        //     // }, __speed, function () {
-        //     //     $(this).addClass('active')
-        //     // })
-        //     item.addClass('active').animate({
-        //         'top': 0,
-        //         'opacity': 1
-        //     }, __speed)
-        // }
-        // fs.parent().find('[data-fs-target]').click(function () {
-        //     const handler = $(this);
-        //     var activeItem = items.parent().find('.fs-item.active'),
-        //     ai_index = items.index(activeItem);
-        //     if ( handler.data('fs-target') == 'next' ) {
-        //         clearItem(activeItem);
-        //         showItem( items.eq(ai_index + 1) )
-        //     }
-        // })
     })
 }());
