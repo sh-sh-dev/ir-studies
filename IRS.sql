@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 04, 2017 at 07:31 PM
+-- Generation Time: Oct 05, 2017 at 02:24 PM
 -- Server version: 5.6.31
 -- PHP Version: 7.0.10
 
@@ -19,6 +19,32 @@ SET time_zone = "+00:00";
 --
 -- Database: `IRS`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Heroes`
+--
+
+CREATE TABLE IF NOT EXISTS `Heroes` (
+  `n` int(11) NOT NULL,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `fstate` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Pics`
+--
+
+CREATE TABLE IF NOT EXISTS `Pics` (
+  `n` int(11) NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `url` text COLLATE utf8_persian_ci NOT NULL,
+  `fstate` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 -- --------------------------------------------------------
 
@@ -47,20 +73,50 @@ INSERT INTO `Setting` (`n`, `title`) VALUES
 CREATE TABLE IF NOT EXISTS `States` (
   `n` int(11) NOT NULL,
   `name` text COLLATE utf8_persian_ci NOT NULL,
-  `english` text COLLATE utf8_persian_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+  `english` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 --
 -- Dumping data for table `States`
 --
 
-INSERT INTO `States` (`n`, `name`, `english`) VALUES
-(1, 'تهران', 'tehran'),
-(2, 'یزد', 'yazd');
+INSERT INTO `States` (`n`, `name`, `english`, `description`) VALUES
+(1, 'آذربایجان شرقی', 'azarbayjansharghi', ''),
+(2, 'آذربایجان غربی', 'azarbayjangharbi', ''),
+(3, 'اردبیل', 'ardebil', ''),
+(4, 'اصفهان', 'esfehan', ''),
+(5, 'ایلام', 'ilam', ''),
+(6, 'بوشهر', 'booshehr', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Wonderful_Places`
+--
+
+CREATE TABLE IF NOT EXISTS `Wonderful_Places` (
+  `n` int(11) NOT NULL,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `fstate` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `Heroes`
+--
+ALTER TABLE `Heroes`
+  ADD PRIMARY KEY (`n`);
+
+--
+-- Indexes for table `Pics`
+--
+ALTER TABLE `Pics`
+  ADD PRIMARY KEY (`n`);
 
 --
 -- Indexes for table `Setting`
@@ -75,9 +131,25 @@ ALTER TABLE `States`
   ADD PRIMARY KEY (`n`);
 
 --
+-- Indexes for table `Wonderful_Places`
+--
+ALTER TABLE `Wonderful_Places`
+  ADD PRIMARY KEY (`n`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `Heroes`
+--
+ALTER TABLE `Heroes`
+  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `Pics`
+--
+ALTER TABLE `Pics`
+  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `Setting`
 --
@@ -87,7 +159,7 @@ ALTER TABLE `Setting`
 -- AUTO_INCREMENT for table `States`
 --
 ALTER TABLE `States`
-  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
