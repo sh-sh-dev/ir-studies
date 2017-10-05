@@ -15,8 +15,9 @@
             <h5 class="p404-title">error 404</h5>
             <span>اوه، مثل اینکه این صفحه وجود نداره!</span>
             <br><br>
-            <a href="../index.php" class="btn yellow">بازگشت به خانه</a>
+            <a href=".." class="btn yellow fab material-icons">home</a>
         </section>
+    </div>
 </body>
 <script src="../assets/dist/jquery-3.1.1.min.js"></script>
 <script src="../assets/dist/pui.min.js"></script>

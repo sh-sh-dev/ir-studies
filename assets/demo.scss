@@ -317,15 +317,17 @@ body#page-404{
     color: #fff;
     section{
         text-align: center;
-    }
-    .p404-icon{
-        font-size: 10em;
-        text-shadow: 5px 5px 0 $yellow;
-        color: $primary + $secondary;
-        display: block;
-        margin-bottom: .67rem;
-    }
-    .p404-title{
-        font-family: monospace;
+        .p404-icon{
+            font-size: 10em;
+            text-shadow: 5px 5px 0 $yellow;
+            // color: $primary + $secondary;
+            display: block;
+            margin-bottom: .67rem;
+        }
+        .p404-title{
+            font-family: monospace;
+            font-size: 2em;
+            // text-shadow: 5px 5px 0 #fff
+        }
     }
 }
