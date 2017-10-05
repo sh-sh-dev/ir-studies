@@ -67,7 +67,6 @@ $State = $_GET["state"];
                         <section>
                     <?php
                         while ($Heroes = mysqli_fetch_assoc($getHeroes)) {
-                            // echo "<div class='chip' data-popover='$Heroes[description]' data-popover-place='bottom>$Heroes[name]</li>";
                             echo "<div class='chip'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></li>";
                         }
                         ?>

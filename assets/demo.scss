@@ -314,5 +314,17 @@ body#_facts{
 
 body#page-404{
     background-color: $secondary;
-    color: #fff
+    color: #fff;
+    section{
+        text-align: center;
+    }
+    .p404-icon{
+        font-size: 10em;
+        text-shadow: 5px 5px 0 $yellow;
+        display: block;
+        margin-bottom: .67rem;
+    }
+    .p404-title{
+        font-family: monospace;
+    }
 }
