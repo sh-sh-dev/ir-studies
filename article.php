@@ -9,8 +9,10 @@ $State = $_GET["state"];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>مطلب سفید!</title>
+    <title><?=getSetting('title')?> :: <?=getState($State,"name")?></title>
     <meta name="theme-color" content="#aeea00">
+    <meta name="msapplication-navbutton-color" content="#aeea00">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#aeea00">
     <link rel="stylesheet" href="assets/demo.css">
 </head>
 <body>
@@ -74,9 +76,22 @@ $State = $_GET["state"];
                     <?php
                     }
                     ?>
-<!--                    <hr>-->
-<!--                    <h3>مکان های دیدنی</h3>-->
-<!--                    اینجا توی چند تا کارت، جاهای دیدنی رو میزاریم.-->
+                    <?php
+                    $getWP = mysqli_query($db,"SELECT * FROM `Wonderful_Places` WHERE `fstate`=$StateCode");
+                    if (mysqli_num_rows($getWP) >= 1) {
+                        ?>
+<!--                        <hr>-->
+                        <h3>مکان های دیدنی استان</h3>
+                        <section>
+                            <?php
+                            while ($WPS = mysqli_fetch_assoc($getWP)) {
+                                echo "<div class='chip'><h5 style='font-weight: 400'>$WPS[name]</h5><p style='font-weight: bold' class='muted-txt'>$WPS[description]</p></li>";
+                            }
+                            ?>
+                        </section>
+                        <?php
+                    }
+                    ?>
 <!--                    <hr>-->
 <!--                    <div class="images">-->
 <!--                        <div class="pui-col xs-12 sm-6 md-4 lg-3">-->

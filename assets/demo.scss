@@ -321,6 +321,7 @@ body#page-404{
     .p404-icon{
         font-size: 10em;
         text-shadow: 5px 5px 0 $yellow;
+        color: $primary + $secondary;
         display: block;
         margin-bottom: .67rem;
     }
