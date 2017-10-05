@@ -64,13 +64,14 @@ $State = $_GET["state"];
                     if (mysqli_num_rows($getHeroes) >= 1) {
                         ?>
                         <h3>مشاهیر استان</h3>
-                        <ul>
+                        <section>
                     <?php
                         while ($Heroes = mysqli_fetch_assoc($getHeroes)) {
-                            echo "<li class='blue-txt' data-popover='$Heroes[description]' data-popover-place='bottom'>$Heroes[name]</li>";
+                            // echo "<div class='chip' data-popover='$Heroes[description]' data-popover-place='bottom>$Heroes[name]</li>";
+                            echo "<div class='chip'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></li>";
                         }
                         ?>
-                            </ul>
+                    </section>
                     <?php
                     }
                     ?>
