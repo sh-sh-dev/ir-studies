@@ -283,12 +283,25 @@ body#_facts{
 .st-stats{
     background-color: $secondary;
     @include y-shadow(6, .3);
-    padding: 15px 0;
+    // padding: 15px 0;
     color: #fff;
     @include clearfixing;
+    display: flex;
+    align-items: center;
+    height: 72px;
     b{
+        &#ppl_title{
+            &::after{
+                content: ' (در سال 1395):'
+            }
+        }
         &::after{
             content: ': '
+        }
+    }
+    #ppl_num{
+        &::after{
+            content: ' نفر'
         }
     }
 }
