@@ -30,6 +30,7 @@ include 'app.php';
                         <div class='inner'>";
                         echo "<h5>$History[title]</h5>";
                         echo "<p>$History[description]</p>";
+                        echo "<footer><label class='lbl primary'>$History[date]</label></footer>";
                         echo " </div>
                     </div>";
                     }
