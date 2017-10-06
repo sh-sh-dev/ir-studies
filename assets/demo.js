@@ -54,9 +54,9 @@
             } else if ( e.which == 37 ) {
                 __trg('prev')
             }
-            //  else if ( e.which > 96 && e.which < 106 && e.ctrlKey && e.altKey ) {
-            //     __trg( e.which - 98 )
-            // }
+            else if ( e.which > 95 && e.which < 106 && e.ctrlKey && e.altKey ) {
+                __trg( e.which - 96 )
+            }
         })
         fs.parent().find('[data-fs-target]').click(function () {
             const button = $(this);

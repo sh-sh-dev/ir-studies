@@ -147,9 +147,8 @@ body#_facts{
                     font-size: 13px;
                     font-weight: bold;
                     word-wrap: break-word;
-                    // display: none;
                     overflow: hidden;
-                    transition: .25s ease;
+                    transition: .25s cubic-bezier(1,0,0,1);
                     position: absolute;
                     top:0;
                     left: 0;
@@ -159,11 +158,10 @@ body#_facts{
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    transform: translateY(15px);
+                    transform: translateY(15px) scale(.75);
                     opacity: 0;
                     pointer-events: none;
                     &.active{
-                        // display: block;
                         opacity: 1;
                         transform: translate(0);
                         pointer-events: auto;
@@ -327,6 +325,7 @@ body#page-404{
             margin-bottom: .67rem;
         }
         .p404-title{
+            display: block;
             font-family: monospace;
             font-size: 2em;
             // text-shadow: 5px 5px 0 #fff

@@ -35,7 +35,7 @@ include 'app.php';
                             echo "<div class=\"fs-item\">";
                         }
                         echo "<i class=\"material-icons\">$Facts[icon]</i>";
-                        echo "<h5><i class=\"material-icons red-txt\">location_on</i> $Facts[location]</h5>";
+                        echo "<h5><i class=\"material-icons muted-txt\">location_on</i> $Facts[location]</h5>";
                         echo "<p>";
                         echo "$Facts[description]";
                         echo "</p>";
@@ -68,8 +68,8 @@ include 'app.php';
                     <li><b>فلش چپ:</b> آیتم قبل</li>
                     <li><code>home</code>: آیتم اول</li>
                     <li><code>end</code>: آیتم آخر</li>
-                    <li><bdi><code>Ctrl + Alt + [n]</code></bdi>: حرکت به آیتم nـُم
-                    <span class="muted-txt">(مثال: <code>Ctrl + Alt + 5</code> برای نمایش آیتم پنجم)</span>
+                    <li><bdi><code>Ctrl + Alt + [n]</code></bdi>: حرکت به آیتم nـُم (اعداد از صفر شروع می شوند!)
+                    <span class="muted-txt">(مثال: <code>Ctrl + Alt + 6</code> برای نمایش آیتم پنجم)</span>
                     </li>
                 </ul>
                 برای دسترسی به قسمت راهنمایی می توانید از کلید های <code>Ctrl + Alt + h</code> استفاده کنید.
