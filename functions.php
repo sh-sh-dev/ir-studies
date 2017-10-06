@@ -9,7 +9,7 @@ function getSetting($req) {
 
 function getState($n,$req) {
     global $db;
-    $gUser = mysqli_query($db,"SELECT * FROM `States` WHERE `name`='$n' OR `english`='$n'");
+    $gUser = mysqli_query($db,"SELECT * FROM `States` WHERE `name`='$n' OR `english`='$n' OR `n`='$n'");
     $User = mysqli_fetch_assoc($gUser);
     return $User[$req];
 }
