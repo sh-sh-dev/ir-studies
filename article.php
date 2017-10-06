@@ -2,39 +2,11 @@
 include 'app.php';
 if (empty($_GET["state"]) || !ValidState($_GET["state"])) header('location:index.php');
 $State = $_GET["state"];
+$StateName = getState($State,"name");
 ?>
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?=getSetting('title')?> :: <?=getState($State,"name")?></title>
-    <meta name="theme-color" content="#aeea00">
-    <meta name="msapplication-navbutton-color" content="#aeea00">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#aeea00">
-    <link rel="stylesheet" href="assets/demo.css">
-</head>
+<?getHeader()?>
+<?getMenu()?>
 <body>
-    <nav class="pui-nav fixed transparent" id="navigation" role="navigation">
-        <div class="inner">
-            <div class="sidenav-toggle">
-                <button class="sidenav-control material-icons">menu</button>
-            </div>
-            <div class="title">
-<?=getState($State,"name")?>
-            </div>
-            <ul class="sidenav">
-                <div class="sidenav-title">
-                    ایران شناسی
-                </div>
-                <li><a href="index.php">
-                    خانه
-                </a></li>
-            </ul>
-            <div class="sidenav-overlay"></div>
-        </div>
-    </nav>
     <div class="heroic-header" style="background-image: url(assets/dist/img/test-bg.svg)">
         <div class="content">
             <h3><?=getState($State,"name")?></h3>
@@ -42,7 +14,6 @@ $State = $_GET["state"];
         </div>
     </div>
     <div class="st-stats">
-        <!-- yes, "stats". AMAR!آمار! -->
         <div class="pui-col xs-12 md-6">
             <i class="material-icons">supervisor_account</i>
             <b id="ppl_title">جمعیت</b>
@@ -65,7 +36,7 @@ $State = $_GET["state"];
                     $getHeroes = mysqli_query($db,"SELECT * FROM `Heroes` WHERE `fstate`=$StateCode");
                     if (mysqli_num_rows($getHeroes) >= 1) {
                         ?>
-                        <h3>مشاهیر استان</h3>
+                        <h3>مشاهیر <?=$StateName?></h3>
                         <section>
                     <?php
                         while ($Heroes = mysqli_fetch_assoc($getHeroes)) {
@@ -81,7 +52,7 @@ $State = $_GET["state"];
                     if (mysqli_num_rows($getWP) >= 1) {
                         ?>
 <!--                        <hr>-->
-                        <h3>مکان های دیدنی استان</h3>
+                        <h3>مکان های دیدنی <?=$StateName?></h3>
                         <section>
                             <?php
                             while ($WPS = mysqli_fetch_assoc($getWP)) {
@@ -92,27 +63,27 @@ $State = $_GET["state"];
                         <?php
                     }
                     ?>
-<!--                    <hr>-->
-<!--                    <div class="images">-->
-<!--                        <div class="pui-col xs-12 sm-6 md-4 lg-3">-->
-<!--                            یه عکس!-->
-<!--                        </div>-->
-<!--                        <div class="pui-col xs-12 sm-6 md-4 lg-3">-->
-<!--                            یه عکس!-->
-<!--                        </div>-->
-<!--                        <div class="pui-col xs-12 sm-6 md-4 lg-3">-->
-<!--                            یه عکس!-->
-<!--                        </div>-->
-<!--                        <div class="pui-col xs-12 sm-6 md-4 lg-3">-->
-<!--                            یه عکس!-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <?php
+                    $getPics = mysqli_query($db,"SELECT * FROM `Pics` WHERE `fstate`=$StateCode");
+                    if (mysqli_num_rows($getPics) >= 1) {
+                        ?>
+                        <h3>تصاویر <?=$StateName?></h3>
+                        <div class="images">
+                            <?php
+                            while ($Pics = mysqli_fetch_assoc($getPics)) {
+                                echo "<div class='pui-col xs-12 sm-6 md-4 lg-3 center-align'>";
+                                echo "<img src='assets/images/$Pics[url]'>";
+                                echo "$Pics[description]";
+                                echo "</div>";
+                            }
+                            ?>
+                        </div>
+                        <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>
     </main>
-</body>
-<script src="assets/dist/jquery-3.1.1.min.js"></script>
-<script src="assets/dist/pui.min.js"></script>
-<script src="assets/demo.min.js"></script>
-</html>
+<?=setTitle(getState($State,"name"))?>
+<?getFooter()?>

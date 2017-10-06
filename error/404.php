@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>صفحه مورد نظر پیدا نشد!</title>
     <meta name="theme-color" content="#aeea00">
+    <meta name="msapplication-navbutton-color" content="#aeea00">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#aeea00">
     <link rel="stylesheet" href="../assets/demo.css">
 </head>
 <body id="page-404">
@@ -13,7 +15,7 @@
         <section>
             <i class="material-icons p404-icon">cloud_off</i>
             <h5 class="p404-title">error 404</h5>
-            <span>اوه، مثل اینکه این صفحه وجود نداره!</span>
+            <span>اوه ، مثل اینکه این صفحه وجود نداره!</span>
             <br><br>
             <a href=".." class="btn yellow fab material-icons">home</a>
         </section>

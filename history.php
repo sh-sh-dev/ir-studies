@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>خلاصه ای از تاریخ ایران</title>
-    <meta name="theme-color" content="#aeea00">
-    <meta name="msapplication-navbutton-color" content="#aeea00">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#aeea00">
-    <link rel="stylesheet" href="assets/demo.css">
-</head>
+<?php
+include 'app.php';
+?>
+<?getHeader()?>
+<?//getMenu()?>
 <body>
     <div class="ui">
         <div class="header-box">
@@ -41,8 +34,5 @@
             </main>
         </div>
     </div>
-</body>
-<script src="assets/dist/jquery-3.1.1.min.js"></script>
-<script src="assets/dist/pui.min.js"></script>
-<script src="assets/demo.min.js"></script>
-</html>
+<?=setTitle("خلاصه ای از تاریخ ایران")?>
+<?getFooter()?>

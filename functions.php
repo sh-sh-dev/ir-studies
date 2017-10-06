@@ -24,3 +24,25 @@ function ValidState($n) {
         return false;
     }
 }
+
+function getHeader() {
+    return include 'header.php';
+}
+
+function getMenu() {
+    return include 'menu.php';
+}
+
+function getFooter() {
+    return include 'footer.php';
+}
+
+function setTitle($ext) {
+    $title = getSetting('title');
+    $titler = "$title :: $ext";
+    $Wreturn = "
+<script>
+    $(document).prop('title','$titler');
+</script>";
+    return $Wreturn;
+}
