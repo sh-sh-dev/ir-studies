@@ -274,6 +274,9 @@ body#_facts{
             p{
                 color: #888;
             }
+            footer{
+                text-align: end;
+            }
         }
     }
 }
@@ -346,5 +349,34 @@ body#page-404{
         &::after{
             content: ': '
         }
+    }
+}
+
+.chip{
+    @include clearfixing;
+}
+
+.raised-area{
+    background-color: $raised-area-bg;
+    @include y-shadow(2, .3);
+    border-radius: $basic-border-radius;
+    overflow: hidden;
+    h2{
+        margin: 0;
+        font-weight: 200
+    }
+    .part{
+        h3{
+            font-weight: 300
+        }
+        p{
+            color: #888;
+            font-weight: normal;
+        }
+        &:not(:last-child){
+            border-bottom: 1px solid $body-bg;
+        }
+        padding: 25px 17px;
+        @include clearfixing;
     }
 }
