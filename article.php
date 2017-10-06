@@ -1,6 +1,6 @@
 <?php
 include 'app.php';
-if (empty($_GET["state"]) || !ValidState($_GET["state"])) header('location:index.php');
+if (empty($_GET["state"]) || !ValidState($_GET["state"])) header('location:home.php');
 $State = $_GET["state"];
 $StateName = getState($State,"name");
 ?>
@@ -17,7 +17,11 @@ $StateName = getState($State,"name");
         <div class="pui-col xs-12 md-6">
             <i class="material-icons">supervisor_account</i>
             <b id="ppl_title">جمعیت</b>
-            <span id="ppl_num"><?=getState($State,"Population")?></span>
+            <span id="ppl_num" data-tooltip="<?=number_format(getState($State,"Population"))?> نفر">
+                <?=
+                formatted_number(getState($State,"Population"));
+                ?>
+            </span>
         </div>
         <div class="pui-col xs-12 md-6">
             <i class="material-icons">location_city</i>

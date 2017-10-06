@@ -46,3 +46,13 @@ function setTitle($ext) {
 </script>";
     return $Wreturn;
 }
+
+function formatted_number($n) {
+    $n = (0+str_replace(",","",$n));
+    if(!is_numeric($n)) return false;
+    if($n>1000000000000) return round(($n/1000000000000),1).' تریلیون';
+    else if($n>1000000000) return round(($n/1000000000),1).' بیلیون';
+    else if($n>1000000) return round(($n/1000000),1).' میلیون';
+    else if($n>1000) return round(($n/1000),1).' هزار';
+    return number_format($n);
+}
