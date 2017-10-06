@@ -53,9 +53,10 @@
                 __trg('next')
             } else if ( e.which == 37 ) {
                 __trg('prev')
-            }
-            else if ( e.which > 95 && e.which < 106 && e.ctrlKey && e.altKey ) {
+            } else if ( e.which > 95 && e.which < 106 && e.ctrlKey && e.altKey ) {
                 __trg( e.which - 96 )
+            } else if ( e.which > 47 && e.which < 58 && e.ctrlKey && e.altKey ) {
+                __trg( e.which - 48 )
             }
         })
         fs.parent().find('[data-fs-target]').click(function () {
