@@ -11,16 +11,16 @@
                 ایران شناسی
             </div>
             <li>
-                <a href="home.php">
+                <a href="<?=getSetting('url')?>/home">
                     خانه
                 </a>
-                <a href="about.php">
+                <a href="<?=getSetting('url')?>/about">
                     شناسنامه محصول
                 </a>
-                <a href="history.php">
+                <a href="<?=getSetting('url')?>/history">
                     تاریخچه ایران
                 </a>
-                <a href="facts.php">
+                <a href="<?=getSetting('url')?>/facts">
                     عجایب ایران
                 </a>
             </li>

@@ -8,6 +8,6 @@
     <meta name="theme-color" content="#aeea00">
     <meta name="msapplication-navbutton-color" content="#aeea00">
     <meta name="apple-mobile-web-app-status-bar-style" content="#aeea00">
-    <link rel="stylesheet" href="assets/demo.css">
-    <script src="assets/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="<?=getSetting('url')?>/assets/irs.css">
+    <script src="<?=getSetting('url')?>/assets/dist/jquery.min.js"></script>
 </head>

@@ -80,7 +80,7 @@ $StateName = getState($State,"name");
                             <?php
                             while ($Pics = mysqli_fetch_assoc($getPics)) {
                                 echo "<div class='pui-col xs-12 sm-6 md-4 lg-3 center-align'>";
-                                echo "<img src='assets/images/$Pics[url]'>";
+                                echo "<img src='$Pics[url]'>";
                                 echo "$Pics[description]";
                                 echo "</div>";
                             }

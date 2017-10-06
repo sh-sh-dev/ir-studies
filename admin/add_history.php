@@ -1,15 +1,8 @@
 <?php
 include '../app.php';
 ?>
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="../assets/demo.css">
-</head>
+<?getHeader()?>
+<?getMenu()?>
 <body>
     <div class="center-align container">
         <h1 style="font-weight: 200">اضافه کردن تاریخچه</h1>
@@ -45,7 +38,5 @@ include '../app.php';
             ?>
         </form>
     </div>
-</body>
-<script src="../assets/dist/jquery.min.js"></script>
-<script src="../assets/dist/pui.min.js"></script>
-</html>
+    <?=setTitle("اضافه کردن تاریخچه")?>
+<?getFooter()?>
