@@ -16,10 +16,10 @@ include '../app.php';
         <form action="" method="post">
             <div style="max-width: 300px; width: 100%; margin:0 auto">
                 <div class="pui-input">
-                    <input type="text" name='name' placeholder="نام استان">
+                    <input type="text" name='name' placeholder="نام استان" required>
                 </div>
                 <div class="pui-input">
-                    <input type="text" name='english' style="direction: ltr" placeholder="فینگیلیش...">
+                    <input type="text" name='english' style="direction: ltr" required placeholder="فینگیلیش...">
                 </div>
 <!--                <div class="pui-input">-->
 <!--                    <input type="text" name='ins_sentense' placeholder="جمله قهرمانانه">-->

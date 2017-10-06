@@ -39,7 +39,7 @@ function getFooter() {
 
 function setTitle($ext) {
     $title = getSetting('title');
-    $titler = "$title :: $ext";
+    $titler = "$title | $ext";
     $Wreturn = "
 <script>
     $(document).prop('title','$titler');
