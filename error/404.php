@@ -14,14 +14,14 @@
     <div class="flex-centered" style="height: 100vh">
         <section>
             <i class="material-icons p404-icon">cloud_off</i>
-            <h5 class="p404-title">error 404</h5>
-            <span>اوه ، مثل اینکه این صفحه وجود نداره!</span>
+            <span class="p404-title">error 404</span>
+            <span style="font-weight: bold">اوه، مثل اینکه این صفحه وجود نداره!</span>
             <br><br>
-            <a href=".." class="btn yellow fab material-icons">home</a>
+            <a href=".." class="btn primary fab material-icons">home</a>
         </section>
     </div>
 </body>
-<script src="../assets/dist/jquery-3.1.1.min.js"></script>
+<script src="../assets/dist/jquery.min.js"></script>
 <script src="../assets/dist/pui.min.js"></script>
 <script src="../assets/demo.min.js"></script>
 </html>
