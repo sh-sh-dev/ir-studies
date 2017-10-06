@@ -146,8 +146,6 @@
 <script src="assets/dist/pui.min.js"></script>
 <script src="assets/demo.min.js"></script>
 <script type="text/javascript">
-    $(document).on('keyup', function (e) {
-        e.which == 72 && e.ctrlKey && e.altKey ? $('#help-handle').trigger('click') : void 0
-    })
+    $(document).on('keyup', function (e) {e.which == 72 && e.ctrlKey && e.altKey ? $('#help-handle').trigger('click') : void 0})
 </script>
 </html>

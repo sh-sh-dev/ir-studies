@@ -315,6 +315,8 @@ body#_facts{
 body#page-404{
     background-color: $secondary;
     color: #fff;
+    @include no-select;
+    cursor: default;
     section{
         text-align: center;
         .p404-icon{
