@@ -37,7 +37,7 @@ $StateName = getState($State,"name");
                     <hr>
                     <?php
                     $StateCode = getState($State,"n");
-                    $getHeroes = mysqli_query($db,"SELECT * FROM `Heroes` WHERE `fstate`=$StateCode");
+                    $getHeroes = mysqli_query($db,"SELECT * FROM `Heroes` WHERE `fstate`=$StateCode AND `active`=1");
                     if (mysqli_num_rows($getHeroes) >= 1) {
                         ?>
                         <h3>مشاهیر <?=$StateName?></h3>
@@ -52,7 +52,7 @@ $StateName = getState($State,"name");
                     }
                     ?>
                     <?php
-                    $getWP = mysqli_query($db,"SELECT * FROM `Wonderful_Places` WHERE `fstate`=$StateCode");
+                    $getWP = mysqli_query($db,"SELECT * FROM `Wonderful_Places` WHERE `fstate`=$StateCode AND `active`=1");
                     if (mysqli_num_rows($getWP) >= 1) {
                         ?>
 <!--                        <hr>-->
@@ -68,7 +68,7 @@ $StateName = getState($State,"name");
                     }
                     ?>
                     <?php
-                    $getPics = mysqli_query($db,"SELECT * FROM `Pics` WHERE `fstate`=$StateCode");
+                    $getPics = mysqli_query($db,"SELECT * FROM `Pics` WHERE `fstate`=$StateCode AND `active`=1");
                     if (mysqli_num_rows($getPics) >= 1) {
                         ?>
                         <h3>تصاویر <?=$StateName?></h3>

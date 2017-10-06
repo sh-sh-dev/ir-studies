@@ -21,83 +21,28 @@ include 'app.php';
                 data-tooltip='آیتم بعد' data-tooltip-place='left'>keyboard_arrow_right</button>
                 <div class="fs">
                     <div class="fs-indicators"></div>
-                    <div class="fs-item active">
-                        <i class="material-icons">flash_on</i>
-                        <h5><i class="material-icons red-txt">location_on</i> اندیمشک</h5>
-                        <p>
-                            تنها شهر دارای سه سد جهانی در ایران
-                        </p>
-                    </div>
-                    <div class="fs-item">
-                        <i class="material-icons">traffic</i>
-                        <h5><i class="material-icons red-txt">location_on</i> پاوه</h5>
-                        <p>
-                            شهری بدون حتی یک چراغ قرمز!
-                        </p>
-                    </div>
-                    <div class="fs-item">
-                        <i class="material-icons">ac_unit</i>
-                        <h5><i class="material-icons red-txt">location_on</i> چالدران</h5>
-                        <p>
-                            شهر بدون کولر!
-                        </p>
-                    </div>
-                    <div class="fs-item">
-                        <i class="material-icons">monetization_on</i>
-                        <h5><i class="material-icons red-txt">location_on</i> اردکان</h5>
-                        <p>
-                            پولدارترین و مرفه ترین شهر ایران
-                        </p>
-                    </div>
-                    <div class="fs-item">
-                        <i class="material-icons">security</i>
-                        <h5><i class="material-icons red-txt">location_on</i> فردوس</h5>
-                        <p>
-                            امن ترین شهر ایران و دومین شهر جهان!
-                        </p>
-                    </div>
-                    <div class="fs-item">
-                        <i class="material-icons">money_off</i>
-                        <h5><i class="material-icons red-txt">location_on</i> تبریز</h5>
-                        <p>
-                            شهر بدون گدا
-                        </p>
-                    </div>
-                    <div class="fs-item">
-                        <i class="material-icons">school</i>
-                        <h5><i class="material-icons red-txt">location_on</i> نورآباد ممسنی</h5>
-                        <p>
-                            شهری که 18% جمعیتش دانشجو است!
-                        </p>
-                    </div>
-                    <div class="fs-item">
-                        <i class="material-icons">insert_emoticon</i>
-                        <h5><i class="material-icons red-txt">location_on</i> بروجرد</h5>
-                        <p>
-                            خوشگذران ترین مردم ایران!
-                        </p>
-                    </div>
-                    <div class="fs-item">
-                        <i class="material-icons">motorcycle</i>
-                        <h5><i class="material-icons red-txt">location_on</i> کیش</h5>
-                        <p>
-                            شهر بدون موتورسیکلت!
-                        </p>
-                    </div>
-                    <div class="fs-item">
-                        <i class="material-icons">hotel</i>
-                        <h5><i class="material-icons red-txt">location_on</i> شادگان</h5>
-                        <p>
-                            شهر بدون هتل و مسافر خانه!
-                        </p>
-                    </div>
-                    <!-- <div class="fs-item">
-                        <i class="material-icons"></i>
-                        <h5><i class="material-icons red-txt">location_on</i></h5>
-                        <p>
-
-                        </p>
-                    </div> -->
+                    <?php
+                    $getFacts = mysqli_query($db,"SELECT * FROM `Facts` WHERE `active`=1");
+                    if (!mysqli_num_rows($getFacts) >= 1) {
+                        echo "<p class='center-align red-txt'>هیچ چیزی برای نمایش وجود ندارد :(</p>";
+                    }
+                    $n = 0;
+                    while ($Facts = mysqli_fetch_assoc($getFacts)) {
+                        if ($n == 0) {
+                            echo "<div class=\"fs-item active\">";
+                        }
+                        else {
+                            echo "<div class=\"fs-item\">";
+                        }
+                        echo "<i class=\"material-icons\">$Facts[icon]</i>";
+                        echo "<h5><i class=\"material-icons red-txt\">location_on</i> $Facts[location]</h5>";
+                        echo "<p>";
+                        echo "$Facts[description]";
+                        echo "</p>";
+                        echo "</div>";
+                        $n++;
+                    }
+                    ?>
                 </div>
                 <button class="btn fab material-icons primary" data-fs-target='prev'
                 data-tooltip='آیتم قبل' data-tooltip-place='right'>keyboard_arrow_left</button>

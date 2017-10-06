@@ -18,7 +18,7 @@ include 'app.php';
             <main role="main">
                 <div class="timeline">
                     <?
-                    $getHistory = mysqli_query($db,"SELECT * FROM `History`");
+                    $getHistory = mysqli_query($db,"SELECT * FROM `History` WHERE `active`=1");
                     if (mysqli_num_rows($getHistory) >= 1) {
                         echo "<div class='line'></div>";
                     }

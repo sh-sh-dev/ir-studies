@@ -25,7 +25,7 @@ include 'app.php';
     <script type="text/javascript">
         function DataList() {
             <?php
-            $query = mysqli_query($db,"SELECT `name` FROM `States`");
+            $query = mysqli_query($db,"SELECT `name` FROM `States` WHERE `active`=1");
             $json = array();
             while ($States = mysqli_fetch_assoc($query)) {
                 array_push($json,$States["name"]);
