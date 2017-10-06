@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 06, 2017 at 07:23 AM
+-- Generation Time: Oct 06, 2017 at 09:02 AM
 -- Server version: 5.6.31
 -- PHP Version: 7.0.10
 
@@ -31,14 +31,7 @@ CREATE TABLE IF NOT EXISTS `Heroes` (
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `fstate` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
-
---
--- Dumping data for table `Heroes`
---
-
-INSERT INTO `Heroes` (`n`, `name`, `description`, `fstate`) VALUES
-(1, 'شهاب', 'این شخص تو دفتر 400 برق قوشی میورد مدرسه :|', 3);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 -- --------------------------------------------------------
 
@@ -64,15 +57,7 @@ CREATE TABLE IF NOT EXISTS `Pics` (
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `url` text COLLATE utf8_persian_ci NOT NULL,
   `fstate` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
-
---
--- Dumping data for table `Pics`
---
-
-INSERT INTO `Pics` (`n`, `description`, `url`, `fstate`) VALUES
-(1, 'هعی', '1.JPG', 3),
-(2, 'هعی هعی هعی', '1.JPG', 2);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 -- --------------------------------------------------------
 
@@ -157,14 +142,7 @@ CREATE TABLE IF NOT EXISTS `Wonderful_Places` (
   `name` text COLLATE utf8_persian_ci NOT NULL,
   `description` text COLLATE utf8_persian_ci NOT NULL,
   `fstate` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
-
---
--- Dumping data for table `Wonderful_Places`
---
-
-INSERT INTO `Wonderful_Places` (`n`, `name`, `description`, `fstate`) VALUES
-(1, 'آب قرم', 'یک آب خیلی خیلی داغ و قرم :)', 3);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 --
 -- Indexes for dumped tables
@@ -214,7 +192,7 @@ ALTER TABLE `Wonderful_Places`
 -- AUTO_INCREMENT for table `Heroes`
 --
 ALTER TABLE `Heroes`
-  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `History`
 --
@@ -224,7 +202,7 @@ ALTER TABLE `History`
 -- AUTO_INCREMENT for table `Pics`
 --
 ALTER TABLE `Pics`
-  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `Setting`
 --
@@ -239,7 +217,7 @@ ALTER TABLE `States`
 -- AUTO_INCREMENT for table `Wonderful_Places`
 --
 ALTER TABLE `Wonderful_Places`
-  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
