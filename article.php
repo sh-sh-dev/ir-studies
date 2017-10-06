@@ -60,7 +60,11 @@ $StateName = getState($State,"name");
                         <section>
                             <?php
                             while ($WPS = mysqli_fetch_assoc($getWP)) {
-                                echo "<div class='chip'><h5 style='font-weight: 400'>$WPS[name]</h5><p style='font-weight: bold' class='muted-txt'>$WPS[description]</p></li>";
+                                echo "<div class='chip'>
+<h5 style='font-weight: 400'>$WPS[name]</h5>
+<p style='font-weight: bold' class='muted-txt'>$WPS[description]</p>
+</li>
+</div>";
                             }
                             ?>
                         </section>
