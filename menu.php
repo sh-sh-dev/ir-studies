@@ -3,7 +3,7 @@
         <div class="sidenav-toggle">
             <button class="sidenav-control material-icons">menu</button>
         </div>
-        <div class="title">
+        <div class="title" id="menu-title">
             منو
         </div>
         <ul class="sidenav">

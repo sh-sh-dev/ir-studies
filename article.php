@@ -97,5 +97,5 @@ $StateName = getState($State,"name");
             </main>
         </div>
     </div>
-    <?=setTitle(getState($State,"name"))?>
+    <?=setTitle(getState($State,"name"),1)?>
     <?getFooter()?>

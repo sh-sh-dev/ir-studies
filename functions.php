@@ -37,13 +37,22 @@ function getFooter() {
     return include 'footer.php';
 }
 
-function setTitle($ext) {
+function setTitle($ext,$menu_title = 0) {
     $title = getSetting('title');
     $titler = "$title | $ext";
-    $Wreturn = "
+    if ($menu_title) {
+        $Wreturn = "
+<script>
+    $(document).prop('title','$titler');
+    $('#menu-title').text('$ext');
+</script>";
+    }
+    else {
+        $Wreturn = "
 <script>
     $(document).prop('title','$titler');
 </script>";
+    }
     return $Wreturn;
 }
 
