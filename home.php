@@ -44,5 +44,5 @@ include 'app.php';
             )
         }
     </script>
-    <?=setTitle("خانه")?>
+    <?=setTitle("خانه",1)?>
 <?getFooter()?>

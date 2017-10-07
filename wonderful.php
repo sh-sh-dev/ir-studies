@@ -47,5 +47,5 @@ include 'app.php';
         </div>
     </div>
 </div>
-<?setTitle("مکان های دیدنی")?>
+<?=setTitle("مکان های دیدنی",1)?>
 <?getFooter()?>

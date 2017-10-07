@@ -84,5 +84,5 @@ include 'app.php';
             e.which == 72 && e.ctrlKey && e.altKey ? $('#help-handle').trigger('click') : void 0
         })
     </script>
-    <?=setTitle("عجایب ایران")?>
+    <?=setTitle("عجایب ایران",1)?>
 <?getFooter()?>

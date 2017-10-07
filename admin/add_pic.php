@@ -12,7 +12,10 @@ include '../app.php';
                 <input type="text" name='description' placeholder="موضوع" required>
             </div>
             <div class="pui-input">
-                <input type="text" name='fstate' id="s" placeholder="برای استان" required list="states">
+<!--                <div class="pui-datalist">-->
+<!--                    <input type="text" name='fstate' id="s" placeholder="برای استان" required list="states">-->
+<!--                </div>-->
+                                <input type="text" name='fstate' id="s" placeholder="برای استان" required list="states">
                 <datalist id="states">
                     <?php
                     $query = mysqli_query($db,"SELECT * FROM `States` WHERE `active`=1");
