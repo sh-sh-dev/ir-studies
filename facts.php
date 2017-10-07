@@ -2,20 +2,20 @@
 include 'app.php';
 ?>
 <?getHeader()?>
-<?//getMenu()?>
 <body id="_facts">
     <div class="ui">
         <div class="header-box">
-            <nav class="pui-nav primary">
+            <!-- <nav class="pui-nav primary">
                 <div class="inner">
                     <div class="title">
                         عجایب ایران
                         <small style="opacity: .7; font-weight: normal">نکاتی که هرگز نمی دانستید!</small>
                     </div>
                 </div>
-            </nav>
+            </nav> -->
+            <?getMenu()?>
         </div>
-        <div class="facts-container">
+        <div class="box-container">
             <div class="fs-box">
                 <button class="btn fab material-icons primary" data-fs-target='next'
                 data-tooltip='آیتم بعد' data-tooltip-place='left'>keyboard_arrow_right</button>

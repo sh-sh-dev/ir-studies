@@ -2,8 +2,15 @@
 include 'app.php';
 ?>
 <?getHeader()?>
-<?//getMenu()?>
 <body onload="DataList()">
+    <div class="ui">
+        <div class="header-box">
+            <?getMenu()?>
+        </div>
+        <div class="box-container">
+
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="space-80"></div>

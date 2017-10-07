@@ -2,19 +2,19 @@
 include 'app.php';
 ?>
 <?getHeader()?>
-<?//getMenu()?>
 <body>
     <div class="ui">
         <div class="header-box">
-            <nav class="pui-nav primary">
+            <!-- <nav class="pui-nav primary">
                 <div class="inner">
                     <div class="title">
                         تاریخ ایران
                     </div>
                 </div>
-            </nav>
+            </nav> -->
+            <?getMenu()?>
         </div>
-        <div class="facts-container">
+        <div class="box-container">
             <main role="main">
                 <div class="timeline">
                     <?

@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 61px - 72px);
     max-height: 550px;
     background-color: rgba(#000, .35);
     background-blend-mode: overlay;
@@ -87,7 +87,7 @@ body#_facts{
     overflow: hidden;
     flex-direction: column;
     flex: 1;
-    & > .facts-container{
+    & > .box-container{
         // overflow-y: auto;
         overflow-x: hidden;
         height: 100%;

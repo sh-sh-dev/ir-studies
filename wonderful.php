@@ -14,7 +14,7 @@ include 'app.php';
     <div class="header-box">
         <?getMenu()?>
     </div>
-    <div class="facts-container">
+    <div class="box-container">
         <div class="space-60"></div>
         <div class="container">
             <div class="row">

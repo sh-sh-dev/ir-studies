@@ -8,7 +8,7 @@ $StateName = getState($State,"name");
 <body>
     <div class="ui">
         <div class="header-box"><?getMenu()?></div>
-        <div class="facts-container">
+        <div class="box-container">
             <div class="heroic-header" style="background-image: url(assets/dist/img/test-bg.svg)">
                 <div class="content">
                     <h3><?=getState($State,"name")?></h3>
