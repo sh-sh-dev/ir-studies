@@ -1,15 +1,8 @@
 <?php
 include '../app.php';
 ?>
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="../assets/demo.css">
-</head>
+<?getHeader()?>
+<?getMenu()?>
 <body>
 <div class="center-align container">
     <h1 style="font-weight: 200">اضافه کردن مکان های عجیب</h1>
@@ -18,8 +11,13 @@ include '../app.php';
             <div class="pui-input">
                 <input type="text" name='location' placeholder="مکان" required>
             </div>
-            <div class="pui-input">
-                <input type="text" name='icon' placeholder="آیکون">
+            <div class="input-table">
+                <div class="pui-input">
+                    <input type="text" autocomplete="off" name='icon' id="ico" onkeyup="$('#icon').text($('#ico').val())" placeholder="آیکون">
+                </div>
+                <div class="addon" style="font-size: 2em" >
+                    <i class="material-icons input-addon" id="icon"></i>
+                </div>
             </div>
         </div>
         <div class="pui-textarea pui-col xs-12 md-8 md-offset-2">
@@ -45,7 +43,5 @@ include '../app.php';
         ?>
     </form>
 </div>
-</body>
-<script src="../assets/dist/jquery.min.js"></script>
-<script src="../assets/dist/pui.min.js"></script>
-</html>
+<?=setTitle("اضافه کردن عجایب ایران")?>
+<?getFooter()?>

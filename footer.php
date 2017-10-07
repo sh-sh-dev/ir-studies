@@ -1,5 +1,5 @@
 </body>
-<script src="assets/dist/pui.min.js"></script>
-<script src="assets/demo.min.js"></script>
-<script src="assets/watermark.js"></script>
+<script src="<?=getSetting('url')?>/assets/dist/pui.min.js"></script>
+<script src="<?=getSetting('url')?>/assets/irs.min.js"></script>
+<script src="<?=getSetting('url')?>/assets/watermark.js"></script>
 </html>
