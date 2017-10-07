@@ -1,4 +1,4 @@
-<nav class="pui-nav fixed transparent" id="navigation" role="navigation">
+<nav class="pui-nav primary">
     <div class="inner">
         <div class="sidenav-toggle">
             <button class="sidenav-control material-icons">menu</button>
