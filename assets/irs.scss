@@ -380,3 +380,13 @@ body#page-404{
         @include clearfixing;
     }
 }
+
+.home-header{
+    height: calc(100vh - 60px);
+    max-height: 450px;
+    @include y-shadow(2, .3);
+    color: #fff;
+    position: relative;
+    background-color: lighten($secondary, 17%);
+    display: flex;
+}

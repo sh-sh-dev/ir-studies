@@ -53,5 +53,5 @@ include 'app.php';
             </div>
         </div>
     </div>
-<?=setTitle("درباره ما")?>
+<?=setTitle("درباره ما", 1)?>
 <?getFooter()?>

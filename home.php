@@ -8,14 +8,20 @@ include 'app.php';
             <?getMenu()?>
         </div>
         <div class="box-container">
-
+            <div class="home-header">
+                <div class="content">
+                    <h1>ایران شناسی</h1>
+                </div>
+                <button class="btn secondary fab lg material-icons" style="position: absolute;
+                left: 50px; bottom: -42.5px; z-index: 7">list</button>
+            </div>
         </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="space-80"></div>
             <div class="pui-col xs-12 center-align">
-                <h3><?=getSetting('title')?></h3>
+                <h3><?//=getSetting('title')?></h3>
                 <div style="max-width: 280px; width: 100%; margin: 0 auto">
                     <form action="" method="post">
                         <div class="pui-datalist">
@@ -28,7 +34,7 @@ include 'app.php';
             </div>
             <div class="space-80"></div>
         </div>
-    </div>
+    </div> -->
     <script type="text/javascript">
         function DataList() {
             <?php
@@ -44,5 +50,6 @@ include 'app.php';
             )
         }
     </script>
-    <?=setTitle("خانه",1)?>
+    <?=setTitle("خانه", 1)?>
 <?getFooter()?>
+<script src="assets/crispRipple.js"></script>
