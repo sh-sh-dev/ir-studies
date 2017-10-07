@@ -39,5 +39,5 @@ include 'app.php';
             </main>
         </div>
     </div>
-<?=setTitle("خلاصه ای از تاریخ ایران")?>
+<?=setTitle("خلاصه ای از تاریخ ایران", 1)?>
 <?getFooter()?>

@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#aeea00">
     <meta name="msapplication-navbutton-color" content="#aeea00">
     <meta name="apple-mobile-web-app-status-bar-style" content="#aeea00">
-    <link rel="stylesheet" href="../assets/demo.css">
+    <link rel="stylesheet" href="../assets/irs.css">
 </head>
 <body id="page-404">
     <div class="flex-centered" style="height: 100vh">
@@ -23,5 +23,5 @@
 </body>
 <script src="../assets/dist/jquery.min.js"></script>
 <script src="../assets/dist/pui.min.js"></script>
-<script src="../assets/demo.min.js"></script>
+<script src="../assets/irs.min.js"></script>
 </html>
