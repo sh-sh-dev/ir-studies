@@ -180,10 +180,6 @@ body#_facts{
     }
 }
 
-.btn.fab{
-    overflow: hidden;
-}
-
 @for $i from 1 through 10{
     .space-#{$i*20}{
         height: #{$i*20}px;
@@ -428,7 +424,7 @@ body#page-404{
 
 .states-list{
     margin: 0;
-    padding-right: 17px;
+    // padding-right: 17px;
     li{
         width: 50%;
         &:nth-child(odd){
@@ -436,6 +432,51 @@ body#page-404{
         }
         &:nth-child(even){
             float: left;
+        }
+        & > a{
+            width: 100%;
+        }
+        & > *{
+            // width: 100%;
+            display: table-cell;
+        }
+    }
+}
+
+.home-links{
+    padding: 0;
+    margin: 0;
+    li{
+        display: table-cell;
+        padding: 0 2px 0;
+        &:last-child{
+            padding: 0;
+        }
+        width: 0.01%;
+        text-align: center;
+        a{
+            color: #000;
+            display: inline-block;
+            width: 100%;
+            border-radius: $basic-border-radius;
+            padding: 5px 10px;
+            transition: 350ms;
+            font-size: 18px;
+            i{
+                // line-height: 20px;
+                margin-bottom: 5px;
+                font-size: 5em;
+                color: $secondary;
+                display: block;
+                // @include clearfixing;
+            }
+            span{
+                font-size: 1.5em;
+                max-width: 100%;
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
     }
 }

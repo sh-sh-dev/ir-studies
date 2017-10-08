@@ -44,8 +44,6 @@ include 'app.php';
                                 <span>زمان ساخت</span>
                                 <b>6 مهر 1396</b>
                             </div>
-                            <!-- <h5>ابزار های استفاده شده در این محصول</h5>
-                            رابط کاربری توسعه یافته توسط <a href="https://github.com/piorra/pui">PUI</a> -->
                         </div>
                         <div class="space-80"></div>
                     </div>
