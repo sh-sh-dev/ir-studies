@@ -387,12 +387,22 @@ body#page-404{
     @include y-shadow(2, .3);
     color: #fff;
     position: relative;
-    background-color: lighten($secondary, 17%);
+    background-color: $secondary;
     display: flex;
+    user-select: auto;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
     .content{
         position: relative;
         z-index: 2
     }
+}
+
+//debug pui
+
+.sidenav-title{
+    flex-shrink: 0
 }
 
 //=======CRISP RIPPLE ============
@@ -410,7 +420,7 @@ body#page-404{
         border-radius: 50%;
         position: absolute;
         // background-color: #000;
-        transition: .7s ease;
+        transition: .9s cubic-bezier(.2, 0, .4, 1);
         transition-property: height, width;
         transform: translate3d(-50%, -50%, 0);
     }

@@ -35,7 +35,7 @@ include 'app.php';
                                 <h3>$Wonderful[name]</h3>
                                 <p>$Wonderful[description]</p>
                                 <br>
-                                <label class='lbl blue' style='float: left'><i class='material-icons'>location_on</i> $State</label>
+                                <label class='lbl primary' style='float: left'><i class='material-icons'>location_on</i> $State</label>
                                 </div>";
                             }
                         }
