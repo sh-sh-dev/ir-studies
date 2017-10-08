@@ -13,13 +13,30 @@ include 'app.php';
                     <h1>ایران شناسی</h1>
                 </div>
                 <button class="btn primary fab lg material-icons" style="position: absolute;
-                left: 50px; bottom: -45px; z-index: 7" data-tooltip='مشاهده لیست استان ها' data-tooltip-place='right'>list</button>
+                left: 50px; bottom: -45px; z-index: 7" data-tooltip='مشاهده لیست استان ها' data-tooltip-place='right'
+                data-modal-target='#states_list'>list</button>
             </div>
             <main role="main">
                 <div class="container">
 
                 </div>
             </main>
+        </div>
+    </div>
+    <div class="pui-modal" id="states_list">
+        <div class="inner">
+            <div class="header">
+                <span class="modal-title">لیست استان ها</span>
+                <button class="close modal-close material-icons">close</button>
+            </div>
+            <div class="body">
+                <ul class="unstyled">
+                    <li><i class="material-icons">keyboard_arrow_left</i> <a class="link" href="article?state=ardabil">اردبیل</a></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <button class="btn primary simple modal-close">چشــــــــــــــــــــم</button>
+            </div>
         </div>
     </div>
     <!-- <div class="container">
