@@ -31,11 +31,21 @@ include 'app.php';
             </div>
             <div class="body">
                 <ul class="unstyled">
-                    <li><i class="material-icons">keyboard_arrow_left</i> <a class="link" href="article?state=ardabil">اردبیل</a></li>
+                    <?php
+                    $getStates = mysqli_query($db,"SELECT * FROM `States`  WHERE `active`=1");
+                    if (mysqli_num_rows($getStates) >= 1) {
+                        while ($State = mysqli_fetch_assoc($getStates)) {
+                            echo "<li id='state-$State[n]'><i class='material-icons'>keyboard_arrow_left</i><a class='link' href='article?state=$State[english]'>$State[name]</a></li>";
+                        }
+                    }
+                    else {
+                        echo '<p class="center-align red-txt">هیچ استانی پیدا نشد :(</p>';
+                    }
+                    ?>
                 </ul>
             </div>
             <div class="footer">
-                <button class="btn primary simple modal-close">چشــــــــــــــــــــم</button>
+                <button class="btn primary simple modal-close">بستن</button>
             </div>
         </div>
     </div>
