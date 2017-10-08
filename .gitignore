@@ -1,5 +1,5 @@
 assets/dist/*.scss
-assets/dist/data/*.scss
+assets/dist/sass/*.scss
 *.ttf
 *.eot
 *.woff

@@ -8,11 +8,11 @@ include 'app.php';
             <?getMenu()?>
         </div>
         <div class="box-container">
-            <div class="home-header">
+            <div class="home-header" data-crr-color='#858585'>
                 <div class="content">
                     <h1>ایران شناسی</h1>
                 </div>
-                <button class="btn secondary fab lg material-icons" style="position: absolute;
+                <button class="btn primary fab lg material-icons" style="position: absolute;
                 left: 50px; bottom: -45px; z-index: 7" data-tooltip='مشاهده لیست استان ها' data-tooltip-place='right'>list</button>
             </div>
             <main role="main">

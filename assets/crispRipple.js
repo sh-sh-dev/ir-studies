@@ -7,10 +7,10 @@
     el.append('<div class="crisp-container" />').click(function () {
         data++;
 
-        if ( data == 10 ) data = 0; //prevent the number to be very big
-
+        if ( data == 10 ) data = 0;
+        
         el.attr('data-crr-hold', data);
-    }).click(function (e) {
+    }).click((e) => {
         if ( e.target.tagName.toLowerCase() == 'button' ) {
             return false
         };
@@ -21,7 +21,7 @@
         container = el.find('.crisp-container'),
         crisp = $('<div class="crisp-ripple" />'),
         size = Math.max( el.height(), el.width() ) * Math.PI;
-        var bg = data%2 == 0 || data == 0 ? color : '#333';
+        var bg = data%2 == 0 || data == 0 ? color : el.data('crr-color');
 
         crisp.appendTo(container).css({
             'left': pos.x,
