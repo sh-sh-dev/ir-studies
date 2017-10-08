@@ -41,17 +41,18 @@
             if ( $('.pui-modal') && $('.pui-modal').hasClass('open') ) {
                 return false;
             };
+            var additional = e.ctrlKey || e.altKey || e.shiftKey ? true : false;
             // fs.parent().find('[data-fs-target=next]').trigger('click')
-            if ( e.which == 36 ) {
+            if ( e.which == 36 && !additional ) {
                 // fs.find('[data-fs-target=0]').trigger('click')
                 __trg(0)
-            } else if ( e.which == 35 ) {
+            } else if ( e.which == 35 && !additional ) {
                 // fs.find('[data-fs-target=' + (i_l-1) + ']').trigger('click')
                 __trg(i_l - 1)
-            } else if ( e.which == 39 ) {
+            } else if ( e.which == 39 && !additional ) {
                 // fs.parent().find('[data-fs-target=next]').trigger('click')
                 __trg('next')
-            } else if ( e.which == 37 ) {
+            } else if ( e.which == 37 && !additional ) {
                 __trg('prev')
             } else if ( e.which > 95 && e.which < 106 && e.ctrlKey && e.altKey ) {
                 __trg( e.which - 96 )

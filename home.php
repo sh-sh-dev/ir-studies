@@ -19,19 +19,6 @@ include 'app.php';
             <div class="space-40"></div>
             <main role="main">
                 <div class="container">
-                    <!-- <div class="pui-col xs-12 md-9 lg-7">
-                        <div class="chip">
-
-                        </div>
-                    </div>
-                    <div class="pui-col xs-12 md-3 lg-5">
-                        <div class="chip sm center-align">
-                            <h5><i class="material-icons primary-txt">access_time</i> ساعت</h5>
-                            <div style="font-size: 2em">18:54:23</div>
-                            <h5><i class="material-icons primary-txt">date_range</i> تاریخ (هجری شمسی)</h5>
-                            <div style="font-size: 2em">10/8/2017</div>
-                        </div>
-                    </div> -->
                     <ul class="home-links">
                         <li><a href="facts" target="_blank">
                             <i class="material-icons">assistant</i>
@@ -41,6 +28,7 @@ include 'app.php';
                             <i class="material-icons">change_history</i>
                             <span>تاریخ ایران</span>
                         </a></li>
+<<<<<<< HEAD
                         <li><a href="facts" target="_blank">
                             <i class="material-icons">assistant</i>
                             <span>عجایب</span>
@@ -48,7 +36,20 @@ include 'app.php';
                         <li><a href="facts" target="_blank">
                             <i class="material-icons">assistant</i>
                             <span>عجایب</span>
+=======
+                        <li><a href="wonderful" target="_blank" class="has-ripple">
+                            <i class="material-icons">nature</i>
+                            <span>مکان های دیدنی</span>
                         </a></li>
+                        <li><a href="pics" target="_blank" class="has-ripple">
+                            <i class="material-icons">camera_alt</i>
+                            <span>تصاویر</span>
+>>>>>>> 066febb463d54f3cad866aa1db24eaa831dc18b9
+                        </a></li>
+                        <li><a href="about" target="_blank" class="has-ripple">
+                                <i class="material-icons">people</i>
+                                <span>شناسنامه محصول</span>
+                            </a></li>
                     </ul>
                 </div>
             </main>
