@@ -33,19 +33,19 @@ include 'app.php';
                         </div>
                     </div> -->
                     <ul class="home-links">
-                        <li><a href="facts" target="_blank" class="has-ripple">
+                        <li><a href="facts" target="_blank">
                             <i class="material-icons">assistant</i>
                             <span>عجایب</span>
                         </a></li>
-                        <li><a href="history" target="_blank" class="has-ripple">
+                        <li><a href="history" target="_blank">
                             <i class="material-icons">change_history</i>
                             <span>تاریخ ایران</span>
                         </a></li>
-                        <li><a href="facts" target="_blank" class="has-ripple">
+                        <li><a href="facts" target="_blank">
                             <i class="material-icons">assistant</i>
                             <span>عجایب</span>
                         </a></li>
-                        <li><a href="facts" target="_blank" class="has-ripple">
+                        <li><a href="facts" target="_blank">
                             <i class="material-icons">assistant</i>
                             <span>عجایب</span>
                         </a></li>
