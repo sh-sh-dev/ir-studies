@@ -30,12 +30,12 @@ include 'app.php';
                 <button class="close modal-close material-icons">close</button>
             </div>
             <div class="body">
-                <ul class="unstyled">
+                <ul class="unstyled states-list">
                     <?php
                     $getStates = mysqli_query($db,"SELECT * FROM `States`  WHERE `active`=1");
                     if (mysqli_num_rows($getStates) >= 1) {
                         while ($State = mysqli_fetch_assoc($getStates)) {
-                            echo "<li id='state-$State[n]'><i class='material-icons'>keyboard_arrow_left</i><a class='link' href='article?state=$State[english]'>$State[name]</a></li>";
+                            echo "<li id='state-link-$State[n]'><i class='material-icons'>keyboard_arrow_left</i> <a class='link' target='_blank' href='article?state=$State[english]'>$State[name]</a></li>";
                         }
                     }
                     else {

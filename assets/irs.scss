@@ -425,3 +425,17 @@ body#page-404{
         transform: translate3d(-50%, -50%, 0);
     }
 }
+
+.states-list{
+    margin: 0;
+    padding-right: 17px;
+    li{
+        width: 50%;
+        &:nth-child(odd){
+            float: right;
+        }
+        &:nth-child(even){
+            float: left;
+        }
+    }
+}
