@@ -19,7 +19,7 @@ $StateName = getState($State,"name");
                 <div class="pui-col xs-12 md-6">
                     <i class="material-icons">supervisor_account</i>
                     <b id="ppl_title">جمعیت</b>
-                    <span id="ppl_num" data-tooltip="<?=number_format(getState($State,"Population"))?> نفر">
+                    <span id="ppl_num" style="cursor: default" data-tooltip="<?=number_format(getState($State,"Population"))?> نفر">
                         <?=
                         formatted_number(getState($State,"Population"));
                         ?>

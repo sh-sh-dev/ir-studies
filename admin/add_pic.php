@@ -59,7 +59,7 @@ include '../app.php';
             $image = WideImage::load($target_path);
 //            $watermark = WideImage::load("../assets/images/watermark.png");
             $watermark = WideImage::load("../assets/images/watermark.jpg");
-            $new = $image->merge($watermark,  'center + 10', 'bottom + 10', 50);
+            $new = $image->merge($watermark,  'center', 'bottom', 50);
             $new->saveToFile($target_path);
             $addPic = mysqli_query($db,"INSERT INTO `Pics` (`url`,`fstate`,`description`) VALUES ('$url','$fstate','$description')");
             if ($addPic && $ok) {
