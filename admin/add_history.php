@@ -38,5 +38,5 @@ include '../app.php';
             ?>
         </form>
     </div>
-    <?=setTitle("اضافه کردن تاریخچه")?>
+    <?=setTitle("اضافه کردن تاریخچه",1)?>
 <?getFooter()?>

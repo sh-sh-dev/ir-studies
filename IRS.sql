@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 06, 2017 at 07:46 PM
+-- Generation Time: Oct 07, 2017 at 06:35 PM
 -- Server version: 5.6.31
 -- PHP Version: 7.0.10
 
@@ -90,7 +90,14 @@ CREATE TABLE IF NOT EXISTS `Pics` (
   `url` text COLLATE utf8_persian_ci NOT NULL,
   `fstate` int(11) NOT NULL,
   `active` int(11) NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+--
+-- Dumping data for table `Pics`
+--
+
+INSERT INTO `Pics` (`n`, `description`, `url`, `fstate`, `active`) VALUES
+(1, 'سلام', 'http://localhost/ir-studies/assets/images/Tehran-1-Ghaem-Logo.png258.png', 8, 1);
 
 -- --------------------------------------------------------
 
@@ -256,7 +263,7 @@ ALTER TABLE `History`
 -- AUTO_INCREMENT for table `Pics`
 --
 ALTER TABLE `Pics`
-  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `Setting`
 --

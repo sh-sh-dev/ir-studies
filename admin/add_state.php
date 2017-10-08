@@ -51,5 +51,5 @@ include '../app.php';
             ?>
         </form>
     </div>
-    <?=setTitle("اضافه کردن استان")?>
+    <?=setTitle("اضافه کردن استان",1)?>
 <?getFooter()?>

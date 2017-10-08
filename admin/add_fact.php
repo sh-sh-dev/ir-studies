@@ -43,5 +43,5 @@ include '../app.php';
         ?>
     </form>
 </div>
-<?=setTitle("اضافه کردن عجایب ایران")?>
+<?=setTitle("اضافه کردن عجایب ایران",1)?>
 <?getFooter()?>

@@ -19,6 +19,7 @@ include '../app.php';
                 <datalist id="states">
                     <?php
                     $query = mysqli_query($db,"SELECT * FROM `States` WHERE `active`=1");
+                    $json = array();
                     while ($States = mysqli_fetch_assoc($query)) {
                         echo "<option value='$States[n]'>$States[name]</option>";
                         array_push($json,$States["name"]);
@@ -46,6 +47,7 @@ include '../app.php';
             $StateName = getState($fstate,"name");
             $fileName = $State . '-' . $file_name . rand(99,999) . $format;
             $target_path = "../assets/images/" . $fileName ;
+            $target_path_wm = "../assets/images/wm-" . $fileName ;
             if(move_uploaded_file($_FILES['UploadedFile']['tmp_name'], $target_path)) {
                 $url = getSetting('url') . '/' . str_replace('../','',$target_path) ;
                 $ok = 1;
@@ -53,6 +55,12 @@ include '../app.php';
             else {
                 $ok = 0;
             }
+            include '../assets/php/watermark/WideImage/WideImage.php';
+            $image = WideImage::load($target_path);
+//            $watermark = WideImage::load("../assets/images/watermark.png");
+            $watermark = WideImage::load("../assets/images/watermark.jpg");
+            $new = $image->merge($watermark,  'center + 10', 'bottom + 10', 50);
+            $new->saveToFile($target_path);
             $addPic = mysqli_query($db,"INSERT INTO `Pics` (`url`,`fstate`,`description`) VALUES ('$url','$fstate','$description')");
             if ($addPic && $ok) {
                 echo "<div class='chip'>تصویر استان $StateName اضافه شد</div>";
@@ -79,5 +87,5 @@ include '../app.php';
         )
     }
 </script>
-<?=setTitle("اضافه کردن عکس")?>
+<?=setTitle("اضافه کردن عکس",1)?>
 <?getFooter()?>
