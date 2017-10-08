@@ -410,7 +410,7 @@ body#page-404{
         border-radius: 50%;
         position: absolute;
         // background-color: #000;
-        transition: .7s ease;
+        transition: .9s cubic-bezier(.2, 0, .4, 1);
         transition-property: height, width;
         transform: translate3d(-50%, -50%, 0);
     }
