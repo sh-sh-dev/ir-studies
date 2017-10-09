@@ -486,3 +486,13 @@ body#page-404{
         }
     }
 }
+
+.features{
+    .pui-col{
+        text-align: center;
+        & > i{
+            font-size: 5em;
+            color: $secondary
+        }
+    }
+}

@@ -19,7 +19,7 @@ include 'app.php';
             <div class="space-40"></div>
             <main role="main">
                 <div class="container">
-                    <ul class="home-links">
+                    <!-- <ul class="home-links">
                         <li><a href="facts" target="_blank">
                             <i class="material-icons">assistant</i>
                             <span>عجایب</span>
@@ -28,10 +28,10 @@ include 'app.php';
                             <i class="material-icons">change_history</i>
                             <span>تاریخ ایران</span>
                         </a></li>
-                        <!-- <li><a href="facts" target="_blank">
+                        <li><a href="facts" target="_blank">
                             <i class="material-icons">assistant</i>
                             <span>عجایب</span>
-                        </a></li> -->
+                        </a></li>
                             <li><a href="wonderful" target="_blank">
                                 <i class="material-icons">nature</i>
                                 <span>مکان های دیدنی</span>
@@ -44,7 +44,33 @@ include 'app.php';
                                 <i class="material-icons">info_outline</i>
                                 <span>شناسنامه محصول</span>
                             </a></li>
-                        </ul>
+                        </ul> -->
+                        <div class="features">
+                            <div class="pui-col xs-12 md-4">
+                                <i class="material-icons">description</i>
+                                <h5>اطلاعات کامل</h5>
+                                <p>
+                                    در این پروژه، ما برای هر استان از کشور، اطلاعاتی کامل و دقیق از قبیل جمعیت، مشاهیر، و توضیحاتی کامل و در عین حال مختصر
+                                    فراهم کرده ایم تا محتوای کاملی را به شما ارائه کنیم.<br>
+                                    <button class="btn secondary sm" onclick="$('#list-control').trigger('click')"><i class="material-icons">open_in_new</i> لیست استان ها</button>
+                                </p>
+                            </div>
+                            <div class="pui-col xs-12 md-4">
+                                <i class="material-icons">assistant</i>
+                                <h5>مطالب جالب</h5>
+                                <p>
+                                    عجایب ایران، خلاصه ای از تاریخ کشور و همچنین گلچین تصاویر از مکان های دیدنی نیز در قالب صفحاتی مجزا در دسترس شما هستند. شاید برخی نکات را برای اولین بار  خواهید دانست!
+                                </p>
+                            </div>
+                            <div class="pui-col xs-12 md-4">
+                                <i class="material-icons">wc</i>
+                                <h5>سفیـد</h5>
+                                <p>
+                                    سفیــــــــــــــــــــــــــــــــــــــــــــد!<br>
+                                    <button class="btn white sm">من سفیدم!</button>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
