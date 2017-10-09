@@ -8,7 +8,7 @@
         data++;
 
         if ( data == 10 ) data = 0;
-        
+
         el.attr('data-crr-hold', data);
     }).click((e) => {
         if ( e.target.tagName.toLowerCase() == 'button' ) {
@@ -37,6 +37,6 @@
                 el.css('background-color', crisp.css('background-color') );
                 crisp.remove()
             })
-        }, 1);
+        }, 0);
     })
 }(jQuery));

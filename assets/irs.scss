@@ -391,7 +391,7 @@ body#page-404{
     justify-content: center;
     .content{
         position: relative;
-        z-index: 2
+        z-index: 2;
     }
 }
 
@@ -457,23 +457,30 @@ body#page-404{
         a{
             color: #000;
             display: inline-block;
+            transition: .3s ease;
+            &:hover, &:focus{
+                background-color: rgba(#000, .1)
+            }
+            &:active{
+                background-color: rgba(#000, .25)
+            }
             width: 100%;
             border-radius: $basic-border-radius;
             padding: 5px 10px;
             font-size: 18px;
             i{
-                // line-height: 20px;
                 margin-bottom: 5px;
                 font-size: 5em;
                 color: $secondary;
                 display: block;
-                // @include clearfixing;
             }
             span{
                 font-size: 1.5em;
                 max-width: 100%;
                 display: block;
                 overflow: hidden;
+                font-weight: bold;
+                white-space: nowrap;
                 text-overflow: ellipsis;
             }
         }
