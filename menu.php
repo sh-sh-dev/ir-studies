@@ -23,6 +23,9 @@
                 <a href="<?=getSetting('url')?>/facts">
                     عجایب ایران
                 </a>
+                <a href="<?=getSetting('url')?>/wonderful">
+                    مکان های دیدنی ایران
+                </a>
             </li>
         </ul>
         <div class="sidenav-overlay"></div>

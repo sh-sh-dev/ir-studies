@@ -27,6 +27,7 @@ include '../app.php';
                 $title = $_POST["title"];
                 $date = $_POST["date"];
                 $description = $_POST["description"];
+                $description = str_replace(PHP_EOL,"<br>",$description);
                 $addHistory = mysqli_query($db,"INSERT INTO `History` (`title`,`date`,`description`) VALUES ('$title','$date','$description')");
                 if ($addHistory) {
                     echo "<div class='chip'>$title اضافه شد</div>";

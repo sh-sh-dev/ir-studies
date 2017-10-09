@@ -39,6 +39,7 @@ include '../app.php';
                 $population = $_POST["population"];
                 $city_center = $_POST["city_center"];
                 $description = $_POST["description"];
+                $description = str_replace(PHP_EOL,"<br>",$description);
 //                $addState = mysqli_query($db,"INSERT INTO `States` (`name`,city_center,Population,ins_sentense,description) VALUES ('$name','$city_center',$population,'$ins_sentense','$description')");
                 $addState = mysqli_query($db,"INSERT INTO `States` (`name`,`english`) VALUES ('$name','$english')");
                 if ($addState) {

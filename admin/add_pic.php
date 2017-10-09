@@ -38,6 +38,7 @@ include '../app.php';
         <?php
         if (isset($_POST["submit"])) {
             $description = $_POST["description"];
+            $description = str_replace(PHP_EOL,"<br>",$description);
             $fstate = $_POST["fstate"];
             $file = $_POST["file"];
             $url = null;

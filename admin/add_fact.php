@@ -32,6 +32,7 @@ include '../app.php';
             $location = $_POST["location"];
             $icon = $_POST["icon"];
             $description = $_POST["description"];
+            $description = str_replace(PHP_EOL,"<br>",$description);
             $addFact = mysqli_query($db,"INSERT INTO `Facts` (`location`,`icon`,`description`) VALUES ('$location','$icon','$description')");
             if ($addFact) {
                 echo "<div class='chip'>$location اضافه شد</div>";

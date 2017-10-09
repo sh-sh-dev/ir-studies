@@ -46,7 +46,7 @@ include 'app.php';
                             </a></li>
                         </ul> -->
                         <div class="features">
-                            <div class="pui-col xs-12 md-4">
+                            <div class="pui-col xs-12 md-3">
                                 <i class="material-icons">description</i>
                                 <h5>اطلاعات کامل</h5>
                                 <p>
@@ -55,19 +55,31 @@ include 'app.php';
                                     <button class="btn secondary sm" onclick="$('#list-control').trigger('click')"><i class="material-icons">open_in_new</i> لیست استان ها</button>
                                 </p>
                             </div>
-                            <div class="pui-col xs-12 md-4">
+                            <div class="pui-col xs-12 md-3">
                                 <i class="material-icons">assistant</i>
-                                <h5>مطالب جالب</h5>
+                                <h5>مطالب جالب ایران</h5>
                                 <p>
                                     عجایب ایران، خلاصه ای از تاریخ کشور و همچنین گلچین تصاویر از مکان های دیدنی نیز در قالب صفحاتی مجزا در دسترس شما هستند. شاید برخی نکات را برای اولین بار  خواهید دانست!
+                                    <br>
+                                    <button class="btn secondary sm" onclick="location.href = 'facts'"><i class="material-icons">open_in_new</i>مطالب جالب ایران</button>
                                 </p>
                             </div>
-                            <div class="pui-col xs-12 md-4">
-                                <i class="material-icons">wc</i>
-                                <h5>سفیـد</h5>
+                            <div class="pui-col xs-12 md-3">
+                                <i class="material-icons">nature</i>
+                                <h5>مکان های دیدنی ایران</h5>
                                 <p>
-                                    سفیــــــــــــــــــــــــــــــــــــــــــــد!<br>
-                                    <button class="btn white sm">من سفیدم!</button>
+                                    مکان های مهم ایران ، اعم از مکان های زیارتی ، تفریحی ، توریستی و... ایران در این مکان میباشند.
+                                    <br>
+                                    <button class="btn secondary sm" onclick="location.href = 'wonderful'"><i class="material-icons">open_in_new</i>مکان های دیدنی ایران</button>
+                                </p>
+                            </div>
+                            <div class="pui-col xs-12 md-3">
+                                <i class="material-icons">history</i>
+                                <h5>تاریخچه ایران</h5>
+                                <p>
+                                    تاریخچه ایران ، حاوی اطلاعات کاملی از ایران قدیم تا امروز میباشد.برای مثال حکومت عباسیان از سال 750 تا 1258 میلادی
+                                    <br>
+                                    <button class="btn secondary sm" onclick="location.href = 'history'"><i class="material-icons">open_in_new</i>تاریخچه ایران</button>
                                 </p>
                             </div>
                         </div>
