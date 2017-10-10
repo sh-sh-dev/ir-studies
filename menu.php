@@ -4,7 +4,7 @@
             <button class="sidenav-control material-icons">menu</button>
         </div>
         <div class="title" id="menu-title">
-            منو
+            لطفا کمی صبر کنید...
         </div>
         <ul class="sidenav">
             <div class="sidenav-title">
@@ -25,6 +25,9 @@
                 </a>
                 <a href="<?=getSetting('url')?>/wonderful">
                     مکان های دیدنی ایران
+                </a>
+                <a href="<?=getSetting('url')?>/heroes">
+                    مشاهیر
                 </a>
             </li>
         </ul>

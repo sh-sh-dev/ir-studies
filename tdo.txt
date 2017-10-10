@@ -1,11 +1,5 @@
-Heroes.php (vi(very important))
-Pics.php (NaN)
-States.php (NaN)
 Fill ! DB (vi) (Pics , Heroes , WP(wonderful_places))
+Zoom Pics onclick Article.php
+Pics.php (NaN)
 IranSans License
 Upload ir-studies to Piorra.ir !
-...
-NULL
-void 0
-...
-@hkh12
