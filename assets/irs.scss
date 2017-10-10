@@ -395,10 +395,46 @@ body#page-404{
     }
 }
 
+@mixin responsive-lg($value: 768px, $property: 'min-width') {
+    @media only screen and ( #{ unquote($property) } : $value){
+        @content;
+    }
+}
+
 //debug pui
 
 .sidenav-title{
     flex-shrink: 0
+}
+
+.pui-modal{
+    .inner{
+        width: calc(100% - 30px);
+        @include responsive-lg{
+            width: 65%
+        };
+    }
+}
+
+//effection for navbar
+
+.pui-nav{
+    box-shadow: none !important;
+}
+
+.header-box{
+    z-index: 6000;
+    position: relative;
+    &::after{
+        content: '';
+        height: 8px;
+        pointer-events: none;
+        right: 0;
+        left: 0;
+        bottom: -8px;
+        position: absolute;
+        background-image: linear-gradient(to bottom, rgba(#000, .5), transparent);
+    }
 }
 
 //=======CRISP RIPPLE ============
@@ -410,6 +446,7 @@ body#page-404{
     bottom: 0;
     pointer-events: none;
     overflow: hidden;
+    --crr-color1: $primary;
     .crisp-ripple{
         height: 2px;
         width: 2px;
@@ -419,6 +456,10 @@ body#page-404{
         transition: .9s cubic-bezier(.2, 0, .4, 1);
         transition-property: height, width;
         transform: translate3d(-50%, -50%, 0);
+        //colors!
+        --crr-color1: $primary;
+        --crr-color2: lighten($secondary, 20%);
+        --crr-color-3: #333;
     }
 }
 
@@ -426,13 +467,18 @@ body#page-404{
     margin: 0;
     // padding-right: 17px;
     li{
-        width: 50%;
-        &:nth-child(odd){
-            float: right;
-        }
-        &:nth-child(even){
-            float: left;
-        }
+        @include responsive-lg{
+            width: 50%;
+            &:nth-child(odd){
+                float: right;
+            }
+            &:nth-child(even){
+                float: left;
+            }
+        };
+        @include responsive-lg(850px){
+            width: (100% / 3);
+        };
         & > a{
             width: 100%;
         }
