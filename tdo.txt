@@ -8,4 +8,4 @@ Upload ir-studies to Piorra.ir !
 NULL
 void 0
 ...
-@hkh12 :)
+@hkh12
