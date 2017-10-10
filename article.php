@@ -36,17 +36,16 @@ $StateName = getState($State,"name");
                     <div class="container">
                         <div class="row">
                             <?=getState($State,"description")?>
-                            <hr>
                             <?php
                             $StateCode = getState($State,"n");
                             $getHeroes = mysqli_query($db,"SELECT * FROM `Heroes` WHERE `fstate`=$StateCode AND `active`=1");
                             if (mysqli_num_rows($getHeroes) >= 1) {
                                 ?>
                                 <h3>مشاهیر <?=$StateName?></h3>
-                                <section>
+                                <section class="cleared">
                                     <?php
                                     while ($Heroes = mysqli_fetch_assoc($getHeroes)) {
-                                        echo "<div class='chip'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></li></div>";
+                                        echo "<div class='pui-col xs-12 md-6' style='padding: 5px'><div class='chip' style='margin: 0'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></div></li></div>";
                                     }
                                     ?>
                                 </section>

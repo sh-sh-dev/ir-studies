@@ -446,20 +446,14 @@ body#page-404{
     bottom: 0;
     pointer-events: none;
     overflow: hidden;
-    --crr-color1: $primary;
     .crisp-ripple{
         height: 2px;
         width: 2px;
         border-radius: 50%;
         position: absolute;
-        // background-color: #000;
         transition: .9s cubic-bezier(.2, 0, .4, 1);
         transition-property: height, width;
         transform: translate3d(-50%, -50%, 0);
-        //colors!
-        --crr-color1: $primary;
-        --crr-color2: lighten($secondary, 20%);
-        --crr-color-3: #333;
     }
 }
 
@@ -541,4 +535,8 @@ body#page-404{
             color: $secondary
         }
     }
+}
+
+.cleared{
+    @include clearfixing;
 }
