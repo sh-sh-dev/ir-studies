@@ -1,6 +1,7 @@
 ;(function() {
     'use strict';
-    //Scrolling Effects
+    //Initials
+    //scroll
     $(window).scroll(function () {
         var scrolled = $(window).scrollTop();
         if ( scrolled > 1 ){
@@ -12,6 +13,18 @@
             'transform': 'translate3d(0, ' + scrolled/2.25 + 'px, 0)'
         })
     })
+    //sidenav keyboard shortcut
+    if ( $('.sidenav').length !== 0 ) {
+        $(document).on('keyup', (e) => {
+            if ( e.ctrlKey && e.which == 39 && !e.shiftKey && !e.altKey ) {
+                if ( !$('.sidenav').hasClass('active') ) {
+                    $('.sidenav').closest('.pui-nav').find('.sidenav-control').trigger('click')
+                } else {
+                    $('.sidenav').parent().find('.sidenav-overlay').trigger('click')
+                }
+            }
+        })
+    }
 }());
 +(function() {
     'use strict';
