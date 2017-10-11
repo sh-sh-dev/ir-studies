@@ -35,7 +35,9 @@ $StateName = getState($State,"name");
                 <div class="pui-col xs-12 sm-10 sm-offset-1 md-8 md-offset-2">
                     <div class="container">
                         <div class="row">
-                            <?=getState($State,"description")?>
+                            <p style="white-space: pre-line;word-wrap: break-word;word-break: keep-all;">
+                                <?=getState($State,"description")?>
+                            </p>
                             <?php
                             $StateCode = getState($State,"n");
                             $getHeroes = mysqli_query($db,"SELECT * FROM `Heroes` WHERE `fstate`=$StateCode AND `active`=1");
@@ -58,7 +60,7 @@ $StateName = getState($State,"name");
                                 ?>
                                 <!--                        <hr>-->
                                 <h3>مکان های دیدنی <?=$StateName?></h3>
-                                <section>
+                                <section class="cleared">
                                     <?php
                                     while ($WPS = mysqli_fetch_assoc($getWP)) {
                                         echo "<div class='pui-col xs-12 md-6' style='padding: 5px'>
@@ -78,11 +80,11 @@ $StateName = getState($State,"name");
                             if (mysqli_num_rows($getPics) >= 1) {
                                 ?>
                                 <h3>تصاویر <?=$StateName?></h3>
-                                <div class="images">
+                                <div class="images cleared">
                                     <?php
                                     while ($Pics = mysqli_fetch_assoc($getPics)) {
                                         echo "<div class='pui-col xs-12 sm-6 md-4 lg-3 center-align'>";
-                                        echo "<img src='$Pics[url]'>";
+                                        echo "<img src='$Pics[url]' class='img img-raised'>";
                                         echo "$Pics[description]";
                                         echo "</div>";
                                     }

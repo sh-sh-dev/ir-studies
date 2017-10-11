@@ -14,9 +14,6 @@
                 <a href="<?=getSetting('url')?>/home">
                     خانه
                 </a>
-                <a href="<?=getSetting('url')?>/about">
-                    شناسنامه محصول
-                </a>
                 <a href="<?=getSetting('url')?>/history">
                     تاریخچه ایران
                 </a>
@@ -25,6 +22,9 @@
                 </a>
                 <a href="<?=getSetting('url')?>/wonderful">
                     مکان های دیدنی ایران
+                </a>
+                <a href="<?=getSetting('url')?>/about">
+                    شناسنامه محصول
                 </a>
                 <a href="<?=getSetting('url')?>/heroes">
                     مشاهیر

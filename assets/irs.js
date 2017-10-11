@@ -108,3 +108,7 @@
         })
     })
 }());
+(function($) {
+    'use strict';
+    
+}(jQuery));

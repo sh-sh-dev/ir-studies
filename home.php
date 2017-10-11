@@ -52,7 +52,7 @@ include 'app.php';
                                 <p>
                                     در این پروژه، ما برای هر استان از کشور، اطلاعاتی کامل و دقیق از قبیل جمعیت، مشاهیر، و توضیحاتی کامل و در عین حال مختصر
                                     فراهم کرده ایم تا محتوای کاملی را به شما ارائه کنیم.<br>
-                                    <button class="btn secondary sm" onclick="$('#list-control').trigger('click')"><i class="material-icons">open_in_new</i> لیست استان ها</button>
+                                    <button class="btn simple primary sm" onclick="$('#list-control').trigger('click')"><i class="material-icons">open_in_new</i> لیست استان ها</button>
                                 </p>
                             </div>
                             <div class="pui-col xs-12 md-3">
@@ -61,25 +61,25 @@ include 'app.php';
                                 <p>
                                     عجایب ایران، خلاصه ای از تاریخ کشور و همچنین گلچین تصاویر از مکان های دیدنی نیز در قالب صفحاتی مجزا در دسترس شما هستند. شاید برخی نکات را برای اولین بار  خواهید دانست!
                                     <br>
-                                    <button class="btn secondary sm" onclick="location.href = 'facts'"><i class="material-icons">open_in_new</i>مطالب جالب ایران</button>
+                                    <button class="btn simple primary sm" onclick="location.href = 'facts'"><i class="material-icons">open_in_new</i> مطالب جالب ایران</button>
                                 </p>
                             </div>
                             <div class="pui-col xs-12 md-3">
                                 <i class="material-icons">nature</i>
                                 <h5>مکان های دیدنی ایران</h5>
                                 <p>
-                                    مکان های مهم ایران ، اعم از مکان های زیارتی ، تفریحی ، توریستی و... ایران در این مکان میباشند.
+                                    مکان های دیدنی ایران، همه و همه در دسترس شما هستند. از عجایب طبیعی تا مکان های زیارتی و تفریحی.
                                     <br>
-                                    <button class="btn secondary sm" onclick="location.href = 'wonderful'"><i class="material-icons">open_in_new</i>مکان های دیدنی ایران</button>
+                                    <button class="btn simple primary sm" onclick="location.href = 'wonderful'"><i class="material-icons">open_in_new</i> مکان های دیدنی ایران</button>
                                 </p>
                             </div>
                             <div class="pui-col xs-12 md-3">
                                 <i class="material-icons">history</i>
                                 <h5>تاریخچه ایران</h5>
                                 <p>
-                                    تاریخچه ایران ، حاوی اطلاعات کاملی از ایران قدیم تا امروز میباشد.برای مثال حکومت عباسیان از سال 750 تا 1258 میلادی
+                                    خلاصه ای اتفاقات بزرگ در تاریخ ایران، از تشکیل تا فروپاشی حکومت ها و ... را در اینجا ببینید.
                                     <br>
-                                    <button class="btn secondary sm" onclick="location.href = 'history'"><i class="material-icons">open_in_new</i>تاریخچه ایران</button>
+                                    <button class="btn simple primary sm" onclick="location.href = 'history'"><i class="material-icons">open_in_new</i> تاریخچه ایران</button>
                                 </p>
                             </div>
                         </div>
@@ -94,6 +94,9 @@ include 'app.php';
                     <button class="close modal-close material-icons">close</button>
                 </div>
                 <div class="body">
+                    <div class="pui-raised-input dark">
+                        <input type="text" placeholder="جستجو کنید...">
+                    </div>
                     <ul class="unstyled states-list">
                         <?php
                         $getStates = mysqli_query($db,"SELECT * FROM `States`  WHERE `active`=1");
