@@ -4,12 +4,12 @@ function addWatermark() {
     copytext = selection + pagelink,
     newdiv = document.createElement('div');
     newdiv.style.display = 'none';
-    // document.body.appendChild(newdiv);
+    document.body.appendChild(newdiv);
     newdiv.innerHTML = copytext;
     selection.selectAllChildren(newdiv);
     window.setTimeout(function () {
         // document.body.removeChild(newdiv);
         $(newdiv).remove()
-    }, 0);
+    }, 100);
 }
 document.addEventListener('copy', addWatermark);

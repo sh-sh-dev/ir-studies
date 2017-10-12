@@ -11,23 +11,23 @@
                 ایران شناسی
             </div>
             <li>
-                <a href="<?=getSetting('url')?>/home">
+                <a href="<?=getSetting('url')?>/home" target="_blank">
                     خانه
                 </a>
-                <a href="<?=getSetting('url')?>/history">
+                <a href="<?=getSetting('url')?>/history" target="_blank">
                     تاریخچه ایران
                 </a>
-                <a href="<?=getSetting('url')?>/facts">
+                <a href="<?=getSetting('url')?>/facts" target="_blank">
                     عجایب ایران
                 </a>
-                <a href="<?=getSetting('url')?>/wonderful">
+                <a href="<?=getSetting('url')?>/wonderful" target="_blank">
                     مکان های دیدنی ایران
                 </a>
-                <a href="<?=getSetting('url')?>/about">
-                    شناسنامه محصول
-                </a>
-                <a href="<?=getSetting('url')?>/heroes">
+                <a href="<?=getSetting('url')?>/heroes" target="_blank">
                     مشاهیر
+                </a>
+                <a href="<?=getSetting('url')?>/about" target="_blank">
+                    شناسنامه محصول
                 </a>
             </li>
         </ul>

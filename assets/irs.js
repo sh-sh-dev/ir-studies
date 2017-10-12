@@ -2,20 +2,15 @@
     'use strict';
     //Initials
     //scroll
-    $(window).scroll(function () {
-        var scrolled = $(window).scrollTop();
-        if ( scrolled > 1 ){
-            $('#navigation').addClass('primary').removeClass('transparent')
-        } else {
-            $('#navigation').removeClass('primary').addClass('transparent')
-        };
+    $('.box-container').scroll(function () {
+        var scrolled = $(this).scrollTop();
         $('.heroic-header>.content').css({
             'transform': 'translate3d(0, ' + scrolled/2.25 + 'px, 0)'
         })
     })
     //sidenav keyboard shortcut
     if ( $('.sidenav').length !== 0 ) {
-        $(document).on('keyup', (e) => {
+        $(document).on('keyup', function(e){
             if ( e.ctrlKey && e.which == 39 && !e.shiftKey && !e.altKey ) {
                 if ( !$('.sidenav').hasClass('active') ) {
                     $('.sidenav').closest('.pui-nav').find('.sidenav-control').trigger('click')
@@ -51,9 +46,6 @@
             //(home: 36)(end: 35)
             //(up arrow: 38)(down arrow: 40)
             // if ( !/(35|36|37|39)/.test(e.which) ) return;
-            if ( $('.pui-modal') && $('.pui-modal').hasClass('open') ) {
-                return false;
-            };
             var additional = e.ctrlKey || e.altKey || e.shiftKey ? true : false;
             // fs.parent().find('[data-fs-target=next]').trigger('click')
             if ( e.which == 36 && !additional ) {
@@ -74,6 +66,10 @@
             }
         })
         fs.parent().find('[data-fs-target]').click(function () {
+            if ( ($('.pui-modal')&&$('.pui-modal').hasClass('open')) ||
+            ($('.sidenav')&&$('.sidenav').hasClass('active')) ) {
+                return false;
+            };
             const button = $(this);
             var items = fs.find('.fs-item'),
             index = items.index( fs.find('.fs-item.active') ),
@@ -110,5 +106,19 @@
 }());
 (function($) {
     'use strict';
-    
+    var states = $('#states_list'),
+    filter_handler = $('#states-filter');
+    filter_handler.on('keyup change', function(){
+        var $this = filter_handler,
+        li = $('.states-list').find('li');
+        for (var i = 0; i < li.length; i++) {
+            var text = li.eq(i).find('a').text(),
+            val = filter_handler.val();
+            if ( text.toLowerCase().indexOf(val.toLowerCase()) == -1 ) {
+                li.eq(i).hide();
+            } else {
+                li.eq(i).show();
+            }
+        }
+    })
 }(jQuery));

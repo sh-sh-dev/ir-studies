@@ -20,7 +20,7 @@
     pointer-events: none;
     border-radius: inherit;
     .ripple-effect{
-        $ripple-transition_speed: 900;
+        $ripple-transition_speed: 700;
         $timing: cubic-bezier(.2, 0,.4, 1);
         position: absolute;
         pointer-events: inherit;
