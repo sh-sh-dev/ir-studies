@@ -5,20 +5,13 @@ include 'app.php';
 <body id="_facts">
     <div class="ui">
         <div class="header-box">
-            <!-- <nav class="pui-nav primary">
-                <div class="inner">
-                    <div class="title">
-                        عجایب ایران
-                        <small style="opacity: .7; font-weight: normal">نکاتی که هرگز نمی دانستید!</small>
-                    </div>
-                </div>
-            </nav> -->
             <?getMenu()?>
         </div>
         <div class="box-container">
             <div class="fs-box">
                 <button class="btn fab material-icons primary" data-fs-target='next'
-                data-tooltip='آیتم بعد' data-tooltip-place='left'>keyboard_arrow_right</button>
+                data-tooltip='آیتم بعد' data-tooltip-place='left'
+                data-tooltip-container='[data-fs-target=next]'>keyboard_arrow_right</button>
                 <div class="fs">
                     <div class="fs-indicators"></div>
                     <?php
@@ -45,7 +38,8 @@ include 'app.php';
                     ?>
                 </div>
                 <button class="btn fab material-icons primary" data-fs-target='prev'
-                data-tooltip='آیتم قبل' data-tooltip-place='right'>keyboard_arrow_left</button>
+                data-tooltip='آیتم قبل' data-tooltip-place='right'
+                data-tooltip-container='[data-fs-target=prev]'>keyboard_arrow_left</button>
             </div>
         </div>
     </div>

@@ -1,5 +1,6 @@
 @import "iransans.css";
 @import "md-icon.css";
+
 body{
     font-family: IRANsans;
     font-weight: 300;
@@ -12,6 +13,7 @@ h1,h2,h3,h5,h6{
 
 .pui-tooltip{
     font-family: IRANsans;
+    /*line-height: 1.75em;*/
 }
 
 .pui-tooltip .inner{

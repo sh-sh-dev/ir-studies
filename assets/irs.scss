@@ -1,10 +1,12 @@
 @import "dist/pui";
 @import "dist/pui-rtl";
 @import "dist/fonts/fonts.css";
-//
-// *{
-//     font-family: IRANsans
-// }
+
+@mixin responsive($value: 768px, $property: 'min-width') {
+    @media only screen and ( #{ unquote($property) } : $value){
+        @content;
+    }
+}
 
 #navigation{
     transition: .17s cubic-bezier(0,1,1,1);
@@ -25,8 +27,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 61px - 72px);
-    max-height: 550px;
+    @include no-select;
+    cursor: default;
+    height: calc(100vh - 60px - 70px);
+    // min-height: 470px;
     background-color: rgba(#000, .35);
     background-blend-mode: overlay;
     color: #fff;
@@ -88,7 +92,7 @@ body#_facts{
     flex-direction: column;
     flex: 1;
     & > .box-container{
-        // overflow-y: auto;
+        overflow-y: overlay;
         overflow-x: hidden;
         height: 100%;
         .fs-box{
@@ -279,13 +283,27 @@ body#_facts{
 
 .st-stats{
     background-color: $secondary;
-    @include y-shadow(6, .3);
-    // padding: 15px 0;
     color: #fff;
+    @include y-shadow(6, .3);
     @include clearfixing;
-    display: flex;
-    align-items: center;
-    height: 72px;
+    @include no-select;
+    @include responsive(768px, 'max-width'){
+        line-height: 45px;
+        height: 90px;
+    };
+    cursor: default;
+    height: 70px;
+    line-height: 70px;
+    & > .pui-col{
+        @include responsive{
+            &:first-child{
+                padding-left: 0
+            }
+            &:last-child{
+                padding-right: 0
+            }
+        };
+    }
     b{
         &#ppl_title{
             &::after{
@@ -369,10 +387,11 @@ body#page-404{
             color: #888;
             font-weight: normal;
         }
-        &:not(:last-child){
+        &:not( :last-child ){
             border-bottom: 1px solid $body-bg;
         }
-        padding: 25px 17px;
+        padding: 7px 16px;
+        font-size: 84.32%;
         @include clearfixing;
     }
 }
@@ -395,12 +414,6 @@ body#page-404{
     }
 }
 
-@mixin responsive-lg($value: 768px, $property: 'min-width') {
-    @media only screen and ( #{ unquote($property) } : $value){
-        @content;
-    }
-}
-
 //debug pui
 
 .sidenav-title{
@@ -410,7 +423,7 @@ body#page-404{
 .pui-modal{
     .inner{
         width: calc(100% - 30px);
-        @include responsive-lg{
+        @include responsive{
             width: 65%
         };
     }
@@ -447,8 +460,8 @@ body#page-404{
     pointer-events: none;
     overflow: hidden;
     .crisp-ripple{
-        height: 2px;
-        width: 2px;
+        height: 0;
+        width: 0;
         border-radius: 50%;
         position: absolute;
         transition: .9s cubic-bezier(.2, 0, .4, 1);
@@ -461,25 +474,20 @@ body#page-404{
     margin: 0;
     // padding-right: 17px;
     li{
-        @include responsive-lg{
+        display: block;
+        @include responsive{
             width: 50%;
-            &:nth-child(odd){
-                float: right;
-            }
-            &:nth-child(even){
-                float: left;
-            }
+            display: inline-block;
+            // &:nth-child(odd){
+            //     float: right;
+            // }
+            // &:nth-child(even){
+            //     float: left;
+            // }
         };
-        @include responsive-lg(850px){
+        @include responsive(1000px){
             width: (100% / 3);
         };
-        & > a{
-            width: 100%;
-        }
-        & > *{
-            // width: 100%;
-            display: table-cell;
-        }
     }
 }
 
@@ -539,4 +547,59 @@ body#page-404{
 
 .cleared{
     @include clearfixing;
+}
+
+.elide-text{
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.v-a-center{
+    align-items: center;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.btn.fab .material-icons{
+    font-size: inherit;
+}
+
+.lbl.secondary{
+    background-color: $secondary
+}
+
+@each $type in block, inline-block, inline, flex, inline-flex, none, table, table-cell{
+    .d-#{$type}{
+        display: $type;
+    }
+}
+
+.non-floated{
+    float: none !important;
+}
+
+.vertical-middle{
+    vertical-align: middle;
+}
+
+// ::-webkit-scrollbar{
+//     width: 13px;
+// }
+//
+// ::-webkit-scrollbar-track{
+//     background-color:transparent;
+// }
+//
+// ::-webkit-scrollbar-thumb{
+//     background-color: rgba($secondary, .5);
+    //    border-radius: 1000vw;
+    //    border: 2px solid $body-bg
+// }
+
+.pui-tooltip{
+    line-height: initial
 }

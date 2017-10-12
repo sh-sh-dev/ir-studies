@@ -10,7 +10,7 @@
         if ( data == 10 ) data = 0;
 
         el.attr('data-crr-hold', data);
-    }).click((e) => {
+    }).click(function(e){
         if ( e.target.tagName.toLowerCase() == 'button' ) {
             return false
         };

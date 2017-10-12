@@ -24,11 +24,13 @@ include 'app.php';
                         else {
                             while ($Hero = mysqli_fetch_assoc($getHero)) {
                                 $State = getState($Hero['fstate'],"name");
+                                $englishState = getState($Hero['fstate'],"english");
                                 echo "<div class='part'>
                                 <h3>$Hero[name]</h3>
                                 <p>$Hero[description]</p>
-                                <br>
-                                <label class='lbl primary' style='float: left'><i class='material-icons'>location_on</i> $State</label>
+                                <a target='_blank' href='article?state=$englishState'>
+                                <label class='lbl secondary' style='float: left; cursor: pointer'><i class='material-icons'>location_on</i> $State</label>
+                                </a>
                                 </div>";
                             }
                         }

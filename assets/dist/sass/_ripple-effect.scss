@@ -21,7 +21,7 @@
     border-radius: inherit;
     .ripple-effect{
         $ripple-transition_speed: 700;
-        $timing: cubic-bezier(1, 0,0, 1);
+        $timing: cubic-bezier(.2, 0,.4, 1);
         position: absolute;
         pointer-events: inherit;
         height: 2px;

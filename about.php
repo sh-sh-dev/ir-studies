@@ -3,13 +3,6 @@ include 'app.php';
 ?>
 <?getHeader()?>
 <body>
-    <!-- <nav class="pui-nav primary">
-        <div class="inner">
-            <div class="title">
-                درباره این پروژه
-            </div>
-        </div>
-    </nav> -->
     <div class="ui">
         <div class="header-box">
             <?getMenu()?>
@@ -19,7 +12,7 @@ include 'app.php';
             <div class="container">
                 <div class="row">
                     <div class="pui-col xs-12 sm-10 sm-offset-1 md-8 md-offset-2">
-                        <div class="chip" id="about" role="presentation">
+                        <div class="chip" id="about" role="presentation" style="margin: 0">
                             <div class="presentation">
                                 <h1>شناسنامه محصول</h1>
                                 <h4><b>مشخصات محصول</b></h4>
@@ -45,7 +38,7 @@ include 'app.php';
                                 <b>6 مهر 1396</b>
                             </div>
                         </div>
-                        <div class="space-80"></div>
+                        <div class="space-60"></div>
                     </div>
                 </div>
             </div>
