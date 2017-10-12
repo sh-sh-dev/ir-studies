@@ -9,10 +9,10 @@ include '../app.php';
     <form action="" method="post" enctype="multipart/form-data">
         <div style="max-width: 300px; width: 100%; margin:0 auto">
             <div class="pui-input">
-                <input type="text" name='ins_sentense' placeholder="جمله قرمانانه" required>
+                <input type="text" name='ins_sentense' id="ins_sentense" placeholder="جمله قرمانانه" required>
             </div>
             <div class="pui-textarea">
-                <textarea name='description' placeholder="توضیحات" required rows="8"></textarea>
+                <textarea name='description' id="description" placeholder="توضیحات" required rows="8"></textarea>
             </div>
             <div class="pui-input">
                 <input type="text" name='fstate' id="s" placeholder="برای استان" required list="states">
@@ -50,5 +50,23 @@ include '../app.php';
         ?>
     </form>
 </div>
+<?php
+if (isset($_GET["state"]) && ValidState($_GET["state"])) {
+    $StateName = getState($_GET["state"],"name");
+    $StateN = getState($_GET["state"],"n");
+    $Description = getState($_GET["state"],"description");
+    $ins_sentense = getState($_GET["state"],"ins_sentense");
+    ?>
+<script>
+    var StateName = "<?=$StateName?>" , ins_sentense = "<?=$ins_sentense?>",description = "<?=$Description?>",StateN = <?=$StateN?>;
+    description.toString();
+    alert("ویرایش استان " + StateName);
+    $("#ins_sentense").val(ins_sentense);
+    $("#description").val(description);
+    $("#s").val(StateN);
+    </script>
+<?php
+}
+?>
 <?=setTitle("اضافه کردن توضیحات",1)?>
 <?getFooter()?>
