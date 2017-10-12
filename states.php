@@ -30,8 +30,12 @@ include 'app.php';
                                 <h3 class='elide-text'>$State[name]</h3>
                                 <small style='font-size: 120%' class='muted-txt bold-txt elide-text d-block'>$State[ins_sentense]</small>
                                 <p class='elide-text'>$State[description]</p>
-                                <label id='ppl-label-$State[n]' data-tooltip-place='top' data-tooltip-container='#ppl-label-$State[n]' data-tooltip='$formatted نفر' class='lbl secondary' style='float: left'><i class='material-icons'>people</i> جمعیت:  $Population نفر</label>
-                                <label class='lbl gray' style='float: left'><i class='material-icons'>location_city</i> مرکز استان:  $State[city_center]</label>
+                                <a href='article?state=$State[english]' target='_blank'>
+                                <label class='lbl gray' style='float: left; cursor: pointer'><i class='material-icons'>location_city</i> مرکز استان:  $State[city_center]</label>
+                                </a>
+                                <label id='ppl-label-$State[n]' data-tooltip-place='top' data-tooltip-container='#ppl-label-$State[n]'
+                                data-tooltip='$formatted نفر' class='lbl secondary' style='float: left;'>
+                                <i class='material-icons'>people</i> جمعیت:  $Population نفر</label>
                                 </div>
                                 <div style='width: 80px' class='center-align'>
                                     <a class='btn gray fab simple' href='article?state=$State[english]' target='_blank'><i class='material-icons' style='transform: scaleX(-1)'>open_in_new</i></a>
