@@ -567,7 +567,10 @@ body#page-404{
 }
 
 .st-stats{
-    z-index: 4;
+    // z-index: 4;
+    .pui-modal{
+        line-height: initial
+    }
     background-color: $secondary;
     color: #fff;
     @include y-shadow(6, .3);
@@ -621,7 +624,7 @@ body#page-404{
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 0 15px;
-    z-index: 2
+    // z-index: 2
 }
 .st-impcities{
     @extend .st-souvenir;
@@ -630,7 +633,7 @@ body#page-404{
     list-style: none;
     color: #333;
     background-color: #fff;
-    z-index: 1;
+    // z-index: 1;
     li{
         display: table-cell;
         vertical-align: middle;
