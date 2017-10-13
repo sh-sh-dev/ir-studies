@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/add_majorcity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/add_souvenir.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IRS.sql" afterPath="$PROJECT_DIR$/IRS.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article.php" afterPath="$PROJECT_DIR$/article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/watermark.js" afterPath="$PROJECT_DIR$/assets/watermark.js" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,14 +16,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="E:\Ampps\www\ir-studies" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ir-studies" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="article.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="57" column="94" selection-start-line="57" selection-start-column="94" selection-end-line="57" selection-end-column="94" />
+              <folding>
+                <marker date="1507914255517" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
+                <marker date="1507914255517" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
+                <marker date="1507914255517" expanded="true" signature="2693:3266" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="2731:3247" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="2774:2828" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="2774:2960" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="3001:3065" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="3108:3224" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="3906:3969" ph="SELECT * FRO... Heroes" />
+                <marker date="1507914255517" expanded="true" signature="4407:4419" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="4446:4455" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="4468:4484" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="4514:4531" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="4898:4971" ph="SELECT * FRO... Wonderful_Places" />
+                <marker date="1507914255517" expanded="true" signature="5406:5418" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="5419:5784" ph="..." />
+                <marker date="1507914255517" expanded="false" signature="5486:5495" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="5496:5737" ph="..." />
+                <marker date="1507914255517" expanded="false" signature="5549:5565" ph="..." />
+                <marker date="1507914255517" expanded="false" signature="5633:5650" ph="..." />
+                <marker date="1507914255517" expanded="true" signature="6098:6159" ph="SELECT * FRO... Pics" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,6 +74,7 @@
         <option value="$PROJECT_DIR$/assets/watermark.js" />
         <option value="$PROJECT_DIR$/admin/add_souvenir.php" />
         <option value="$PROJECT_DIR$/admin/add_majorcity.php" />
+        <option value="$PROJECT_DIR$/../bot/M802/M802.php" />
         <option value="$PROJECT_DIR$/article.php" />
       </list>
     </option>
@@ -119,7 +149,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bot/M802/M802.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -292,7 +322,7 @@
       <workItem from="1507827769999" duration="83000" />
       <workItem from="1507827866961" duration="2848000" />
       <workItem from="1507885954036" duration="623000" />
-      <workItem from="1507886587003" duration="4705000" />
+      <workItem from="1507886587003" duration="8112000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -308,17 +338,24 @@
       <option name="project" value="LOCAL" />
       <updated>1507832574776</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="admin/add_majorCity , admin/add_souvenir&#10;watermark.js fix :| (@hkh12)&#10;article is now show the souvenirs and mc(major cities) (Dear @hkh12 , create a modal for show major city description)&#10;sql file (2 new table) (@hkh12 first import to db please !)">
+      <created>1507897532611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1507897532611</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8456000" />
+    <option name="totallyTimeSpent" value="11863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -358,7 +395,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !" />
     <MESSAGE value="admin/add_description edit states" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin/add_description edit states" />
+    <MESSAGE value="admin/add_majorCity , admin/add_souvenir&#10;watermark.js fix :| (@hkh12)&#10;article is now show the souvenirs and mc(major cities) (Dear @hkh12 , create a modal for show major city description)&#10;sql file (2 new table) (@hkh12 first import to db please !)" />
+    <MESSAGE value="modal for major cities" />
+    <option name="LAST_COMMIT_MESSAGE" value="modal for major cities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -382,22 +421,27 @@
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="37" />
           <folding>
-            <marker date="1507897147888" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
-            <marker date="1507897147888" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
-            <marker date="1507897147888" expanded="false" signature="2876:2941" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="3201:3264" ph="SELECT * FRO... Heroes" />
-            <marker date="1507897147888" expanded="true" signature="3702:3714" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="3741:3750" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="3763:3779" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="3809:3826" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="4193:4266" ph="SELECT * FRO... Wonderful_Places" />
-            <marker date="1507897147888" expanded="true" signature="4701:4713" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="4714:5079" ph="..." />
-            <marker date="1507897147888" expanded="false" signature="4781:4790" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="4791:5032" ph="..." />
-            <marker date="1507897147888" expanded="false" signature="4844:4860" ph="..." />
-            <marker date="1507897147888" expanded="false" signature="4928:4945" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="5393:5454" ph="SELECT * FRO... Pics" />
+            <marker date="1507914255517" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
+            <marker date="1507914255517" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
+            <marker date="1507914255517" expanded="true" signature="2693:3266" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="2731:3247" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="2774:2828" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="2774:2960" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="3001:3065" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="3108:3224" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="3906:3969" ph="SELECT * FRO... Heroes" />
+            <marker date="1507914255517" expanded="true" signature="4407:4419" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="4446:4455" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="4468:4484" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="4514:4531" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="4898:4971" ph="SELECT * FRO... Wonderful_Places" />
+            <marker date="1507914255517" expanded="true" signature="5406:5418" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="5419:5784" ph="..." />
+            <marker date="1507914255517" expanded="false" signature="5486:5495" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="5496:5737" ph="..." />
+            <marker date="1507914255517" expanded="false" signature="5549:5565" ph="..." />
+            <marker date="1507914255517" expanded="false" signature="5633:5650" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="6098:6159" ph="SELECT * FRO... Pics" />
           </folding>
         </state>
       </provider>
@@ -494,27 +538,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../bot/M802/M802.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="795" column="11" selection-start-line="795" selection-start-column="11" selection-end-line="795" selection-end-column="11" />
+          <folding>
+            <marker date="1507910283471" expanded="true" signature="2347:2381" ph="UPDATE `Grou... " />
+            <marker date="1507910283471" expanded="true" signature="2591:2624" ph="UPDATE `Grou... " />
+            <marker date="1507910283471" expanded="true" signature="2841:2887" ph="SELECT `stat... Groups" />
+            <marker date="1507910283471" expanded="true" signature="3257:3300" ph="SELECT `AID`... Groups" />
+            <marker date="1507910283471" expanded="true" signature="3606:3674" ph="INSERT INTO `Users`... " />
+            <marker date="1507910283471" expanded="true" signature="3901:3972" ph="DELETE FROM " />
+            <marker date="1507910283471" expanded="true" signature="4199:4286" ph="UPDATE `User... " />
+            <marker date="1507910283471" expanded="true" signature="4514:4575" ph="SELECT * FRO... Users" />
+            <marker date="1507910283471" expanded="true" signature="4831:4892" ph="SELECT * FRO... Users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="130" column="19" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
+        <state relative-caret-position="155">
+          <caret line="57" column="94" selection-start-line="57" selection-start-column="94" selection-end-line="57" selection-end-column="94" />
           <folding>
-            <marker date="1507897147888" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
-            <marker date="1507897147888" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
-            <marker date="1507897147888" expanded="false" signature="2876:2941" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="3201:3264" ph="SELECT * FRO... Heroes" />
-            <marker date="1507897147888" expanded="true" signature="3702:3714" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="3741:3750" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="3763:3779" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="3809:3826" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="4193:4266" ph="SELECT * FRO... Wonderful_Places" />
-            <marker date="1507897147888" expanded="true" signature="4701:4713" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="4714:5079" ph="..." />
-            <marker date="1507897147888" expanded="false" signature="4781:4790" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="4791:5032" ph="..." />
-            <marker date="1507897147888" expanded="false" signature="4844:4860" ph="..." />
-            <marker date="1507897147888" expanded="false" signature="4928:4945" ph="..." />
-            <marker date="1507897147888" expanded="true" signature="5393:5454" ph="SELECT * FRO... Pics" />
+            <marker date="1507914255517" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
+            <marker date="1507914255517" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
+            <marker date="1507914255517" expanded="true" signature="2693:3266" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="2731:3247" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="2774:2828" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="2774:2960" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="3001:3065" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="3108:3224" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="3906:3969" ph="SELECT * FRO... Heroes" />
+            <marker date="1507914255517" expanded="true" signature="4407:4419" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="4446:4455" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="4468:4484" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="4514:4531" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="4898:4971" ph="SELECT * FRO... Wonderful_Places" />
+            <marker date="1507914255517" expanded="true" signature="5406:5418" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="5419:5784" ph="..." />
+            <marker date="1507914255517" expanded="false" signature="5486:5495" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="5496:5737" ph="..." />
+            <marker date="1507914255517" expanded="false" signature="5549:5565" ph="..." />
+            <marker date="1507914255517" expanded="false" signature="5633:5650" ph="..." />
+            <marker date="1507914255517" expanded="true" signature="6098:6159" ph="SELECT * FRO... Pics" />
           </folding>
         </state>
       </provider>
