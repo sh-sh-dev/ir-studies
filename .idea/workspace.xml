@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
+    <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="add error/403">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/error/403.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article.php" afterPath="$PROJECT_DIR$/article.php" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,34 +25,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="article.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/article.php">
+      <file leaf-file-name="404.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/error/404.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="57" column="94" selection-start-line="57" selection-start-column="94" selection-end-line="57" selection-end-column="94" />
-              <folding>
-                <marker date="1507914255517" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
-                <marker date="1507914255517" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
-                <marker date="1507914255517" expanded="true" signature="2693:3266" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="2731:3247" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="2774:2828" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="2774:2960" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="3001:3065" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="3108:3224" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="3906:3969" ph="SELECT * FRO... Heroes" />
-                <marker date="1507914255517" expanded="true" signature="4407:4419" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="4446:4455" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="4468:4484" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="4514:4531" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="4898:4971" ph="SELECT * FRO... Wonderful_Places" />
-                <marker date="1507914255517" expanded="true" signature="5406:5418" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="5419:5784" ph="..." />
-                <marker date="1507914255517" expanded="false" signature="5486:5495" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="5496:5737" ph="..." />
-                <marker date="1507914255517" expanded="false" signature="5549:5565" ph="..." />
-                <marker date="1507914255517" expanded="false" signature="5633:5650" ph="..." />
-                <marker date="1507914255517" expanded="true" signature="6098:6159" ph="SELECT * FRO... Pics" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="403.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/error/403.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,6 +75,10 @@
         <option value="$PROJECT_DIR$/admin/add_majorcity.php" />
         <option value="$PROJECT_DIR$/../bot/M802/M802.php" />
         <option value="$PROJECT_DIR$/article.php" />
+        <option value="$PROJECT_DIR$/../school/me/prime/pui.css" />
+        <option value="$PROJECT_DIR$/../school/me/prime/index.html" />
+        <option value="$PROJECT_DIR$/error/403.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
   </component>
@@ -149,7 +152,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bot/M802/M802.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../school/me/prime/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -167,7 +170,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/IRS.sql</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/article.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/irs.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/irs.scss</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -322,7 +327,7 @@
       <workItem from="1507827769999" duration="83000" />
       <workItem from="1507827866961" duration="2848000" />
       <workItem from="1507885954036" duration="623000" />
-      <workItem from="1507886587003" duration="8112000" />
+      <workItem from="1507886587003" duration="13989000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -345,11 +350,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507897532611</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="modal for major cities">
+      <created>1507914326897</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1507914326897</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11863000" />
+    <option name="totallyTimeSpent" value="17740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -400,7 +412,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="modal for major cities" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -421,27 +435,27 @@
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="37" />
           <folding>
-            <marker date="1507914255517" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
-            <marker date="1507914255517" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
-            <marker date="1507914255517" expanded="true" signature="2693:3266" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="2731:3247" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="2774:2828" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="2774:2960" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="3001:3065" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="3108:3224" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="3906:3969" ph="SELECT * FRO... Heroes" />
-            <marker date="1507914255517" expanded="true" signature="4407:4419" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="4446:4455" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="4468:4484" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="4514:4531" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="4898:4971" ph="SELECT * FRO... Wonderful_Places" />
-            <marker date="1507914255517" expanded="true" signature="5406:5418" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="5419:5784" ph="..." />
-            <marker date="1507914255517" expanded="false" signature="5486:5495" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="5496:5737" ph="..." />
-            <marker date="1507914255517" expanded="false" signature="5549:5565" ph="..." />
-            <marker date="1507914255517" expanded="false" signature="5633:5650" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="6098:6159" ph="SELECT * FRO... Pics" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <marker date="1507915750077" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
+            <marker date="1507915750077" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
+            <marker date="1507915750077" expanded="true" signature="2693:3266" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="2731:3247" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="2774:2960" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="3001:3065" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="3108:3224" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="3906:3969" ph="SELECT * FRO... Heroes" />
+            <marker date="1507915750077" expanded="true" signature="4407:4419" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="4446:4455" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="4468:4484" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="4514:4531" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="4898:4971" ph="SELECT * FRO... Wonderful_Places" />
+            <marker date="1507915750077" expanded="true" signature="5406:5418" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="5419:5784" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="5486:5495" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="5496:5737" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="5549:5565" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="5633:5650" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="6098:6159" ph="SELECT * FRO... Pics" />
           </folding>
         </state>
       </provider>
@@ -559,30 +573,121 @@
     <entry file="file://$PROJECT_DIR$/article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
-          <caret line="57" column="94" selection-start-line="57" selection-start-column="94" selection-end-line="57" selection-end-column="94" />
+          <caret line="57" column="83" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="83" />
           <folding>
-            <marker date="1507914255517" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
-            <marker date="1507914255517" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
-            <marker date="1507914255517" expanded="true" signature="2693:3266" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="2731:3247" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="2774:2828" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="2774:2960" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="3001:3065" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="3108:3224" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="3906:3969" ph="SELECT * FRO... Heroes" />
-            <marker date="1507914255517" expanded="true" signature="4407:4419" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="4446:4455" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="4468:4484" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="4514:4531" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="4898:4971" ph="SELECT * FRO... Wonderful_Places" />
-            <marker date="1507914255517" expanded="true" signature="5406:5418" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="5419:5784" ph="..." />
-            <marker date="1507914255517" expanded="false" signature="5486:5495" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="5496:5737" ph="..." />
-            <marker date="1507914255517" expanded="false" signature="5549:5565" ph="..." />
-            <marker date="1507914255517" expanded="false" signature="5633:5650" ph="..." />
-            <marker date="1507914255517" expanded="true" signature="6098:6159" ph="SELECT * FRO... Pics" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <marker date="1507915750077" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
+            <marker date="1507915750077" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
+            <marker date="1507915750077" expanded="true" signature="2693:3266" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="2731:3247" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="2774:2960" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="3001:3065" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="3108:3224" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="3906:3969" ph="SELECT * FRO... Heroes" />
+            <marker date="1507915750077" expanded="true" signature="4407:4419" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="4446:4455" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="4468:4484" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="4514:4531" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="4898:4971" ph="SELECT * FRO... Wonderful_Places" />
+            <marker date="1507915750077" expanded="true" signature="5406:5418" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="5419:5784" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="5486:5495" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="5496:5737" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="5549:5565" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="5633:5650" ph="..." />
+            <marker date="1507915750077" expanded="true" signature="6098:6159" ph="SELECT * FRO... Pics" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../school/me/prime/pui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/dist/pui.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/dist/pui-rtl.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/irs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="0" column="1013" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../school/me/prime/pui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../school/me/prime/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3638">
+          <caret line="214" column="9" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#8455#8701#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error/403.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>

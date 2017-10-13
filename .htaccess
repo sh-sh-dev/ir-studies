@@ -2,9 +2,11 @@
 
 Options -Indexes
 
-#sSet 404 error file
+#Set 404 - 403 error file
 
 ErrorDocument 404 http://localhost/ir-studies/error/404.php
+
+ErrorDocument 403 http://localhost/ir-studies/error/403.php
 
 #Hide php extension
 
