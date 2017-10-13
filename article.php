@@ -31,15 +31,35 @@ $StateName = getState($State,"name");
                     <span><?=getState($State,"city_center")?></span>
                 </div>
             </div>
-            <div class="st-souvenir">
-                <b>سوغات</b>
-                ماهی سفید، مویز، میگو
-            </div>
-            <ul class="st-impcities">
-                <li><button class="btn simple block">مویزآباد</button></li>
-                <li><button class="btn simple block">میگوآباد</button></li>
-                <li><button class="btn simple block">ماهی آباد سفید</button></li>
-            </ul>
+            <?php
+            $StateCode = getState($State,"n");
+            $getSouvenirs = mysqli_query($db,"SELECT * FROM `Souvenir` WHERE `fstate`=$StateCode AND `active`=1");
+            if (mysqli_num_rows($getSouvenirs) >= 1) {
+                $n = 0;
+                $i = mysqli_num_rows($getSouvenirs);
+                echo '<div class="st-souvenir">';
+                echo '<b>سوغات</b>';
+                while ($Souvenirs = mysqli_fetch_assoc($getSouvenirs)) {
+                    echo "$Souvenirs[name]";
+                    $n++;
+                    if ($n !== $i) {
+                        echo ' ، ';
+                    }
+                }
+                echo '</div>';
+            }
+            ?>
+            <?php
+            $StateCode = getState($State,"n");
+            $getMC = mysqli_query($db,"SELECT * FROM `Major_cities` WHERE `fstate`=$StateCode AND `active`=1");
+            if (mysqli_num_rows($getMC) >= 1) {
+                echo '<ul class="st-impcities">';
+                while ($MC = mysqli_fetch_assoc($getMC)) {
+                    echo "<li><button class='btn simple block'>$MC[name]</button></li>";
+                }
+                echo '</ul>';
+            }
+            ?>
             <main role="main">
                 <div class="pui-col xs-12 sm-10 sm-offset-1 md-8 md-offset-2">
                     <div class="container">
@@ -67,7 +87,6 @@ $StateName = getState($State,"name");
                             $getWP = mysqli_query($db,"SELECT * FROM `Wonderful_Places` WHERE `fstate`=$StateCode AND `active`=1");
                             if (mysqli_num_rows($getWP) >= 1) {
                                 ?>
-                                <!--                        <hr>-->
                                 <h3>مکان های دیدنی <?=$StateName?></h3>
                                 <section class="cleared">
                                     <?php

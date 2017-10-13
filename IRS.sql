@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 13, 2017 at 11:19 AM
+-- Generation Time: Oct 13, 2017 at 11:57 AM
 -- Server version: 5.6.31
 -- PHP Version: 7.0.10
 
@@ -116,6 +116,20 @@ CREATE TABLE IF NOT EXISTS `History` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `Major_cities`
+--
+
+CREATE TABLE IF NOT EXISTS `Major_cities` (
+  `n` int(11) NOT NULL,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `description` text COLLATE utf8_persian_ci NOT NULL,
+  `fstate` int(11) NOT NULL,
+  `active` int(11) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `Pics`
 --
 
@@ -145,6 +159,19 @@ CREATE TABLE IF NOT EXISTS `Setting` (
 
 INSERT INTO `Setting` (`n`, `title`, `url`) VALUES
 (1, 'ایران شناسی', 'http://localhost/ir-studies');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Souvenir`
+--
+
+CREATE TABLE IF NOT EXISTS `Souvenir` (
+  `n` int(11) NOT NULL,
+  `name` text COLLATE utf8_persian_ci NOT NULL,
+  `fstate` int(11) NOT NULL,
+  `active` int(11) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 -- --------------------------------------------------------
 
@@ -272,6 +299,12 @@ ALTER TABLE `History`
   ADD PRIMARY KEY (`n`);
 
 --
+-- Indexes for table `Major_cities`
+--
+ALTER TABLE `Major_cities`
+  ADD PRIMARY KEY (`n`);
+
+--
 -- Indexes for table `Pics`
 --
 ALTER TABLE `Pics`
@@ -281,6 +314,12 @@ ALTER TABLE `Pics`
 -- Indexes for table `Setting`
 --
 ALTER TABLE `Setting`
+  ADD PRIMARY KEY (`n`);
+
+--
+-- Indexes for table `Souvenir`
+--
+ALTER TABLE `Souvenir`
   ADD PRIMARY KEY (`n`);
 
 --
@@ -315,6 +354,11 @@ ALTER TABLE `Heroes`
 ALTER TABLE `History`
   MODIFY `n` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `Major_cities`
+--
+ALTER TABLE `Major_cities`
+  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `Pics`
 --
 ALTER TABLE `Pics`
@@ -324,6 +368,11 @@ ALTER TABLE `Pics`
 --
 ALTER TABLE `Setting`
   MODIFY `n` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `Souvenir`
+--
+ALTER TABLE `Souvenir`
+  MODIFY `n` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `States`
 --
