@@ -47,7 +47,7 @@ $StateName = getState($State,"name");
                                 <section class="cleared">
                                     <?php
                                     while ($Heroes = mysqli_fetch_assoc($getHeroes)) {
-                                        echo "<div class='pui-col xs-12 md-6' style='padding: 5px'><div class='chip' style='margin: 0'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></div></div>";
+                                        echo "<div class='pui-col xs-12' style='padding: 5px'><div class='chip' style='margin: 0'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></div></div>";
                                     }
                                     ?>
                                 </section>
@@ -63,7 +63,7 @@ $StateName = getState($State,"name");
                                 <section class="cleared">
                                     <?php
                                     while ($WPS = mysqli_fetch_assoc($getWP)) {
-                                        echo "<div class='pui-col xs-12 md-6' style='padding: 5px'>
+                                        echo "<div class='pui-col xs-12' style='padding: 5px'>
                                         <div class='chip' style='margin: 0'>
                                         <h5 style='font-weight: 400'>$WPS[name]</h5>
                                         <p style='font-weight: bold' class='muted-txt'>$WPS[description]</p>
