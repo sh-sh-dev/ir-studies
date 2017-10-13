@@ -55,8 +55,8 @@ $StateName = getState($State,"name");
             if (mysqli_num_rows($getMC) >= 1) {
                 echo '<ul class="st-impcities">';
                 while ($MC = mysqli_fetch_assoc($getMC)) {
-                    echo "<li><button class='btn simple block' data-modal-target='description-modal-$MC[n]'>$MC[name]</button></li>";
-                    echo "<div class=\"pui-modal\" id=\"#description-modal-$MC[n]\">
+                    echo "<li><button class='btn simple block' data-modal-target='#description-modal-$MC[n]'>$MC[name]</button></li>";
+                    echo "<div class=\"pui-modal\" id=\"description-modal-$MC[n]\">
                 <div class=\"inner\">
                     <div class=\"header\">
                         <span class=\"modal-title\">$MC[name]</span>
