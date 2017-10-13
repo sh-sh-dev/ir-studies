@@ -12,4 +12,4 @@ function addWatermark() {
         $(newdiv).remove()
     }, 100);
 }
-document.addEventListener('copy', addWatermark);
+// document.addEventListener('copy', addWatermark);

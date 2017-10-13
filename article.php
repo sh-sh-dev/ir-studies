@@ -31,6 +31,15 @@ $StateName = getState($State,"name");
                     <span><?=getState($State,"city_center")?></span>
                 </div>
             </div>
+            <div class="st-souvenir">
+                <b>سوغات</b>
+                ماهی سفید، مویز، میگو
+            </div>
+            <ul class="st-impcities">
+                <li><button class="btn simple block">مویزآباد</button></li>
+                <li><button class="btn simple block">میگوآباد</button></li>
+                <li><button class="btn simple block">ماهی آباد سفید</button></li>
+            </ul>
             <main role="main">
                 <div class="pui-col xs-12 sm-10 sm-offset-1 md-8 md-offset-2">
                     <div class="container">

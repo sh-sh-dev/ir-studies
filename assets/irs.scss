@@ -35,6 +35,8 @@
     background-blend-mode: overlay;
     color: #fff;
     font-size: 1.3em;
+    position: relative;
+    z-index: 5;
     text-shadow: 0 2px 5px rgba(#000, .5);
     & > .content > h3{
         font-size: 2em;
@@ -277,46 +279,6 @@ body#_facts{
             footer{
                 text-align: end;
             }
-        }
-    }
-}
-
-.st-stats{
-    background-color: $secondary;
-    color: #fff;
-    @include y-shadow(6, .3);
-    @include clearfixing;
-    @include no-select;
-    @include responsive(768px, 'max-width'){
-        line-height: 45px;
-        height: 90px;
-    };
-    cursor: default;
-    height: 70px;
-    line-height: 70px;
-    & > .pui-col{
-        @include responsive{
-            &:first-child{
-                padding-left: 0
-            }
-            &:last-child{
-                padding-right: 0
-            }
-        };
-    }
-    b{
-        &#ppl_title{
-            &::after{
-                content: ' (در سال 1395):'
-            }
-        }
-        &::after{
-            content: ': '
-        }
-    }
-    #ppl_num{
-        &::after{
-            content: ' نفر'
         }
     }
 }
@@ -602,4 +564,83 @@ body#page-404{
 
 .pui-tooltip{
     line-height: initial
+}
+
+.st-stats{
+    z-index: 4;
+    background-color: $secondary;
+    color: #fff;
+    @include y-shadow(6, .3);
+    @include clearfixing;
+    @include no-select;
+    @include responsive(768px, 'max-width'){
+        line-height: 45px;
+        height: 90px;
+    };
+    position: relative;
+    cursor: default;
+    height: 70px;
+    line-height: 70px;
+    & > .pui-col{
+        @include responsive{
+            &:first-child{
+                padding-left: 0
+            }
+            &:last-child{
+                padding-right: 0
+            }
+        };
+    }
+    b{
+        &#ppl_title{
+            &::after{
+                content: ' (در سال 1395):'
+            }
+        }
+        &::after{
+            content: ': '
+        }
+    }
+    #ppl_num{
+        &::after{
+            content: ' نفر'
+        }
+    }
+}
+
+.st-souvenir{
+    @extend .st-stats;
+    // margin-top: 10px;
+    background-color: $secondary/2 + $primary/2;
+    @include responsive(768px, 'max-width'){
+        height: 70px;
+        line-height: 70px;
+    };
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 15px;
+    z-index: 2
+}
+.st-impcities{
+    @extend .st-souvenir;
+    margin: 0;
+    // padding: 0;
+    list-style: none;
+    color: #333;
+    background-color: #fff;
+    z-index: 1;
+    li{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        padding: 0 2px;
+        width: 0.01%;
+        height: inherit;
+        button{
+            width:100%;
+            margin: 0;
+        }
+    }
 }
