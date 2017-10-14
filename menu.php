@@ -14,6 +14,9 @@
                 <a href="<?=getSetting('url')?>/home" target="_blank">
                     خانه
                 </a>
+                <a href="<?=getSetting('url')?>/states">
+                    لیست استان ها
+                </a>
                 <a href="<?=getSetting('url')?>/history" target="_blank">
                     تاریخچه ایران
                 </a>

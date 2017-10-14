@@ -24,15 +24,13 @@ include 'app.php';
                         else {
                             while ($State = mysqli_fetch_assoc($getStates)) {
                                 $Population = formatted_number($State['Population']);
-                                $formatted = $State['Population'];
+                                $formatted = number_format($State['Population']);
                                 echo "<div class='part d-flex v-a-center'>
                                 <div class='full-width cleared' style='max-width: calc(100% - 80px)'>
                                 <h3 class='elide-text'>$State[name]</h3>
                                 <small style='font-size: 120%' class='muted-txt bold-txt elide-text d-block'>$State[ins_sentense]</small>
                                 <p class='elide-text'>$State[description]</p>
-                                <a href='article?state=$State[english]' target='_blank'>
-                                <label class='lbl gray' style='float: left; cursor: pointer'><i class='material-icons'>location_city</i> مرکز استان:  $State[city_center]</label>
-                                </a>
+                                <label class='lbl gray' style='float: left;'><i class='material-icons'>location_city</i> مرکز استان:  $State[city_center]</label>
                                 <label id='ppl-label-$State[n]' data-tooltip-place='top' data-tooltip-container='#ppl-label-$State[n]'
                                 data-tooltip='$formatted نفر' class='lbl secondary' style='float: left;'>
                                 <i class='material-icons'>people</i> جمعیت:  $Population نفر</label>

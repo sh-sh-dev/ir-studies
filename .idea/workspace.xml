@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="add error/403">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/error/403.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+    <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IRS.sql" afterPath="$PROJECT_DIR$/IRS.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.php" afterPath="$PROJECT_DIR$/about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu.php" afterPath="$PROJECT_DIR$/menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/states.php" afterPath="$PROJECT_DIR$/states.php" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,38 +26,7 @@
     <favorites_list name="ir-studies" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="404.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/error/404.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="403.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/error/403.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,6 +50,11 @@
         <option value="$PROJECT_DIR$/../school/me/prime/index.html" />
         <option value="$PROJECT_DIR$/error/403.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/about.php" />
+        <option value="$PROJECT_DIR$/menu.php" />
+        <option value="$PROJECT_DIR$/states.php" />
+        <option value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/instantwp/index.php" />
+        <option value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/index.php" />
       </list>
     </option>
   </component>
@@ -108,9 +84,6 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -126,8 +99,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,7 +125,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../school/me/prime/index.html" />
+    <property name="last_opened_file_path" value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/index.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -170,9 +143,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/article.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/IRS.sql</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/irs.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/irs.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/header.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -287,6 +260,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -327,7 +306,8 @@
       <workItem from="1507827769999" duration="83000" />
       <workItem from="1507827866961" duration="2848000" />
       <workItem from="1507885954036" duration="623000" />
-      <workItem from="1507886587003" duration="13989000" />
+      <workItem from="1507886587003" duration="15014000" />
+      <workItem from="1507990647992" duration="4176000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -357,17 +337,24 @@
       <option name="project" value="LOCAL" />
       <updated>1507914326897</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add error/403">
+      <created>1507920643586</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1507920643586</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17740000" />
+    <option name="totallyTimeSpent" value="22941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -409,7 +396,8 @@
     <MESSAGE value="admin/add_description edit states" />
     <MESSAGE value="admin/add_majorCity , admin/add_souvenir&#10;watermark.js fix :| (@hkh12)&#10;article is now show the souvenirs and mc(major cities) (Dear @hkh12 , create a modal for show major city description)&#10;sql file (2 new table) (@hkh12 first import to db please !)" />
     <MESSAGE value="modal for major cities" />
-    <option name="LAST_COMMIT_MESSAGE" value="modal for major cities" />
+    <MESSAGE value="add error/403" />
+    <option name="LAST_COMMIT_MESSAGE" value="add error/403" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -418,15 +406,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/error/403.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/add_description.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1507832549563" expanded="true" signature="885:924" ph="SELECT * FRO... States" />
-            <marker date="1507832549563" expanded="true" signature="1807:1877" ph="UPDATE `Stat... " />
-            <marker date="1507832549563" expanded="true" signature="1930:2002" ph="UPDATE `Stat... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -435,7 +426,6 @@
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="37" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
             <marker date="1507915750077" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
             <marker date="1507915750077" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
             <marker date="1507915750077" expanded="true" signature="2693:3266" ph="..." />
@@ -492,7 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -500,11 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
           <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-          <folding>
-            <marker date="1507832549563" expanded="true" signature="885:924" ph="SELECT * FRO... States" />
-            <marker date="1507832549563" expanded="true" signature="1807:1877" ph="UPDATE `Stat... " />
-            <marker date="1507832549563" expanded="true" signature="1930:2002" ph="UPDATE `Stat... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -512,10 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1507572356466" expanded="true" signature="840:879" ph="SELECT * FRO... States" />
-            <marker date="1507572356466" expanded="true" signature="1805:1907" ph="INSERT INTO `Wonderful_Places`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -523,10 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <marker date="1507572381658" expanded="true" signature="843:882" ph="SELECT * FRO... States" />
-            <marker date="1507572381658" expanded="true" signature="1815:1909" ph="INSERT INTO `Heroes`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -534,10 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="29" column="118" selection-start-line="29" selection-start-column="118" selection-end-line="29" selection-end-column="118" />
-          <folding>
-            <marker date="1507896146108" expanded="true" signature="692:731" ph="SELECT * FRO... States" />
-            <marker date="1507896146108" expanded="true" signature="1557:1628" ph="INSERT INTO `Souvenir`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -545,10 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-          <folding>
-            <marker date="1507896232969" expanded="true" signature="843:882" ph="SELECT * FRO... States" />
-            <marker date="1507896232969" expanded="true" signature="1810:1908" ph="INSERT INTO `Major_cities`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -556,26 +524,130 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="795" column="11" selection-start-line="795" selection-start-column="11" selection-end-line="795" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../school/me/prime/pui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/dist/pui.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/dist/pui-rtl.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/irs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="0" column="1013" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../school/me/prime/pui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../school/me/prime/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3638">
+          <caret line="214" column="9" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error/403.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/states.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
           <folding>
-            <marker date="1507910283471" expanded="true" signature="2347:2381" ph="UPDATE `Grou... " />
-            <marker date="1507910283471" expanded="true" signature="2591:2624" ph="UPDATE `Grou... " />
-            <marker date="1507910283471" expanded="true" signature="2841:2887" ph="SELECT `stat... Groups" />
-            <marker date="1507910283471" expanded="true" signature="3257:3300" ph="SELECT `AID`... Groups" />
-            <marker date="1507910283471" expanded="true" signature="3606:3674" ph="INSERT INTO `Users`... " />
-            <marker date="1507910283471" expanded="true" signature="3901:3972" ph="DELETE FROM " />
-            <marker date="1507910283471" expanded="true" signature="4199:4286" ph="UPDATE `User... " />
-            <marker date="1507910283471" expanded="true" signature="4514:4575" ph="SELECT * FRO... Users" />
-            <marker date="1507910283471" expanded="true" signature="4831:4892" ph="SELECT * FRO... Users" />
+            <marker date="1508001017696" expanded="true" signature="596:635" ph="SELECT * FRO... States" />
+            <marker date="1508001017696" expanded="true" signature="1171:2458" ph="..." />
+            <marker date="1508001017696" expanded="false" signature="1244:1272" ph="..." />
+            <marker date="1508001017696" expanded="true" signature="1273:2105" ph="..." />
+            <marker date="1508001017696" expanded="false" signature="1394:1409" ph="..." />
+            <marker date="1508001017696" expanded="true" signature="1563:1725" ph="..." />
+            <marker date="1508001017696" expanded="true" signature="1627:1639" ph="..." />
+            <marker date="1508001017696" expanded="true" signature="1860:2066" ph="..." />
+            <marker date="1508001017696" expanded="true" signature="1952:1964" ph="..." />
+            <marker date="1508001017696" expanded="false" signature="2151:2162" ph="..." />
+            <marker date="1508001017696" expanded="true" signature="2184:2419" ph="..." />
+            <marker date="1508001017696" expanded="false" signature="2339:2360" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="57" column="83" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="83" />
+        <state relative-caret-position="342">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="40" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
             <marker date="1507915750077" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
             <marker date="1507915750077" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
             <marker date="1507915750077" expanded="true" signature="2693:3266" ph="..." />
@@ -600,94 +672,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../school/me/prime/pui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/dist/pui.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/dist/pui-rtl.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/irs.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="0" column="1013" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../school/me/prime/pui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../school/me/prime/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3638">
-          <caret line="214" column="9" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8455#8701#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/error/404.php">
+    <entry file="file://E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/instantwp/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/error/403.php">
+    <entry file="file://E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="-119">
+          <caret line="74" column="116" selection-start-line="74" selection-start-column="116" selection-end-line="74" selection-end-column="116" />
+          <folding>
+            <element signature="e#1779#1785#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
