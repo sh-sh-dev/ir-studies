@@ -12,8 +12,8 @@ include 'app.php';
                 <div class="content">
                     <h1>ایران شناسی</h1>
                 </div>
-                <button class="btn primary fab material-icons" style="position: absolute;
-                left: 50px; bottom: -28px; z-index: 7; margin: 0" data-tooltip='مشاهده لیست استان ها' data-tooltip-place='right'
+                <button class="btn primary fab material-icons lg" style="position: absolute;
+                left: 8vw; bottom: -37.5px; z-index: 7; margin: 0" data-tooltip='مشاهده لیست استان ها' data-tooltip-place='right'
                 data-modal-target='#states_list' data-tooltip-container='#list-control' id="list-control">list</button>
             </div>
             <div class="space-40"></div>
@@ -62,7 +62,7 @@ include 'app.php';
         </div>
     </div>
     <div class="pui-modal" id="states_list">
-        <div class="inner" style="height: 92.5vh; max-height: none">
+        <div class="inner" style="height: calc(92vh - 50px); max-height: none">
             <div class="header">
                 <span class="modal-title">لیست استان ها</span>
                 <button class="close modal-close material-icons">close</button>
