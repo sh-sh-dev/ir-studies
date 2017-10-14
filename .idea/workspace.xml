@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Major_cities.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IRS.sql" afterPath="$PROJECT_DIR$/IRS.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.php" afterPath="$PROJECT_DIR$/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu.php" afterPath="$PROJECT_DIR$/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/states.php" afterPath="$PROJECT_DIR$/states.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article.php" afterPath="$PROJECT_DIR$/article.php" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +43,6 @@
         <option value="$PROJECT_DIR$/admin/add_souvenir.php" />
         <option value="$PROJECT_DIR$/admin/add_majorcity.php" />
         <option value="$PROJECT_DIR$/../bot/M802/M802.php" />
-        <option value="$PROJECT_DIR$/article.php" />
         <option value="$PROJECT_DIR$/../school/me/prime/pui.css" />
         <option value="$PROJECT_DIR$/../school/me/prime/index.html" />
         <option value="$PROJECT_DIR$/error/403.php" />
@@ -55,6 +52,7 @@
         <option value="$PROJECT_DIR$/states.php" />
         <option value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/instantwp/index.php" />
         <option value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/index.php" />
+        <option value="$PROJECT_DIR$/article.php" />
       </list>
     </option>
   </component>
@@ -143,9 +141,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/IRS.sql</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/irs.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/header.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/home.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -307,7 +303,7 @@
       <workItem from="1507827866961" duration="2848000" />
       <workItem from="1507885954036" duration="623000" />
       <workItem from="1507886587003" duration="15014000" />
-      <workItem from="1507990647992" duration="4176000" />
+      <workItem from="1507990647992" duration="5847000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -344,11 +340,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507920643586</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="menu , about , states , db">
+      <created>1508004026008</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1508004026008</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22941000" />
+    <option name="totallyTimeSpent" value="24612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -397,7 +400,8 @@
     <MESSAGE value="admin/add_majorCity , admin/add_souvenir&#10;watermark.js fix :| (@hkh12)&#10;article is now show the souvenirs and mc(major cities) (Dear @hkh12 , create a modal for show major city description)&#10;sql file (2 new table) (@hkh12 first import to db please !)" />
     <MESSAGE value="modal for major cities" />
     <MESSAGE value="add error/403" />
-    <option name="LAST_COMMIT_MESSAGE" value="add error/403" />
+    <MESSAGE value="menu , about , states , db" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu , about , states , db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -426,26 +430,27 @@
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="37" />
           <folding>
-            <marker date="1507915750077" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
-            <marker date="1507915750077" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
-            <marker date="1507915750077" expanded="true" signature="2693:3266" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="2731:3247" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="2774:2960" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="3001:3065" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="3108:3224" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="3906:3969" ph="SELECT * FRO... Heroes" />
-            <marker date="1507915750077" expanded="true" signature="4407:4419" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="4446:4455" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="4468:4484" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="4514:4531" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="4898:4971" ph="SELECT * FRO... Wonderful_Places" />
-            <marker date="1507915750077" expanded="true" signature="5406:5418" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="5419:5784" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="5486:5495" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="5496:5737" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="5549:5565" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="5633:5650" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="6098:6159" ph="SELECT * FRO... Pics" />
+            <marker date="1508005929215" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
+            <marker date="1508005929215" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
+            <marker date="1508005929215" expanded="true" signature="2505:2609" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="2696:3269" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="2734:3250" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="2777:2963" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="3004:3068" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="3111:3227" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="3909:3972" ph="SELECT * FRO... Heroes" />
+            <marker date="1508005929215" expanded="true" signature="4410:4422" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="4449:4458" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="4471:4487" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="4517:4534" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="4901:4974" ph="SELECT * FRO... Wonderful_Places" />
+            <marker date="1508005929215" expanded="true" signature="5409:5421" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="5422:5787" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="5489:5498" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="5499:5740" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="5552:5568" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="5636:5653" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="6101:6162" ph="SELECT * FRO... Pics" />
           </folding>
         </state>
       </provider>
@@ -510,13 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="29" column="118" selection-start-line="29" selection-start-column="118" selection-end-line="29" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/add_majorcity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -643,35 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="40" />
-          <folding>
-            <marker date="1507915750077" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
-            <marker date="1507915750077" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
-            <marker date="1507915750077" expanded="true" signature="2693:3266" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="2731:3247" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="2774:2960" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="3001:3065" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="3108:3224" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="3906:3969" ph="SELECT * FRO... Heroes" />
-            <marker date="1507915750077" expanded="true" signature="4407:4419" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="4446:4455" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="4468:4484" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="4514:4531" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="4898:4971" ph="SELECT * FRO... Wonderful_Places" />
-            <marker date="1507915750077" expanded="true" signature="5406:5418" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="5419:5784" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="5486:5495" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="5496:5737" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="5549:5565" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="5633:5650" ph="..." />
-            <marker date="1507915750077" expanded="true" signature="6098:6159" ph="SELECT * FRO... Pics" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/instantwp/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -685,7 +654,48 @@
         <state relative-caret-position="-119">
           <caret line="74" column="116" selection-start-line="74" selection-start-column="116" selection-end-line="74" selection-end-column="116" />
           <folding>
-            <element signature="e#1779#1785#0#HTML" expanded="true" />
+            <element signature="e#1779#1785#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add_majorcity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+          <folding>
+            <marker date="1507896232969" expanded="true" signature="843:882" ph="SELECT * FRO... States" />
+            <marker date="1507896232969" expanded="true" signature="1810:1908" ph="INSERT INTO `Major_cities`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <marker date="1508005929215" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
+            <marker date="1508005929215" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
+            <marker date="1508005929215" expanded="true" signature="2505:2609" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="2696:3269" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="2734:3250" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="2777:2963" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="3004:3068" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="3111:3227" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="3909:3972" ph="SELECT * FRO... Heroes" />
+            <marker date="1508005929215" expanded="true" signature="4410:4422" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="4449:4458" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="4471:4487" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="4517:4534" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="4901:4974" ph="SELECT * FRO... Wonderful_Places" />
+            <marker date="1508005929215" expanded="true" signature="5409:5421" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="5422:5787" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="5489:5498" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="5499:5740" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="5552:5568" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="5636:5653" ph="..." />
+            <marker date="1508005929215" expanded="true" signature="6101:6162" ph="SELECT * FRO... Pics" />
           </folding>
         </state>
       </provider>
