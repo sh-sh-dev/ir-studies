@@ -8,12 +8,12 @@ include 'app.php';
             <?getMenu()?>
         </div>
         <div class="box-container">
-            <div class="home-header" data-crr-color='#616161'>
+            <div class="has-crr home-header" data-crr-color='#ffc107|#212121'>
                 <div class="content">
                     <h1>ایران شناسی</h1>
                 </div>
-                <button class="btn primary fab material-icons lg" style="position: absolute;
-                left: 8vw; bottom: -37.5px; z-index: 7; margin: 0" data-tooltip='مشاهده لیست استان ها' data-tooltip-place='right'
+                <button class="btn white fab material-icons lg" style="position: absolute;
+                left: 60px; bottom: -37.5px; z-index: 7; margin: 0" data-tooltip='مشاهده لیست استان ها' data-tooltip-place='right'
                 data-modal-target='#states_list' data-tooltip-container='#list-control' id="list-control">list</button>
             </div>
             <div class="space-40"></div>
