@@ -52,21 +52,25 @@ $StateName = getState($State,"name");
             <?php
             $StateCode = getState($State,"n");
             $getMC = mysqli_query($db,"SELECT * FROM `Major_cities` WHERE `fstate`=$StateCode AND `active`=1");
+            $getMCM = mysqli_query($db,"SELECT * FROM `Major_cities` WHERE `fstate`=$StateCode AND `active`=1");
             if (mysqli_num_rows($getMC) >= 1) {
                 echo '<ul class="st-impcities">';
                 while ($MC = mysqli_fetch_assoc($getMC)) {
                     echo "<li>
 <button class='btn simple block' data-modal-target='#description-modal-$MC[n]'>$MC[name]</button>
 </li>";
+                }
+                echo '</ul>';
+                while ($MCM = mysqli_fetch_assoc($getMCM)) {
                     echo "
-<div class=\"pui-modal\" id=\"description-modal-$MC[n]\">
+<div class=\"pui-modal\" id=\"description-modal-$MCM[n]\">
                 <div class=\"inner\">
                     <div class=\"header\">
-                        <span class=\"modal-title\">$MC[name]</span>
+                        <span class=\"modal-title\">$MCM[name]</span>
                         <button class=\"close modal-close material-icons\">close</button>
                     </div>
                     <div class=\"body\">
-                    $MC[description]
+                    $MCM[description]
                     </div>
                     <div class=\"footer\">
                         <button class=\"btn simple secondary modal-close\">بستن</button>
@@ -74,7 +78,6 @@ $StateName = getState($State,"name");
                 </div>
             </div>";
                 }
-                echo '</ul>';
             }
             ?>
             <main role="main">

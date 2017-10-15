@@ -41,7 +41,10 @@ include '../app.php';
             $StateName = getState($fstate,"name");
             $addMC = mysqli_query($db,"INSERT INTO `Major_cities` (`name`,`description`,`fstate`) VALUES ('$MC','$description','$fstate')");
             if ($addMC) {
-                echo "<div class='chip'>شهر مهم استان $StateName اضافه شد</div>";
+                echo "<div class='chip'>شهر مهم استان $StateName
+،
+<b>$MC</b>
+ اضافه شد</div>";
             }
             else {
                 echo '<div class="chip">موفقیت آمیز نبود :(</div>';
@@ -50,5 +53,5 @@ include '../app.php';
         ?>
     </form>
 </div>
-<?=setTitle("اضافه کردن سوغاتی",1)?>
+<?=setTitle("اضافه کردن شهر مهم",1)?>
 <?getFooter()?>

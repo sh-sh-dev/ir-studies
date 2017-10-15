@@ -35,7 +35,7 @@ include '../app.php';
             $description = str_replace(PHP_EOL,"<br>",$description);
             $addFact = mysqli_query($db,"INSERT INTO `Facts` (`location`,`icon`,`description`) VALUES ('$location','$icon','$description')");
             if ($addFact) {
-                echo "<div class='chip'>$location اضافه شد</div>";
+                echo "<div class='chip'><b>$location</b> اضافه شد</div>";
             }
             else {
                 echo '<div class="chip">موفقیت آمیز نبود :(</div>';

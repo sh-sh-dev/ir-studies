@@ -1,8 +1,12 @@
-assets/dist/*.scss
-assets/dist/sass/*.scss
-*.ttf
-*.eot
-*.woff
-*.woff2
-jquery.min.js
-pui.min.js
+# Fonts
+
+#assets/dist/fonts/
+
+# Auto Created Files And Folders
+
+*.lnk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.idea/

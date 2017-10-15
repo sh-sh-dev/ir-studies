@@ -41,7 +41,10 @@ include '../app.php';
             $StateName = getState($fstate,"name");
             $addHero = mysqli_query($db,"INSERT INTO `Heroes` (`name`,`description`,`fstate`) VALUES ('$hero','$description','$fstate')");
             if ($addHero) {
-                echo "<div class='chip'>قهرمان استان $StateName اضافه شد</div>";
+                echo "<div class='chip'>قهرمان استان $StateName
+،
+ <b>$hero</b>
+ اضافه شد</div>";
             }
             else {
                 echo '<div class="chip">موفقیت آمیز نبود :(</div>';

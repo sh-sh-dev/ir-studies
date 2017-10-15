@@ -30,7 +30,7 @@ include '../app.php';
                 $description = str_replace(PHP_EOL,"<br>",$description);
                 $addHistory = mysqli_query($db,"INSERT INTO `History` (`title`,`date`,`description`) VALUES ('$title','$date','$description')");
                 if ($addHistory) {
-                    echo "<div class='chip'>$title اضافه شد</div>";
+                    echo "<div class='chip'><b>$title</b> اضافه شد</div>";
                 }
                 else {
                     echo '<div class="chip">موفقیت آمیز نبود :(</div>';

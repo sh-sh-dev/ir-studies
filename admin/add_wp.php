@@ -41,7 +41,10 @@ include '../app.php';
             $StateName = getState($fstate,"name");
             $addWP = mysqli_query($db,"INSERT INTO `Wonderful_Places` (`name`,`description`,`fstate`) VALUES ('$wp','$description','$fstate')");
             if ($addWP) {
-                echo "<div class='chip'>مکان دیدنی استان $StateName اضافه شد</div>";
+                echo "<div class='chip'>مکان دیدنی استان $StateName
+،
+ <b>$wp</b>
+ اضافه شد</div>";
             }
             else {
                 echo '<div class="chip">موفقیت آمیز نبود :(</div>';

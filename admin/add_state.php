@@ -43,7 +43,7 @@ include '../app.php';
 //                $addState = mysqli_query($db,"INSERT INTO `States` (`name`,city_center,Population,ins_sentense,description) VALUES ('$name','$city_center',$population,'$ins_sentense','$description')");
                 $addState = mysqli_query($db,"INSERT INTO `States` (`name`,`english`) VALUES ('$name','$english')");
                 if ($addState) {
-                    echo "<div class='chip'>$name اضافه شد</div>";
+                    echo "<div class='chip'><b>$name</b> اضافه شد</div>";
                 }
                 else {
                     echo '<div class="chip">موفقیت آمیز نبود :(</div>';
