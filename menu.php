@@ -11,7 +11,7 @@
                 ایران شناسی
             </div>
             <li>
-                <a href="<?=getSetting('url')?>/home" target="_blank">
+                <a href="<?=getSetting('url')?>/home">
                     <i class="material-icons muted-txt" style="position: relative;
                     top: -0.08em; font-size: .75em">home</i>
                     خانه
@@ -21,27 +21,27 @@
                     top: -0.08em; font-size: .75em">list</i>
                     لیست استان ها
                 </a>
-                <a href="<?=getSetting('url')?>/history" target="_blank">
+                <a href="<?=getSetting('url')?>/history">
                     <i class="material-icons muted-txt" style="position: relative;
                     top: -0.08em; font-size: .75em">history</i>
                     تاریخچه ایران
                 </a>
-                <a href="<?=getSetting('url')?>/facts" target="_blank">
+                <a href="<?=getSetting('url')?>/facts">
                     <i class="material-icons muted-txt" style="position: relative;
                     top: -0.08em; font-size: .75em">assistant</i>
                     عجایب ایران
                 </a>
-                <a href="<?=getSetting('url')?>/wonderful" target="_blank">
+                <a href="<?=getSetting('url')?>/wonderful">
                     <i class="material-icons muted-txt" style="position: relative;
                     top: -0.08em; font-size: .75em">nature</i>
                     مکان های دیدنی ایران
                 </a>
-                <a href="<?=getSetting('url')?>/heroes" target="_blank">
+                <a href="<?=getSetting('url')?>/heroes">
                     <i class="material-icons muted-txt" style="position: relative;
                     top: -0.08em; font-size: .75em">people</i>
                     مشاهیر
                 </a>
-                <a href="<?=getSetting('url')?>/about" target="_blank">
+                <a href="<?=getSetting('url')?>/about">
                     <i class="material-icons muted-txt" style="position: relative;
                     top: -0.08em; font-size: .75em">info_outline</i>
                     شناسنامه محصول
