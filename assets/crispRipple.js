@@ -6,23 +6,21 @@
         var color = el.css('background-color');
         el.attr('data-crr-hold', 1);
         var data = el.data('crr-hold');
-        el.append('<div class="crisp-container" />').click(function () {
-            data++;
-
-            if ( data == 4 ) data = 1;
-
-            el.attr('data-crr-hold', data);
-        }).click(function(e){
-            if ( e.target.tagName.toLowerCase() == 'button' ) {
-                return false
+        el.append('<div class="crisp-container" />').click(function(e){
+            var container = el.find('.crisp-container');
+            if ( e.target.tagName.toLowerCase() == 'button' || container.find('.crisp-ripple').length > 1 ) {
+                return false;
             };
+            data++;
+            if ( data == 4 ) data = 1;
+            el.attr('data-crr-hold', data);
             var pos = {
                 x: e.pageX - el.offset().left,
                 y: e.pageY - el.offset().top
             },
-            container = el.find('.crisp-container'),
+            // container = el.find('.crisp-container'),
             crisp = $('<div class="crisp-ripple" />'),
-            size = Math.max( el.height(), el.width() ) * Math.PI,
+            size = Math.max( el.height(), el.width() ) * 3,
             bg,
             colors = el.data('crr-color').split('|');
 

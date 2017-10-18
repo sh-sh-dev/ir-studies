@@ -647,3 +647,11 @@ body#page-404{
         }
     }
 }
+
+.audio-player{
+    background-color: $raised-area-bg;
+    padding: 15px;
+    @include y-shadow(2, .3);
+    margin: 10px 0;
+    border-radius: $basic-border-radius;
+}

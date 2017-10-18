@@ -8,7 +8,7 @@ include 'app.php';
             <?getMenu()?>
         </div>
         <div class="box-container">
-            <div class="has-crr home-header" data-crr-color='#ffc107|#212121'>
+            <div class="has-crr home-header" data-crr-color='#ffc107|#263238'>
                 <div class="content">
                     <h1>ایران شناسی</h1>
                 </div>
@@ -68,7 +68,8 @@ include 'app.php';
                 <button class="close modal-close material-icons">close</button>
             </div>
             <div class="body" style='overflow: overlay'>
-                <div class="pui-input" style="max-width: 300px; width: 95%; margin-right: auto; margin-left: auto">
+                <div class="pui-input"
+                style="max-width: 300px; width: 95%; margin-right: auto; margin-left: auto">
                     <input type="text" placeholder="جستجو کنید..." id='states-filter'>
                 </div>
                 <br><br>

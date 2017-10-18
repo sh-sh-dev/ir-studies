@@ -47,15 +47,11 @@
             //(up arrow: 38)(down arrow: 40)
             // if ( !/(35|36|37|39)/.test(e.which) ) return;
             var additional = e.ctrlKey || e.altKey || e.shiftKey ? true : false;
-            // fs.parent().find('[data-fs-target=next]').trigger('click')
             if ( e.which == 36 && !additional ) {
-                // fs.find('[data-fs-target=0]').trigger('click')
                 __trg(0)
             } else if ( e.which == 35 && !additional ) {
-                // fs.find('[data-fs-target=' + (i_l-1) + ']').trigger('click')
                 __trg(i_l - 1)
             } else if ( e.which == 39 && !additional ) {
-                // fs.parent().find('[data-fs-target=next]').trigger('click')
                 __trg('next')
             } else if ( e.which == 37 && !additional ) {
                 __trg('prev')
@@ -120,5 +116,51 @@
                 li.eq(i).show();
             }
         }
+    })
+}(jQuery));
+(function($) {
+    'use strict';
+    var players = $('.audio-player');
+    return players.each(function() {
+        function time(n) {
+            var min = ~~(n/60);
+            var sec = ~~(n%60);
+            return min.toString() + ':' + sec.toString();
+        }
+        var player = $(this),
+        audio = player.find('audio'),
+        comps = {
+            audio_toggle_button: $('<buttons class="btn fab sm material-icons primary simple">play_arrow</button>'),
+            duration: {
+                remained: $('<span class="remained-time" />'),
+                elapsed: $('<span class="elapsed-time" />')
+            },
+            bigSlider: $('<div class="slider big-slider" />')
+        };
+        //pause
+        player.append(comps.audio_toggle_button).append(comps.duration.remained)
+        .append(comps.duration.elapsed)
+        // .append(comps.bigSlider);
+        comps.audio_toggle_button.materialRipple().on('click', function () {
+            audio.toggleClass('playing');
+
+            if ( audio.hasClass('playing') ) {
+                audio[0].play()
+            } else {
+                audio[0].pause()
+            }
+        });
+        var duration = audio[0].duration;
+        noUiSlider.create(player.find('.big-slider')[0], {
+            start: 40,
+            connect: 'lower',
+            range: {
+                min: 0,
+                max: document.querySelector('#au').duration
+            }
+        });
+        audio.on('durationchange', function () {
+            player.find('.remained-time').html(time(audio[0].currentTime));
+        })
     })
 }(jQuery));
