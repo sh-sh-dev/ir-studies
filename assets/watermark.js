@@ -1,6 +1,6 @@
 function addWatermark() {
     var selection = window.getSelection(),
-        pagelink = '<br>' + 'برگرفته شده از برنامه ایران شناسی' + '<br>' + 'https://i-s.piorra.ir',
+        pagelink = '<br>' + 'برگرفته شده از برنامه ایران شناسی' + '<br>' + 'https://irs.piorra.ir',
         copytext = selection + pagelink,
         newdiv = document.createElement('div');
     newdiv.style.position = 'absolute';
