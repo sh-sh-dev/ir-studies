@@ -361,7 +361,7 @@ body#page-404{
 .home-header{
     height: calc(100vh - 60px);
     max-height: 450px;
-    @include y-shadow(2, .3);
+    @include y-shadow(2, .5);
     color: #fff;
     position: relative;
     background-color: $secondary;
