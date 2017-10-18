@@ -1,5 +1,2 @@
-Google.com
 Zoom Pics onclick Article.php
-Pics.php (NaN)
-IranSans License
-Upload ir-studies to Piorra.ir !
+Pics.php
