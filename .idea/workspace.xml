@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/php/watermark/FarsiGD.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/php/watermark/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/php/watermark/mynewpic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/php/watermark/orginal_image.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article.php" afterPath="$PROJECT_DIR$/article.php" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,34 +27,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="article.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/article.php">
+      <file leaf-file-name="add_pic.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/add_pic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="98" column="75" selection-start-line="98" selection-start-column="75" selection-end-line="98" selection-end-column="75" />
+            <state relative-caret-position="0">
+              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
               <folding>
-                <marker date="1508434466731" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
-                <marker date="1508434466731" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
-                <marker date="1508434466731" expanded="true" signature="2359:2428" ph="SELECT * FRO... Major_cities" />
-                <marker date="1508434466731" expanded="true" signature="2618:2722" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="2919:3494" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="2957:3475" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="3000:3187" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="3228:3293" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="3336:3452" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="4104:4167" ph="SELECT * FRO... Heroes" />
-                <marker date="1508434466731" expanded="true" signature="4609:4621" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="4648:4657" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="4670:4686" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="4716:4733" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="5100:5173" ph="SELECT * FRO... Wonderful_Places" />
-                <marker date="1508434466731" expanded="true" signature="5612:5624" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="5625:5990" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="5692:5701" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="5702:5943" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="5755:5771" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="5839:5856" ph="..." />
-                <marker date="1508434466731" expanded="true" signature="6304:6365" ph="SELECT * FRO... Pics" />
+                <marker date="1508428537785" expanded="true" signature="905:944" ph="SELECT * FRO... States" />
+                <marker date="1508428537785" expanded="true" signature="3284:3374" ph="INSERT INTO `Pics`... " />
+                <marker date="1508428537785" expanded="true" signature="3680:3730" ph="{...}" />
+                <marker date="1508428537785" expanded="true" signature="3731:3775" ph="SELECT `name... States" />
               </folding>
             </state>
           </provider>
@@ -246,7 +231,7 @@
       <workItem from="1508253511128" duration="1641000" />
       <workItem from="1508336851274" duration="7880000" />
       <workItem from="1508414614696" duration="1266000" />
-      <workItem from="1508422148206" duration="6296000" />
+      <workItem from="1508422148206" duration="6875000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -360,17 +345,24 @@
       <option name="project" value="LOCAL" />
       <updated>1508433178481</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="rollback :| (@hkh12)">
+      <created>1508434547501</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1508434547501</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48819000" />
+    <option name="totallyTimeSpent" value="49398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -424,7 +416,8 @@
     <MESSAGE value="admin/add_description (edit)" />
     <MESSAGE value="admin/add_description (edit) bug fix" />
     <MESSAGE value="one col changed to tow col :| !" />
-    <option name="LAST_COMMIT_MESSAGE" value="one col changed to tow col :| !" />
+    <MESSAGE value="rollback :| (@hkh12)" />
+    <option name="LAST_COMMIT_MESSAGE" value="rollback :| (@hkh12)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,19 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/add_pic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-          <folding>
-            <marker date="1508428537785" expanded="true" signature="905:944" ph="SELECT * FRO... States" />
-            <marker date="1508428537785" expanded="true" signature="3284:3374" ph="INSERT INTO `Pics`... " />
-            <marker date="1508428537785" expanded="true" signature="3680:3730" ph="{...}" />
-            <marker date="1508428537785" expanded="true" signature="3731:3775" ph="SELECT `name... States" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -831,6 +811,19 @@
             <marker date="1508434466731" expanded="true" signature="5755:5771" ph="..." />
             <marker date="1508434466731" expanded="true" signature="5839:5856" ph="..." />
             <marker date="1508434466731" expanded="true" signature="6304:6365" ph="SELECT * FRO... Pics" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add_pic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <marker date="1508428537785" expanded="true" signature="905:944" ph="SELECT * FRO... States" />
+            <marker date="1508428537785" expanded="true" signature="3284:3374" ph="INSERT INTO `Pics`... " />
+            <marker date="1508428537785" expanded="true" signature="3680:3730" ph="{...}" />
+            <marker date="1508428537785" expanded="true" signature="3731:3775" ph="SELECT `name... States" />
           </folding>
         </state>
       </provider>
