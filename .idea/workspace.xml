@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/add_pic.php" afterPath="$PROJECT_DIR$/admin/add_pic.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article.php" afterPath="$PROJECT_DIR$/article.php" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,7 +81,6 @@
         <option value="$PROJECT_DIR$/states.php" />
         <option value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/instantwp/index.php" />
         <option value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/index.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/admin/add_history.php" />
         <option value="$PROJECT_DIR$/admin/add_fact.php" />
         <option value="$PROJECT_DIR$/admin/add_state.php" />
@@ -102,6 +99,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/article.php" />
         <option value="$PROJECT_DIR$/admin/add_pic.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -248,7 +246,7 @@
       <workItem from="1508253511128" duration="1641000" />
       <workItem from="1508336851274" duration="7880000" />
       <workItem from="1508414614696" duration="1266000" />
-      <workItem from="1508422148206" duration="2473000" />
+      <workItem from="1508422148206" duration="2592000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -327,11 +325,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508352397069</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="article (show pics) edit">
+      <created>1508430023256</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1508430023256</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44996000" />
+    <option name="totallyTimeSpent" value="45115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -550,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/add_wp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -746,6 +744,14 @@
             <marker date="1508428537785" expanded="true" signature="3680:3730" ph="{...}" />
             <marker date="1508428537785" expanded="true" signature="3731:3775" ph="SELECT `name... States" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
