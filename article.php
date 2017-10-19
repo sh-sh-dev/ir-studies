@@ -91,19 +91,12 @@ $StateName = getState($State,"name");
                             $StateCode = getState($State,"n");
                             $getHeroes = mysqli_query($db,"SELECT * FROM `Heroes` WHERE `fstate`=$StateCode AND `active`=1");
                             if (mysqli_num_rows($getHeroes) >= 1) {
-                                $n = 0;
                                 ?>
                                 <h3>مشاهیر <?=$StateName?></h3>
                                 <section class="cleared">
                                     <?php
                                     while ($Heroes = mysqli_fetch_assoc($getHeroes)) {
-                                        if ($n % 2 == 0) {
-                                            echo "<div class='pui-col xs-12 md-6' style='padding: 5px'><div class='chip' style='margin: 0'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></div></div>";
-                                        }
-                                        else {
-                                            echo "<div class='pui-col xs-12 md-6' style='padding: 5px'><div class='chip' style='margin: 0'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></div></div>";
-                                        }
-                                        $n++;
+                                            echo "<div class='pui-col xs-12' style='padding: 5px'><div class='chip' style='margin: 0'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></div></div>";
                                     }
                                     ?>
                                 </section>
@@ -113,29 +106,17 @@ $StateName = getState($State,"name");
                             <?php
                             $getWP = mysqli_query($db,"SELECT * FROM `Wonderful_Places` WHERE `fstate`=$StateCode AND `active`=1");
                             if (mysqli_num_rows($getWP) >= 1) {
-                                $n = 0;
                                 ?>
                                 <h3>مکان های دیدنی <?=$StateName?></h3>
                                 <section class="cleared">
                                     <?php
                                     while ($WPS = mysqli_fetch_assoc($getWP)) {
-                                        $n++;
-                                        if ($n % 2 == 0) {
-                                            echo "<div class='pui-col xs-12 md-6' style='padding: 5px'>
+                                            echo "<div class='pui-col xs-12' style='padding: 5px'>
                                         <div class='chip' style='margin: 0'>
                                         <h5 style='font-weight: 400'>$WPS[name]</h5>
                                         <p style='font-weight: bold' class='muted-txt'>$WPS[description]</p>
                                         </div>
                                         </div>";
-                                        }
-                                        else {
-                                            echo "<div class='pui-col xs-12 md-6' style='padding: 5px'>
-                                        <div class='chip' style='margin: 0'>
-                                        <h5 style='font-weight: 400'>$WPS[name]</h5>
-                                        <p style='font-weight: bold' class='muted-txt'>$WPS[description]</p>
-                                        </div>
-                                        </div>";
-                                        }
                                     }
                                     ?>
                                 </section>
