@@ -60,13 +60,14 @@
       <file leaf-file-name="add_description.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/add_description.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="376">
+              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
               <folding>
-                <marker date="1508431613000" expanded="true" signature="1263:1302" ph="SELECT * FRO... States" />
-                <marker date="1508431613000" expanded="true" signature="2185:2255" ph="UPDATE `Stat... " />
-                <marker date="1508431613000" expanded="true" signature="2308:2380" ph="UPDATE `Stat... " />
-                <marker date="1508431613000" expanded="true" signature="2805:2806" ph="..." />
+                <marker date="1508431692043" expanded="true" signature="1444:1483" ph="SELECT * FRO... States" />
+                <marker date="1508431692043" expanded="true" signature="2366:2436" ph="UPDATE `Stat... " />
+                <marker date="1508431692043" expanded="true" signature="2489:2561" ph="UPDATE `Stat... " />
+                <marker date="1508431692043" expanded="true" signature="2986:2987" ph="..." />
+                <marker date="1508431692043" expanded="true" signature="2986:2997" ph="..." />
               </folding>
             </state>
           </provider>
@@ -275,7 +276,7 @@
       <workItem from="1508253511128" duration="1641000" />
       <workItem from="1508336851274" duration="7880000" />
       <workItem from="1508414614696" duration="1266000" />
-      <workItem from="1508422148206" duration="3702000" />
+      <workItem from="1508422148206" duration="3777000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -368,11 +369,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508430157134</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="admin/add_description (edit)">
+      <created>1508431638617</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1508431638617</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46225000" />
+    <option name="totallyTimeSpent" value="46300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -429,7 +437,8 @@
     <MESSAGE value="database&#10;delete some files&#10;tdo.txt edit" />
     <MESSAGE value="article (show pics) edit" />
     <MESSAGE value="git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="git ignore" />
+    <MESSAGE value="admin/add_description (edit)" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin/add_description (edit)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -818,13 +827,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/add_description.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="376">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding>
-            <marker date="1508431613000" expanded="true" signature="1263:1302" ph="SELECT * FRO... States" />
-            <marker date="1508431613000" expanded="true" signature="2185:2255" ph="UPDATE `Stat... " />
-            <marker date="1508431613000" expanded="true" signature="2308:2380" ph="UPDATE `Stat... " />
-            <marker date="1508431613000" expanded="true" signature="2805:2806" ph="..." />
+            <marker date="1508431692043" expanded="true" signature="1444:1483" ph="SELECT * FRO... States" />
+            <marker date="1508431692043" expanded="true" signature="2366:2436" ph="UPDATE `Stat... " />
+            <marker date="1508431692043" expanded="true" signature="2489:2561" ph="UPDATE `Stat... " />
+            <marker date="1508431692043" expanded="true" signature="2986:2987" ph="..." />
+            <marker date="1508431692043" expanded="true" signature="2986:2997" ph="..." />
           </folding>
         </state>
       </provider>

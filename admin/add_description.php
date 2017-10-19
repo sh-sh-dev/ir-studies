@@ -23,7 +23,11 @@ include '../app.php';
                     ?></textarea>
             </div>
             <div class="pui-input">
-                <input type="text" name='fstate' id="s" placeholder="برای استان" required list="states">
+                <input type="text" name='fstate' id="s" placeholder="برای استان" required list="states" value="<?php
+                if (isset($_GET["state"]) && ValidState($_GET["state"])) {
+                    echo getState($_GET["state"],"n");
+                }
+                ?>">
                 <datalist id="states">
                     <?php
                     $query = mysqli_query($db,"SELECT * FROM `States` WHERE `active`=1");
