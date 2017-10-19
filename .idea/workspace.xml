@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/add_description.php" afterPath="$PROJECT_DIR$/admin/add_description.php" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="article.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="article.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/article.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1088">
@@ -57,6 +57,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="add_description.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/add_description.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding>
+                <marker date="1508431613000" expanded="true" signature="1263:1302" ph="SELECT * FRO... States" />
+                <marker date="1508431613000" expanded="true" signature="2185:2255" ph="UPDATE `Stat... " />
+                <marker date="1508431613000" expanded="true" signature="2308:2380" ph="UPDATE `Stat... " />
+                <marker date="1508431613000" expanded="true" signature="2805:2806" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -71,7 +86,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/functions.php" />
-        <option value="$PROJECT_DIR$/admin/add_description.php" />
         <option value="$PROJECT_DIR$/../bot/M802/M802.php" />
         <option value="$PROJECT_DIR$/../school/me/prime/pui.css" />
         <option value="$PROJECT_DIR$/../school/me/prime/index.html" />
@@ -100,6 +114,7 @@
         <option value="$PROJECT_DIR$/article.php" />
         <option value="$PROJECT_DIR$/admin/add_pic.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/admin/add_description.php" />
       </list>
     </option>
   </component>
@@ -160,6 +175,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ir-studies" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ir-studies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ir-studies" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,7 +275,7 @@
       <workItem from="1508253511128" duration="1641000" />
       <workItem from="1508336851274" duration="7880000" />
       <workItem from="1508414614696" duration="1266000" />
-      <workItem from="1508422148206" duration="2592000" />
+      <workItem from="1508422148206" duration="3702000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -332,11 +361,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508430023256</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="git ignore">
+      <created>1508430157134</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1508430157134</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45115000" />
+    <option name="totallyTimeSpent" value="46225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -392,7 +428,8 @@
     <MESSAGE value="menu.php (!target=&quot;_blank&quot;)" />
     <MESSAGE value="database&#10;delete some files&#10;tdo.txt edit" />
     <MESSAGE value="article (show pics) edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="article (show pics) edit" />
+    <MESSAGE value="git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="git ignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -597,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/add_description.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/dist/fonts/iransans.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -782,6 +812,19 @@
             <marker date="1508422440045" expanded="false" signature="5747:5763" ph="..." />
             <marker date="1508422440045" expanded="false" signature="5831:5848" ph="..." />
             <marker date="1508422440045" expanded="true" signature="6296:6357" ph="SELECT * FRO... Pics" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add_description.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <marker date="1508431613000" expanded="true" signature="1263:1302" ph="SELECT * FRO... States" />
+            <marker date="1508431613000" expanded="true" signature="2185:2255" ph="UPDATE `Stat... " />
+            <marker date="1508431613000" expanded="true" signature="2308:2380" ph="UPDATE `Stat... " />
+            <marker date="1508431613000" expanded="true" signature="2805:2806" ph="..." />
           </folding>
         </state>
       </provider>
