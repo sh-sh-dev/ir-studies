@@ -13,8 +13,8 @@ A Project to know more about Iran, it's history and places
 
 ### Authors
 <!-- __Ir Studies__ is developed by [Shaygan Shokrollahi](https://github.com/sh-sh-dev) and [Hosein Khansari](https://github.com/hkh12). -->
-- UI Designer: [Hosein Khansari](https://github.com/hkh12)
 - Back-end Developer: [Shaygan Shokrollahi](https://github.com/sh-sh-dev)
+- UI Designer: [Hosein Khansari](https://github.com/hkh12)
 
 ---
 

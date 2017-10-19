@@ -9,7 +9,7 @@ include '../app.php';
     <form action="" method="post" enctype="multipart/form-data">
         <div style="max-width: 300px; width: 100%; margin:0 auto">
             <div class="pui-input">
-                <input type="text" name='description' placeholder="موضوع" required>
+                <input type="text" name='description' placeholder="موضوع">
             </div>
             <div class="pui-input">
 <!--                <div class="pui-datalist">-->
@@ -50,7 +50,8 @@ include '../app.php';
             $target_path = "../assets/images/" . $fileName ;
             $target_path_wm = "../assets/images/wm-" . $fileName ;
             if(move_uploaded_file($_FILES['UploadedFile']['tmp_name'], $target_path)) {
-                $url = getSetting('url') . '/' . str_replace('../','',$target_path) ;
+//                $url = getSetting('url') . '/' . str_replace('../','',$target_path) ;
+                $url = "*url*" . '/' . str_replace('../','',$target_path) ;
                 $ok = 1;
             }
             else {
@@ -61,7 +62,12 @@ include '../app.php';
 //            $watermark = WideImage::load("../assets/images/watermark.png");
             $watermark = WideImage::load("../assets/images/watermark.jpg");
             $new = $image->merge($watermark,  'center', 'bottom', 50);
-            $new->saveToFile($target_path);
+            if ($format == ".png") {
+                $new->saveToFile($target_path,9);
+            }
+            else {
+                $new->saveToFile($target_path,50);
+            }
             $addPic = mysqli_query($db,"INSERT INTO `Pics` (`url`,`fstate`,`description`) VALUES ('$url','$fstate','$description')");
             if ($addPic && $ok) {
                 echo "<div class='chip'>تصویر استان $StateName اضافه شد</div>";

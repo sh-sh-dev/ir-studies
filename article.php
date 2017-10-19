@@ -131,9 +131,14 @@ $StateName = getState($State,"name");
                                 <div class="images cleared">
                                     <?php
                                     while ($Pics = mysqli_fetch_assoc($getPics)) {
-                                        echo "<div class='pui-col xs-12 sm-6 md-4 lg-3 center-align'>";
-                                        echo "<img src='$Pics[url]' class='img img-raised'>";
-                                        echo "$Pics[description]";
+                                        $url = str_replace("*url*",getSetting('url'),$Pics["url"]);
+                                        if (!empty($Pics["description"])) {
+                                            echo "<div class='pui-col xs-12 sm-6 md-4 lg-3 center-align' data-tooltip='$Pics[description]'>";
+                                        }
+                                        else {
+                                            echo "<div class='pui-col xs-12 sm-6 md-4 lg-3 center-align'>";
+                                        }
+                                        echo "<img src='$url' class='img img-raised'>";
                                         echo "</div>";
                                     }
                                     ?>
