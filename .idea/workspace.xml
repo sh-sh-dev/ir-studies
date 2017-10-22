@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="delete some files">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/no_description.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/line.php" />
+    <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IRS.sql" afterPath="$PROJECT_DIR$/IRS.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/add_description.php" afterPath="$PROJECT_DIR$/admin/add_description.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.php" afterPath="$PROJECT_DIR$/about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/no_description.php" afterPath="$PROJECT_DIR$/admin/no_description.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article.php" afterPath="$PROJECT_DIR$/article.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu.php" afterPath="$PROJECT_DIR$/menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdo.txt" afterPath="$PROJECT_DIR$/tdo.txt" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,12 +43,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/functions.php" />
-        <option value="$PROJECT_DIR$/../bot/M802/M802.php" />
         <option value="$PROJECT_DIR$/../school/me/prime/pui.css" />
         <option value="$PROJECT_DIR$/../school/me/prime/index.html" />
         <option value="$PROJECT_DIR$/error/403.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/about.php" />
         <option value="$PROJECT_DIR$/states.php" />
         <option value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/instantwp/index.php" />
         <option value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/index.php" />
@@ -59,21 +59,24 @@
         <option value="$PROJECT_DIR$/assets/dist/fonts/iransans.css" />
         <option value="$PROJECT_DIR$/admin/add_majorcity.php" />
         <option value="$PROJECT_DIR$/assets/watermark.js" />
-        <option value="$PROJECT_DIR$/menu.php" />
         <option value="E:/Program Files (x86)/irs/InstantWP_4.5/iwpserver/htdocs/index.php" />
         <option value="E:/Program Files (x86)/irs/InstantWP_4.5/iwpserver/htdocs/instantwp/functions.php" />
         <option value="E:/Program Files (x86)/irs/InstantWP_4.5/iwpserver/htdocs/instantwp/index.php" />
-        <option value="$PROJECT_DIR$/tdo.txt" />
         <option value="$PROJECT_DIR$/iran.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/admin/add_pic.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/article.php" />
         <option value="$PROJECT_DIR$/line.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/admin/add_description.php" />
         <option value="$PROJECT_DIR$/admin/no_full.php" />
+        <option value="$PROJECT_DIR$/../bot/M802/M802.php" />
         <option value="$PROJECT_DIR$/admin/no_description.php" />
+        <option value="$PROJECT_DIR$/article.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/about.php" />
+        <option value="$PROJECT_DIR$/menu.php" />
+        <option value="$PROJECT_DIR$/features.php" />
+        <option value="$PROJECT_DIR$/tdo.txt" />
       </list>
     </option>
   </component>
@@ -119,7 +122,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -140,11 +142,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ghaem/head.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bot/M802/M802.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -222,7 +225,9 @@
       <workItem from="1508414614696" duration="1266000" />
       <workItem from="1508422148206" duration="7531000" />
       <workItem from="1508498864136" duration="1335000" />
-      <workItem from="1508595922910" duration="4463000" />
+      <workItem from="1508595922910" duration="5099000" />
+      <workItem from="1508683436410" duration="615000" />
+      <workItem from="1508686066918" duration="5446000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -350,11 +355,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508436218490</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="admin/add_description -&gt; arabic char to persian&#10;IRS.sql -&gt; now all states has description&#10;line.php -&gt; count lines of project !&#10;header.php -&gt; some edits and meta tags added">
+      <created>1508603231235</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1508603231235</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55852000" />
+    <option name="totallyTimeSpent" value="62549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -364,6 +376,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30441642" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -380,7 +393,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -416,7 +428,8 @@
     <MESSAGE value="one col changed to tow col :| !" />
     <MESSAGE value="rollback :| (@hkh12)" />
     <MESSAGE value="delete some files" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete some files" />
+    <MESSAGE value="admin/add_description -&gt; arabic char to persian&#10;IRS.sql -&gt; now all states has description&#10;line.php -&gt; count lines of project !&#10;header.php -&gt; some edits and meta tags added" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin/add_description -&gt; arabic char to persian&#10;IRS.sql -&gt; now all states has description&#10;line.php -&gt; count lines of project !&#10;header.php -&gt; some edits and meta tags added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -425,31 +438,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/crispRipple.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bot/M802/M802.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="795" column="11" selection-start-line="795" selection-start-column="11" selection-end-line="795" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -516,20 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/states.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/instantwp/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -572,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/dist/fonts/iransans.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="68" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/add_majorcity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -616,18 +587,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
-          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Program Files (x86)/irs/InstantWP_4.5/iwpserver/htdocs/instantwp/instantwp.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -653,13 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -708,13 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="98" column="75" selection-start-line="98" selection-start-column="75" selection-end-line="98" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/add_pic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -733,9 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding>
-            <marker date="1504458346918" expanded="true" signature="118:142" ph="SELECT * FRO... Template" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,19 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="73" selection-end-column="1" />
-          <folding>
-            <element signature="e#322#408#0#PHP" expanded="false" />
-            <element signature="e#422#532#0#PHP" expanded="false" />
-            <element signature="n#_findExtension#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,22 +706,154 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bot/M802/alexa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bot/M802/M802.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="900" column="16" selection-start-line="900" selection-start-column="16" selection-end-line="900" selection-end-column="16" />
           <folding>
-            <marker date="1508599826238" expanded="true" signature="1435:1474" ph="SELECT * FRO... States" />
-            <marker date="1508599826238" expanded="true" signature="2543:2613" ph="UPDATE `Stat... " />
-            <marker date="1508599826238" expanded="true" signature="2666:2738" ph="UPDATE `Stat... " />
+            <element signature="e#32203#34610#0#PHP" expanded="false" />
+            <element signature="e#32407#34608#0#PHP" expanded="false" />
+            <marker date="1508688694880" expanded="true" signature="2349:2383" ph="UPDATE `Grou... " />
+            <marker date="1508688694880" expanded="true" signature="2593:2626" ph="UPDATE `Grou... " />
+            <marker date="1508688694880" expanded="true" signature="2843:2889" ph="SELECT `stat... Groups" />
+            <marker date="1508688694880" expanded="true" signature="3259:3302" ph="SELECT `AID`... Groups" />
+            <marker date="1508688694880" expanded="true" signature="3608:3676" ph="INSERT INTO `Users`... " />
+            <marker date="1508688694880" expanded="true" signature="3903:3974" ph="DELETE FROM " />
+            <marker date="1508688694880" expanded="true" signature="4201:4288" ph="UPDATE `User... " />
+            <marker date="1508688694880" expanded="true" signature="4516:4577" ph="SELECT * FRO... Users" />
+            <marker date="1508688694880" expanded="true" signature="4833:4894" ph="SELECT * FRO... Users" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
+          <folding>
+            <marker date="1508689624161" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
+            <marker date="1508689624161" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
+            <marker date="1508689624161" expanded="true" signature="2359:2428" ph="SELECT * FRO... Major_cities" />
+            <marker date="1508689624161" expanded="true" signature="2618:2722" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="2919:3494" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="2957:3475" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="3000:3187" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="3228:3293" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="3336:3452" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="4104:4167" ph="SELECT * FRO... Heroes" />
+            <marker date="1508689624161" expanded="true" signature="4846:4858" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="4885:4894" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="4907:4923" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="4953:4970" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="5207:5219" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="5246:5255" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="5268:5284" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="5314:5331" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="6079:6152" ph="SELECT * FRO... Wonderful_Places" />
+            <marker date="1508689624161" expanded="true" signature="6827:6839" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="6840:7205" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="6907:6916" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="6917:7158" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="6970:6986" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="7054:7071" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="7385:7397" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="7398:7763" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="7465:7474" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="7475:7716" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="7528:7544" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="7612:7629" ph="..." />
+            <marker date="1508689624161" expanded="true" signature="8458:8519" ph="SELECT * FRO... Pics" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="135" selection-start-line="8" selection-start-column="135" selection-end-line="8" selection-end-column="135" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/dist/fonts/iransans.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/no_description.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="15" />
+        <state relative-caret-position="-208">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
-            <marker date="1508601190673" expanded="true" signature="237:284" ph="SELECT * FRO... States" />
-            <marker date="1508601190673" expanded="true" signature="785:833" ph="SELECT * FRO... States" />
+            <marker date="1508689371064" expanded="true" signature="216:263" ph="SELECT * FRO... States" />
+            <marker date="1508689371064" expanded="true" signature="1043:1091" ph="SELECT * FRO... States" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/states.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+          <folding>
+            <marker date="1508417989514" expanded="true" signature="596:635" ph="SELECT * FRO... States" />
+            <marker date="1508417989514" expanded="true" signature="1171:2458" ph="..." />
+            <marker date="1508417989514" expanded="false" signature="1244:1272" ph="..." />
+            <marker date="1508417989514" expanded="true" signature="1273:2105" ph="..." />
+            <marker date="1508417989514" expanded="false" signature="1394:1409" ph="..." />
+            <marker date="1508417989514" expanded="false" signature="1627:1639" ph="..." />
+            <marker date="1508417989514" expanded="true" signature="1860:2066" ph="..." />
+            <marker date="1508417989514" expanded="false" signature="1952:1964" ph="..." />
+            <marker date="1508417989514" expanded="false" signature="2151:2162" ph="..." />
+            <marker date="1508417989514" expanded="true" signature="2184:2419" ph="..." />
+            <marker date="1508417989514" expanded="false" signature="2339:2360" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

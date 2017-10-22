@@ -1,2 +1,2 @@
 Zoom Pics onclick Article.php
-Pics.php
+features.php styles (@hkh12)
