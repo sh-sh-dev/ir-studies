@@ -43,7 +43,7 @@ $StateName = getState($State,"name");
                     echo "$Souvenirs[name]";
                     $n++;
                     if ($n !== $i) {
-                        echo ' ، ';
+                        echo '، ';
                     }
                 }
                 echo '</div>';

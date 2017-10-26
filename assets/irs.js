@@ -25,6 +25,42 @@
     'use strict';
     $('.fs').each(function () {
         var fs = $(this);
+        const resizeButtons = function() {
+            var targets = fs.parent().find('.btn[data-fs-target]');
+            // if (window.innerWidth < 768) {
+            //     fs.parent().find('.btn[data-fs-target]').addClass('sm')
+            // } else {
+            //     fs.parent().find('.btn[data-fs-target]').removeClass('sm')
+            // }
+            // var breakpoints = [600, 768, 1000, 1200],
+            // names = ['xs', 'sm', '', 'lg'],
+            // current = window.innerWidth;
+            function modify_class(el, d) {
+                d = d.split(' ');
+                for (var i = 0; i < d.length; i++) {
+                    if ( d[i].charAt(0) == '-' && d[i].charAt(1) == '-' ) {
+                        el.addClass(d[i].replace('--', ''))
+                    } else {
+                        el.removeClass(d[i])
+                    }
+                };
+                return el;
+            }
+            var current = window.innerWidth;
+            // if ( current < 600 ) {
+            //     // targets.removeClass('sm').removeClass('md')
+            //     modify_class(targets, 'sm lg md --xs')
+            // }
+            if ( current < 768 ) {
+                modify_class(targets, 'lg md --sm')
+            } else if ( current >= 768 && current < 1000 ) {
+                modify_class(targets, 'lg sm --md')
+            } else if (current > 1000) {
+                modify_class(targets, 'sm md --lg')
+            }
+        };
+        $(document).ready(resizeButtons);
+        window.onresize = resizeButtons;
         function clearItem(item) {
             item.removeClass('active');
         }
