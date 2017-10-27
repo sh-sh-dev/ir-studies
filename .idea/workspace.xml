@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google122279d1831c9c97.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.php" afterPath="$PROJECT_DIR$/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/no_description.php" afterPath="$PROJECT_DIR$/admin/no_description.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article.php" afterPath="$PROJECT_DIR$/article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu.php" afterPath="$PROJECT_DIR$/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdo.txt" afterPath="$PROJECT_DIR$/tdo.txt" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +41,6 @@
         <option value="$PROJECT_DIR$/../school/me/prime/pui.css" />
         <option value="$PROJECT_DIR$/../school/me/prime/index.html" />
         <option value="$PROJECT_DIR$/error/403.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/states.php" />
         <option value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/instantwp/index.php" />
         <option value="E:/Program Files (x86)/Wordpress - Copy/InstantWP_4.4.2/iwpserver/htdocs/index.php" />
@@ -77,6 +71,8 @@
         <option value="$PROJECT_DIR$/menu.php" />
         <option value="$PROJECT_DIR$/features.php" />
         <option value="$PROJECT_DIR$/tdo.txt" />
+        <option value="$PROJECT_DIR$/admin/fd/fd.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
   </component>
@@ -121,7 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -142,7 +138,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -150,6 +146,229 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bot/M802/M802.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.htaccess</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/admin/add_fact.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/admin/add_hero.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/admin/add_history.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/admin/add_majorcity.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/admin/add_pic.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/admin/add_souvenir.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/admin/add_state.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/admin/add_wp.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/crispRipple.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/fonts/fonts.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/fonts/iransans.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/fonts/md-icon.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/img/highlighted.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/img/test-bg.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/jquery.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/pui-rtl.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/pui.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_alert.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_buttons.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_cards.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_chips.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_column.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_core.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_data.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_datalist.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_dropdown.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_input.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_md-loader.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_miscellaneous.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_modal.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_navigation.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_noUiSlider.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_notifbox.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_pagination.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_pills.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_progress.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_ripple-effect.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_snackbar.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_special.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_tab.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_tables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_text.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_toggle.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/_tooltips.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/data/_colors.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/dist/sass/data/_functions.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/irs.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/irs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/irs.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/irs.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/nouislider.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Canvas.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Coordinate.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Exception.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Font/GDF.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Font/PS.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Font/TTF.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Image.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Mapper/BMP.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Mapper/GD.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Mapper/GD2.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Mapper/GIF.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Mapper/JPEG.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Mapper/PNG.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Mapper/TGA.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/MapperFactory.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/AddNoise.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/ApplyConvolution.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/ApplyFilter.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/ApplyMask.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/AsGrayscale.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/AsNegative.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/AutoCrop.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/CopyChannelsPalette.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/CopyChannelsTrueColor.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/CorrectGamma.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/Crop.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/Flip.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/GetMask.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/Merge.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/Mirror.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/Resize.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/ResizeCanvas.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/Rotate.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/RoundCorners.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/Operation/Unsharp.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/OperationFactory.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/PaletteImage.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/README</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/TrueColorImage.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/VERSION</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/WideImage.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/gpl.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/lgpl.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/vendor/de77/BMP.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/php/watermark/WideImage/vendor/de77/TGA.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/watermark.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/config.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/error/403.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/error/404.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/facts.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/footer.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/functions.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/heroes.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/history.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/home.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/iran.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/states.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/wonderful.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -228,6 +447,7 @@
       <workItem from="1508595922910" duration="5099000" />
       <workItem from="1508683436410" duration="615000" />
       <workItem from="1508686066918" duration="5446000" />
+      <workItem from="1509106234203" duration="2171000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -366,7 +586,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62549000" />
+    <option name="totallyTimeSpent" value="64720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -376,7 +596,6 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30441642" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -393,6 +612,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -438,20 +658,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../school/me/prime/pui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/dist/pui.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -498,13 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -564,13 +763,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/index.php" />
     <entry file="file://$PROJECT_DIR$/assets/images/Ardabil-ig-post.png406.png" />
     <entry file="file://$PROJECT_DIR$/assets/images/watermark.jpg">
       <provider selected="true" editor-type-id="images">
@@ -681,13 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/line.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="73" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/watermark.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -713,7 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,19 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="900" column="16" selection-start-line="900" selection-start-column="16" selection-end-line="900" selection-end-column="16" />
-          <folding>
-            <element signature="e#32203#34610#0#PHP" expanded="false" />
-            <element signature="e#32407#34608#0#PHP" expanded="false" />
-            <marker date="1508688694880" expanded="true" signature="2349:2383" ph="UPDATE `Grou... " />
-            <marker date="1508688694880" expanded="true" signature="2593:2626" ph="UPDATE `Grou... " />
-            <marker date="1508688694880" expanded="true" signature="2843:2889" ph="SELECT `stat... Groups" />
-            <marker date="1508688694880" expanded="true" signature="3259:3302" ph="SELECT `AID`... Groups" />
-            <marker date="1508688694880" expanded="true" signature="3608:3676" ph="INSERT INTO `Users`... " />
-            <marker date="1508688694880" expanded="true" signature="3903:3974" ph="DELETE FROM " />
-            <marker date="1508688694880" expanded="true" signature="4201:4288" ph="UPDATE `User... " />
-            <marker date="1508688694880" expanded="true" signature="4516:4577" ph="SELECT * FRO... Users" />
-            <marker date="1508688694880" expanded="true" signature="4833:4894" ph="SELECT * FRO... Users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,40 +913,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-114">
           <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
-          <folding>
-            <marker date="1508689624161" expanded="true" signature="1537:1602" ph="SELECT * FRO... Souvenir" />
-            <marker date="1508689624161" expanded="true" signature="2246:2315" ph="SELECT * FRO... Major_cities" />
-            <marker date="1508689624161" expanded="true" signature="2359:2428" ph="SELECT * FRO... Major_cities" />
-            <marker date="1508689624161" expanded="true" signature="2618:2722" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="2919:3494" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="2957:3475" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="3000:3187" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="3228:3293" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="3336:3452" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="4104:4167" ph="SELECT * FRO... Heroes" />
-            <marker date="1508689624161" expanded="true" signature="4846:4858" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="4885:4894" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="4907:4923" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="4953:4970" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="5207:5219" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="5246:5255" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="5268:5284" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="5314:5331" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="6079:6152" ph="SELECT * FRO... Wonderful_Places" />
-            <marker date="1508689624161" expanded="true" signature="6827:6839" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="6840:7205" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="6907:6916" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="6917:7158" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="6970:6986" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="7054:7071" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="7385:7397" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="7398:7763" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="7465:7474" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="7475:7716" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="7528:7544" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="7612:7629" ph="..." />
-            <marker date="1508689624161" expanded="true" signature="8458:8519" ph="SELECT * FRO... Pics" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -790,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="68" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,10 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-208">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <marker date="1508689371064" expanded="true" signature="216:263" ph="SELECT * FRO... States" />
-            <marker date="1508689371064" expanded="true" signature="1043:1091" ph="SELECT * FRO... States" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -825,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,19 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-          <folding>
-            <marker date="1508417989514" expanded="true" signature="596:635" ph="SELECT * FRO... States" />
-            <marker date="1508417989514" expanded="true" signature="1171:2458" ph="..." />
-            <marker date="1508417989514" expanded="false" signature="1244:1272" ph="..." />
-            <marker date="1508417989514" expanded="true" signature="1273:2105" ph="..." />
-            <marker date="1508417989514" expanded="false" signature="1394:1409" ph="..." />
-            <marker date="1508417989514" expanded="false" signature="1627:1639" ph="..." />
-            <marker date="1508417989514" expanded="true" signature="1860:2066" ph="..." />
-            <marker date="1508417989514" expanded="false" signature="1952:1964" ph="..." />
-            <marker date="1508417989514" expanded="false" signature="2151:2162" ph="..." />
-            <marker date="1508417989514" expanded="true" signature="2184:2419" ph="..." />
-            <marker date="1508417989514" expanded="false" signature="2339:2360" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -853,6 +973,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fd/detection.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5457">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/line.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fd/fd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
           <folding />
         </state>
       </provider>

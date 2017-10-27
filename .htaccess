@@ -1,14 +1,20 @@
-#Don't show files in folder
+#No to HTTP
 
-Options -Indexes
+RewriteEngine On
 
-#Set 404 - 403 error file
+RewriteCond %{HTTPS} !=on
 
-ErrorDocument 404 http://localhost/ir-studies/error/404.php
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-ErrorDocument 403 http://localhost/ir-studies/error/403.php
+#No to WWW
 
-#Hide php extension
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+#No to .PHP
 
 Options +FollowSymLinks -MultiViews
 
@@ -24,6 +30,30 @@ RewriteCond %{REQUEST_FILENAME}.php -f
 
 RewriteRule ^ %{REQUEST_URI}.php [L]
 
-#Set default index file home.php
+#No to SHOW FILES IN AN FOLDER
+
+Options -Indexes
+
+IndexIgnore *
+
+#No to INDEX.PHP
 
 DirectoryIndex home.php
+
+#Fix Fonts Problem
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|css)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
+#Set 404 - 403 error file
+
+ErrorDocument 403 http://localhost/ir-studies/error/403.php
+
+ErrorDocument 404 http://localhost/ir-studies/error/404.php
+
+#No to ERROR_LOG
+
+php_flag log_errors Off
