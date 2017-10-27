@@ -9,7 +9,7 @@ include 'app.php';
         </div>
         <div class="box-container">
             <div class="fs-box">
-                <button class="btn fab material-icons primary" data-fs-target='next'
+                <button class="btn fab material-icons secondary" data-fs-target='next'
                 data-tooltip='آیتم بعد' data-tooltip-place='left'
                 data-tooltip-container='[data-fs-target=next]'>keyboard_arrow_right</button>
                 <div class="fs">
@@ -28,24 +28,22 @@ include 'app.php';
                             echo "<div class=\"fs-item\">";
                         }
                         echo "<i class=\"material-icons\">$Facts[icon]</i>";
-                        echo "<h5><i class=\"material-icons muted-txt\">location_on</i> $Facts[location]</h5>";
-                        echo "<p>";
-                        echo "$Facts[description]";
-                        echo "</p>";
+                        echo "<h5><i class=\"material-icons red-txt\">
+                        location_on</i>$Facts[location]</h5>";
+                        echo "<p>$Facts[description]</p>";
                         echo "</div>";
                         $n++;
                     }
                     ?>
                 </div>
-                <button class="btn fab material-icons primary" data-fs-target='prev'
+                <button class="btn fab material-icons secondary" data-fs-target='prev'
                 data-tooltip='آیتم قبل' data-tooltip-place='right'
                 data-tooltip-container='[data-fs-target=prev]'>keyboard_arrow_left</button>
             </div>
         </div>
     </div>
-    <button class="btn fab lg material-icons secondary" data-modal-target='#help' style="position: fixed;
-    z-index: 1000; bottom: 25px; left: 25px" data-tooltip='راهنمایی' data-tooltip-place='right'
-    data-ripple-color='#000' id='help-handle'>help</button>
+    <!-- <button class="btn fab lg material-icons" data-modal-target='#help' style="position: fixed;
+    z-index: 1000; bottom: 25px; left: 25px; background-color: #333" data-tooltip='راهنمایی' data-tooltip-place='right' id='help-handle'>help</button>
     <div class="pui-modal" id="help">
         <div class="inner">
             <div class="header">
@@ -77,6 +75,6 @@ include 'app.php';
         $(document).on('keyup', function (e) {
             e.which == 72 && e.ctrlKey && e.altKey ? $('#help-handle').trigger('click') : void 0
         })
-    </script>
+    </script> -->
     <?=setTitle("عجایب ایران",1)?>
 <?getFooter()?>

@@ -104,11 +104,11 @@ body#_facts{
             height: 100%;
             width: 100%;
             [data-fs-target=next], [data-fs-target=prev] {
-                margin-right: auto;
-                margin-left: auto;
+                flex-shrink: 0;
+                margin: 0 .5em;
             }
             .fs{
-                width: calc(100% - 66px*4);
+                width: 100%;
                 height: 100%;
                 position: relative;
                 display: flex;
@@ -116,36 +116,48 @@ body#_facts{
                 justify-content: center;
                 overflow: hidden;
                 .fs-indicators{
-                    position: absolute;
+                    position: fixed;
+                    background-image: linear-gradient(to top, rgba(#000, .5), transparent);
+                    white-space: nowrap;
                     direction: ltr;
-                    text-align: center;
+                    // /*this code is FUCKING terrible, bc of justify-content*/ text-align: center;
                     right:0;
                     left: 0;
-                    bottom: 15px;
+                    bottom: 0;
                     z-index: 2;
+                    height: 75px;
+                    pointer-events: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     .item-link{
-                        &:first-child{
+                        vertical-align: middle;
+                        &:first-of-type{
                             margin-left: 0 !important
                         }
                         margin-left: 7.5px;
-                        height: 25px;
-                        width: 25px;
+                        height: 20px;
+                        width: 20px;
+                        min-width: 20px;
+                        pointer-events: auto;
                         position: relative;
                         border-radius: 50%;
-                        background-color: rgba(#000, .12);
-                        border: 1px solid transparent;
-                        @include y-shadow(2, .8);
+                        background-color: #fff;
+                        @include y-shadow(2, .3);
+                        // border: 1px solid transparent;
                         display: inline-block;
-                        transition: all .125s ease, box-shadow .3s cubic-bezier(0,1,1,1);
+                        transition: all .125s ease;
                         transform: scale(.45);
-                        color: $primary;
+                        // color: $primary;
                         cursor: pointer;
+                        // transform-origin: 50% 100%;
                         &.active{
-                            border-color: rgba(#000, .5);
+                            // border-color: rgba(#000, .5);
                             transform: scale(1);
-                            color: #fff;
-                            background-color: $primary;
-                            box-shadow: 0 0 0 12px rgba($primary, .3), 0 11px 27.5px -5.5px rgba(#000, .95)
+                            // color: #fff;
+                            // background-color: $primary;
+                            // box-shadow: 0 0 0 12px rgba($secondary, 0), 0 11px 27.5px -5.5px rgba(#000, 1)
+                            @include y-shadow(8, 1);
                         }
                     }
                 }
@@ -154,7 +166,7 @@ body#_facts{
                     font-weight: bold;
                     word-wrap: break-word;
                     overflow: hidden;
-                    transition: .25s cubic-bezier(1,0,0,1);
+                    transition: .15s ease-out;
                     position: absolute;
                     top:0;
                     left: 0;
@@ -164,7 +176,7 @@ body#_facts{
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    transform: translateY(15px) scale(.75);
+                    // transform: translateY(15px) scale(.75);
                     opacity: 0;
                     pointer-events: none;
                     &.active{
