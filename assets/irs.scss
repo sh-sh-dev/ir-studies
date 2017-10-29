@@ -46,6 +46,9 @@
             font-weight: 100;
         }
     };
+    @include responsive(768px, 'max-width'){
+      text-align: center;
+    };
     background-position: 50% 50%;
     background-size: cover;
     // background-attachment: fixed;
