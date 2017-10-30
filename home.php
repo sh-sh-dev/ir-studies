@@ -20,7 +20,7 @@ include 'app.php';
             <main role="main">
                 <div class="container">
                     <div class="features">
-                        <div class="pui-col xs-12 md-3">
+                        <div class="pui-col md-3 xs-12">
                             <i class="material-icons">description</i>
                             <h5>اطلاعات کامل</h5>
                             <p>

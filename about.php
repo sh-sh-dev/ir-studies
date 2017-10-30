@@ -14,7 +14,7 @@ include 'app.php';
                     <div class="pui-col xs-12 sm-10 sm-offset-1 md-8 md-offset-2">
                         <div class="chip" id="about" role="presentation" style="margin: 0">
                             <div class="presentation">
-                                <h1>شناسنامه محصول</h1>
+                                <h1 class="center-align">شناسنامه محصول</h1>
                                 <h4><b>مشخصات محصول</b></h4>
                                 <span>عنوان محصول</span>
                                 <b>ایران شناسی</b>
@@ -23,7 +23,10 @@ include 'app.php';
                                 <b>درس افزار های آموزشی متناسب با موضوعات کتاب&zwnj;های درسی</b>
                                 <br>
                                 <span>محیط اجرا</span>
-                                <b>Web</b>
+                                <b>وب (Web)</b>
+<!--                                <br>-->
+<!--                                <span>کد لایسنس فونت ایران سنس</span>-->
+<!--                                <b>EK7P2</b>-->
                                 <h4><b>مشخصات فردی</b></h4>
                                 <span>سازندگان</span>
                                 <b>شایگان شکرالهی و حسین خوانساری</b>
@@ -44,5 +47,5 @@ include 'app.php';
             </div>
         </div>
     </div>
-<?=setTitle("درباره ما", 1)?>
+<?=setTitle("شناسنامه محصول", 1)?>
 <?getFooter()?>

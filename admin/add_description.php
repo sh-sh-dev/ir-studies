@@ -9,7 +9,7 @@ include '../app.php';
     <form action="" method="post" enctype="multipart/form-data">
         <div style="max-width: 300px; width: 100%; margin:0 auto">
             <div class="pui-input">
-                <input type="text" name='ins_sentense' id="ins_sentense" placeholder="جمله قرمانانه" required value="<?php
+                <input type="text" name='ins_sentense' id="ins_sentense" placeholder="جمله قرمانانه" value="<?php
                 if (isset($_GET["state"]) && ValidState($_GET["state"])) {
                     echo getState($_GET["state"],"ins_sentense");
                 }
@@ -47,6 +47,9 @@ include '../app.php';
         <?php
         if (isset($_POST["submit"])) {
             $description = $_POST["description"];
+            $description = str_replace("ك","ک",$description);
+            $description = str_replace("ي","ی",$description);
+            $description = str_replace("ة","ه",$description);
             $fstate = $_POST["fstate"];
             $ins_sentense = $_POST["ins_sentense"];
             $StateName = getState($fstate,"name");

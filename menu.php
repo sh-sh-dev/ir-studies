@@ -41,6 +41,11 @@
                     top: -0.08em; font-size: .75em">people</i>
                     مشاهیر
                 </a>
+                <a href="<?=getSetting('url')?>/features">
+                    <i class="material-icons muted-txt" style="position: relative;
+                    top: -0.08em; font-size: .75em">help</i>
+                    امکانات محصول
+                </a>
                 <a href="<?=getSetting('url')?>/about">
                     <i class="material-icons muted-txt" style="position: relative;
                     top: -0.08em; font-size: .75em">info_outline</i>
