@@ -5,7 +5,7 @@ $State = $_GET["state"];
 $StateName = getState($State,"name");
 ?>
 <?getHeader()?>
-<body>
+    <body>
     <div class="ui">
         <div class="header-box"><?getMenu()?></div>
         <div class="box-container">
@@ -89,71 +89,37 @@ $StateName = getState($State,"name");
                             </p>
                             <?php
                             $StateCode = getState($State,"n");
-                            $getHeroes = mysqli_query($db,"SELECT * FROM `Heroes` WHERE `fstate`=$StateCode AND `active`=1");
-                            if (mysqli_num_rows($getHeroes) >= 1) {
-                                $n = 0;
-                                $odd = "";
-                                $even = "";
+                            ?>
+                            <?php
+                            $getWP = mysqli_query($db,"SELECT * FROM `Wonderful_Places` WHERE `fstate`=$StateCode AND `active`=1");
+                            if (mysqli_num_rows($getWP) >= 1) {
                                 ?>
-                                <h3>مشاهیر <?=$StateName?></h3>
+                                <h3>مکان های دیدنی <?=$StateName?></h3>
                                 <section class="cleared">
                                     <?php
-                                    while ($Heroes = mysqli_fetch_assoc($getHeroes)) {
-                                        $n++;
-                                        if ($n % 2 == 0) {
-                                            $even .=  "<div class='pui-col xs-12' style='padding: 5px'><div class='chip' style='margin: 0'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></div></div>";
-
-                                        }
-                                        else {
-                                            $odd .=  "<div class='pui-col xs-12' style='padding: 5px'><div class='chip' style='margin: 0'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></div></div>";
-                                        }
+                                    while ($WPS = mysqli_fetch_assoc($getWP)) {
+                                        echo "<div class='pui-col xs-12' style='padding: 5px'>
+                                        <div class='chip' style='margin: 0'>
+                                        <h5 style='font-weight: 400'>$WPS[name]</h5>
+                                        <p style='font-weight: bold' class='muted-txt'>$WPS[description]</p>
+                                        </div>
+                                        </div>";
                                     }
-                                    echo "<div class='pui-col md-6'>";
-                                    echo $even;
-                                    echo "</div>";
-                                    echo "<div class='pui-col md-6'>";
-                                    echo $odd;
-                                    echo "</div>";
                                     ?>
                                 </section>
                                 <?php
                             }
                             ?>
                             <?php
-                            $getWP = mysqli_query($db,"SELECT * FROM `Wonderful_Places` WHERE `fstate`=$StateCode AND `active`=1");
-                            if (mysqli_num_rows($getWP) >= 1) {
-                                $n = 0;
-                                $odd = "";
-                                $even = "";
+                            $getHeroes = mysqli_query($db,"SELECT * FROM `Heroes` WHERE `fstate`=$StateCode AND `active`=1");
+                            if (mysqli_num_rows($getHeroes) >= 1) {
                                 ?>
-                                <h3>مکان های دیدنی <?=$StateName?></h3>
+                                <h3>مشاهیر <?=$StateName?></h3>
                                 <section class="cleared">
                                     <?php
-                                    while ($WPS = mysqli_fetch_assoc($getWP)) {
-                                        $n++;
-                                        if ($n % 2 == 0) {
-                                            $even .= "<div class='pui-col xs-12' style='padding: 5px'>
-                                        <div class='chip' style='margin: 0'>
-                                        <h5 style='font-weight: 400'>$WPS[name]</h5>
-                                        <p style='font-weight: bold' class='muted-txt'>$WPS[description]</p>
-                                        </div>
-                                        </div>";
-                                        }
-                                        else {
-                                            $odd .= "<div class='pui-col xs-12' style='padding: 5px'>
-                                        <div class='chip' style='margin: 0'>
-                                        <h5 style='font-weight: 400'>$WPS[name]</h5>
-                                        <p style='font-weight: bold' class='muted-txt'>$WPS[description]</p>
-                                        </div>
-                                        </div>";
-                                        }
+                                    while ($Heroes = mysqli_fetch_assoc($getHeroes)) {
+                                        echo "<div class='pui-col xs-12' style='padding: 5px'><div class='chip' style='margin: 0'><h5 style='font-weight: 400'>$Heroes[name]</h5><p style='font-weight: bold' class='muted-txt'>$Heroes[description]</p></div></div>";
                                     }
-                                    echo "<div class='pui-col md-6'>";
-                                    echo $even;
-                                    echo "</div>";
-                                    echo "<div class='pui-col md-6'>";
-                                    echo $odd;
-                                    echo "</div>";
                                     ?>
                                 </section>
                                 <?php
@@ -188,5 +154,5 @@ $StateName = getState($State,"name");
             </main>
         </div>
     </div>
-    <?=setTitle(getState($State,"name"),1)?>
-    <?getFooter()?>
+<?=setTitle(getState($State,"name"),1)?>
+<?getFooter()?>
