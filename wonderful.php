@@ -24,6 +24,13 @@ include 'app.php';
                             <h2>مکان های دیدنی</h2>
                         </div>
                         <?php
+//                        $page = 1;
+//                        if (!empty($_GET["page"])) {
+//                            $page = $_GET["page"];
+//                        }
+//                        $paged_item = 2;
+//                        $start = ($page - 1) * $paged_item;
+//                        $getWonderful = mysqli_query($db,"SELECT * FROM `Wonderful_Places` WHERE `active`=1 ORDER BY `name` LIMIT $start, $paged_item");
                         $getWonderful = mysqli_query($db,"SELECT * FROM `Wonderful_Places` WHERE `active`=1");
                         if (!mysqli_num_rows($getWonderful) >= 1) {
                             echo "<div class='part red-txt'>هیچ مکان دیدنی ای پیدا نشد :(</div>";

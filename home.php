@@ -20,7 +20,7 @@ include 'app.php';
             <main role="main">
                 <div class="container">
                     <div class="features">
-                        <div class="pui-col md-3 xs-12">
+                        <div class="pui-col xs-12 md-3">
                             <i class="material-icons">description</i>
                             <h5>اطلاعات کامل</h5>
                             <p>
@@ -78,7 +78,8 @@ include 'app.php';
                     $getStates = mysqli_query($db,"SELECT * FROM `States`  WHERE `active`=1");
                     if (mysqli_num_rows($getStates) >= 1) {
                         while ($State = mysqli_fetch_assoc($getStates)) {
-                            echo "<li id='state-link-$State[n]'><i class='material-icons'>keyboard_arrow_left</i> <a class='link elide-text' target='_blank' href='article?state=$State[english]'>$State[name]</a></li>";
+//                            echo "<li id='state-link-$State[n]'><i class='material-icons'>keyboard_arrow_left</i> <a class='link elide-text' target='_blank' href='article?state=$State[english]'>$State[name]</a></li>";
+                            echo "<li id='state-link-$State[n]'><i class='material-icons'>keyboard_arrow_left</i> <a class='link elide-text' href='article?state=$State[english]'>$State[name]</a></li>";
                         }
                     }
                     else {
