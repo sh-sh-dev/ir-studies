@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="article some edits">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/hpid.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/buttons.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robots.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tdo.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+    <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IRS.sql" afterPath="$PROJECT_DIR$/IRS.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.php" afterPath="$PROJECT_DIR$/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wonderful.php" afterPath="$PROJECT_DIR$/wonderful.php" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -253,7 +243,7 @@
       <workItem from="1510492056883" duration="14139000" />
       <workItem from="1510582031728" duration="5138000" />
       <workItem from="1510664737115" duration="16558000" />
-      <workItem from="1510750001310" duration="1200000" />
+      <workItem from="1510750001310" duration="2411000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -402,11 +392,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510671090686</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="new =&gt; buttons (included in footer)&#10;about =&gt; add teacher">
+      <created>1510753081972</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1510753081972</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104319000" />
+    <option name="totallyTimeSpent" value="105530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -471,7 +468,8 @@
     <MESSAGE value="admin/add_description -&gt; arabic char to persian&#10;IRS.sql -&gt; now all states has description&#10;line.php -&gt; count lines of project !&#10;header.php -&gt; some edits and meta tags added" />
     <MESSAGE value=".htaccess -&gt; fix CROS error , added force ssl , added no to www ! , added no to error_log , and optimize code" />
     <MESSAGE value="article some edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="article some edits" />
+    <MESSAGE value="new =&gt; buttons (included in footer)&#10;about =&gt; add teacher" />
+    <option name="LAST_COMMIT_MESSAGE" value="new =&gt; buttons (included in footer)&#10;about =&gt; add teacher" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -571,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/import.php" />
     <entry file="file://$PROJECT_DIR$/../bot/ITB/dl.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -633,6 +624,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="27" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="15" />
+          <folding>
+            <marker date="1510671799876" expanded="true" signature="229:286" ph="SELECT * FRO... States" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -654,6 +648,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="33" column="107" selection-start-line="33" selection-start-column="107" selection-end-line="33" selection-end-column="107" />
+          <folding>
+            <element signature="e#679#715#0#PHP" expanded="true" />
+            <marker date="1510677647437" expanded="true" signature="1017:1097" ph="SELECT * FRO... Wonderful_Places" />
+            <marker date="1510677647437" expanded="true" signature="1170:1219" ph="SELECT * FRO... Wonderful_Places" />
+            <marker date="1510677647437" expanded="true" signature="1666:1999" ph="..." />
+            <marker date="1510677647437" expanded="false" signature="1892:1903" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -661,6 +662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,6 +687,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding>
+            <marker date="1510681956554" expanded="true" signature="4348:4388" ph="SELECT * FRO... States" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -780,6 +785,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="38" />
           <folding />
         </state>
       </provider>
