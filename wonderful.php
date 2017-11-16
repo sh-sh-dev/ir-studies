@@ -53,6 +53,7 @@ include 'app.php';
             </div>
         </div>
     </div>
+    <?getButtons()?>
 </div>
 <?=setTitle("مکان های دیدنی",1)?>
 <?getFooter()?>

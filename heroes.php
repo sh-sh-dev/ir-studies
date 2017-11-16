@@ -41,6 +41,7 @@ include 'app.php';
             </div>
         </div>
     </div>
+    <?getButtons()?>
 </div>
 <?=setTitle("مشاهیر",1)?>
 <?getFooter()?>

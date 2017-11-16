@@ -21,6 +21,9 @@
         })
     }
 }());
+function openMenu() {
+    $('.sidenav').closest('.pui-nav').find('.sidenav-control').trigger('click')
+}
 +(function() {
     'use strict';
     $('.fs').each(function () {

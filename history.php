@@ -38,6 +38,7 @@ include 'app.php';
                 </div>
             </main>
         </div>
+        <?getButtons()?>
     </div>
 <?=setTitle("خلاصه ای از تاریخ ایران", 1)?>
 <?getFooter()?>

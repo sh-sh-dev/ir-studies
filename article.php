@@ -153,6 +153,7 @@ $StateName = getState($State,"name");
                 </div>
             </main>
         </div>
+        <?getButtons()?>
     </div>
 <?=setTitle(getState($State,"name"),1)?>
 <?getFooter()?>

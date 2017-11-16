@@ -31,6 +31,7 @@ include 'app.php';
             </div>
         </div>
     </div>
+    <?getButtons()?>
 </div>
 <?=setTitle("امکانات محصول", 1)?>
 <?getFooter()?>

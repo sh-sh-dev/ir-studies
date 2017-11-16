@@ -18,6 +18,7 @@ include 'app.php';
             </div>
         </div>
     </div>
+    <?getButtons()?>
 </body>
 <?=setTitle('ایران', 1)?>
 <?getFooter(); ?>
