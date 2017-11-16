@@ -37,6 +37,10 @@ function getFooter() {
     return include 'footer.php';
 }
 
+function getButtons() {
+    return include 'buttons.php';
+} 
+
 function setTitle($ext,$menu_title = 0) {
     $title = getSetting('title');
     $titler = "$title | $ext";

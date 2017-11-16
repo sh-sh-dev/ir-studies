@@ -60,6 +60,7 @@ include 'app.php';
                 </div>
             </main>
         </div>
+        <?getButtons()?>
     </div>
     <div class="pui-modal" id="states_list">
         <div class="inner" style="height: calc(92vh - 50px); max-height: none">
