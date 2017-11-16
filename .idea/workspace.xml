@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="Buttons optimize core and styles&#10;buttons added to all pages">
+    <list default="true" id="940abcb5-455f-44f4-9056-3c26475cd323" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.php" afterPath="$PROJECT_DIR$/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/add_description.php" afterPath="$PROJECT_DIR$/admin/add_description.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article.php" afterPath="$PROJECT_DIR$/article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/irs.css" afterPath="$PROJECT_DIR$/assets/irs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/irs.js" afterPath="$PROJECT_DIR$/assets/irs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/irs.min.js" afterPath="$PROJECT_DIR$/assets/irs.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/irs.scss" afterPath="$PROJECT_DIR$/assets/irs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buttons.php" afterPath="$PROJECT_DIR$/buttons.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facts.php" afterPath="$PROJECT_DIR$/facts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features.php" afterPath="$PROJECT_DIR$/features.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/heroes.php" afterPath="$PROJECT_DIR$/heroes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/history.php" afterPath="$PROJECT_DIR$/history.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iran.php" afterPath="$PROJECT_DIR$/iran.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/states.php" afterPath="$PROJECT_DIR$/states.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wonderful.php" afterPath="$PROJECT_DIR$/wonderful.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/hpid.php" afterPath="$PROJECT_DIR$/admin/hpid.php" />
     </list>
     <ignored path="ir-studies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +23,20 @@
     <favorites_list name="ir-studies" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="hpid.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/hpid.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+              <folding>
+                <marker date="1510841367864" expanded="true" signature="239:296" ph="SELECT * FRO... States" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -162,6 +160,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ir-studies" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ir-studies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ir-studies" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,7 +386,7 @@
       <workItem from="1510492056883" duration="14139000" />
       <workItem from="1510582031728" duration="5138000" />
       <workItem from="1510664737115" duration="16558000" />
-      <workItem from="1510750001310" duration="11161000" />
+      <workItem from="1510750001310" duration="11210000" />
     </task>
     <task id="LOCAL-00001" summary="Replace &quot;.&quot;  To &quot;,&quot; In functions.php-&gt;formatted_number !">
       <created>1507831401616</created>
@@ -537,17 +549,24 @@
       <option name="project" value="LOCAL" />
       <updated>1510759580987</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Buttons optimize core and styles&#10;buttons added to all pages">
+      <created>1510841332130</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1510841332130</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114280000" />
+    <option name="totallyTimeSpent" value="114329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -608,7 +627,8 @@
     <MESSAGE value="article some edits" />
     <MESSAGE value="new =&gt; buttons (included in footer)&#10;about =&gt; add teacher" />
     <MESSAGE value="getHeader?" />
-    <option name="LAST_COMMIT_MESSAGE" value="getHeader?" />
+    <MESSAGE value="Buttons optimize core and styles&#10;buttons added to all pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buttons optimize core and styles&#10;buttons added to all pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1131,10 +1151,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/hpid.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        <state relative-caret-position="136">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
           <folding>
-            <marker date="1510841310494" expanded="true" signature="229:286" ph="SELECT * FRO... States" />
+            <marker date="1510841367864" expanded="true" signature="239:296" ph="SELECT * FRO... States" />
           </folding>
         </state>
       </provider>
