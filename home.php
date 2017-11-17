@@ -8,7 +8,7 @@ include 'app.php';
             <?getMenu()?>
         </div>
         <div class="box-container">
-            <div class="has-crr home-header" data-crr-color='#009688|#263238'>
+            <div class="has-crr home-header" data-crr-color='<?=$crr_hex?>'>
                 <div class="content">
                     <h1>ایران شناسی</h1>
                 </div>
@@ -35,7 +35,7 @@ include 'app.php';
                             <p>
                                 عجایب ایران، خلاصه ای از تاریخ کشور و همچنین گلچین تصاویر از مکان های دیدنی نیز در قالب صفحاتی مجزا در دسترس شما هستند. شاید برخی نکات را برای اولین بار  خواهید دانست!
                                 <br>
-                                <button class="btn simple primary sm" onclick="location.href = 'facts'"><i class="material-icons">open_in_new</i> مطالب جالب ایران</button>
+                                <a class="btn simple primary sm" href="facts" target="_blank"><i class="material-icons">open_in_new</i> مطالب جالب ایران</a>
                             </p>
                         </div>
                         <div class="pui-col xs-12 md-3">
@@ -44,7 +44,7 @@ include 'app.php';
                             <p>
                                 مکان های دیدنی ایران، همه و همه در دسترس شما هستند. از عجایب طبیعی تا مکان های زیارتی و تفریحی.
                                 <br>
-                                <button class="btn simple primary sm" onclick="location.href = 'wonderful'"><i class="material-icons">open_in_new</i> مکان های دیدنی ایران</button>
+                                <a href="wonderful" target="_blank" class="btn simple primary sm"><i class="material-icons">open_in_new</i> مکان های دیدنی ایران</a>
                             </p>
                         </div>
                         <div class="pui-col xs-12 md-3">
@@ -53,7 +53,7 @@ include 'app.php';
                             <p>
                                 خلاصه ای اتفاقات بزرگ در تاریخ ایران، از تشکیل تا فروپاشی حکومت ها و ... را در اینجا ببینید.
                                 <br>
-                                <button class="btn simple primary sm" onclick="location.href = 'history'"><i class="material-icons">open_in_new</i> تاریخچه ایران</button>
+                                <a href="history" target="_blank" class="btn simple primary sm"><i class="material-icons">open_in_new</i> تاریخچه ایران</a>
                             </p>
                         </div>
                     </div>

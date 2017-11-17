@@ -1,5 +1,11 @@
 <div class="buttons">
-    <a class="material-icons has-ripple">arrow_back</a>
-    <a class="material-icons has-ripple">home</a>
-    <a class="material-icons has-ripple">menu</a>
+    <a class="has-ripple">
+        <img src="assets/dist/img/buttons/icon_back.svg">
+    </a>
+    <a class="has-ripple">
+        <img src="assets/dist/img/buttons/icon_home.svg">
+	</a>
+    <a class="has-ripple" href="javascript:$('.sidenav').addClass('active')">
+        <img src="assets/dist/img/buttons/icon_navigation.svg">
+	</a>
 </div>

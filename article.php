@@ -9,44 +9,48 @@ $StateName = getState($State,"name");
     <div class="ui">
         <div class="header-box"><?getMenu()?></div>
         <div class="box-container">
-            <div class="heroic-header" style="background-image: url(assets/dist/img/test-bg.svg)">
+<!--            <div class="heroic-header" style="background-image: url(assets/dist/img/test-bg.svg)">-->
+            <div class="has-crr home-header" data-crr-color='<?=$crr_hex?>'>
                 <div class="content">
                     <h3><?=getState($State,"name")?></h3>
                     <span><?=getState($State,"ins_sentense")?></span>
                 </div>
+                <a class="btn fab white lg material-icons" style="margin: 0; position: absolute; bottom: -37.5px; left: 60px; z-index: 50" target="_blank" tabindex="-1" href="https://google.com/search?q=<?= getState($State, "english")?>">public</a>
             </div>
-            <div class="st-stats">
+			<br><br>
+            <div class="chip pui-col xs-12 md-8 md-offset-2" id="state-info">
                 <div class="pui-col xs-12 md-6">
-                    <i class="material-icons">supervisor_account</i>
-                    <b id="ppl_title">جمعیت</b>
+                    <i class="material-icons primary-txt">people</i>
+                    <b id="ppl_title">جمعیت:</b>
                     <span id="ppl_num" style="cursor: default" data-tooltip-container='#ppl_num' data-tooltip="<?=number_format(getState($State,"Population"))?> نفر">
                         <?=
                         formatted_number(getState($State,"Population"));
-                        ?>
+                        ?> نفر (در سال 1395)
                     </span>
                 </div>
                 <div class="pui-col xs-12 md-6">
-                    <i class="material-icons">location_city</i>
-                    <b>مرکز استان</b>
+                    <i class="material-icons primary-txt">location_city</i>
+                    <b>مرکز استان:</b>
                     <span><?=getState($State,"city_center")?></span>
                 </div>
             </div>
+			<div class="cf"></div>
             <?php
             $StateCode = getState($State,"n");
             $getSouvenirs = mysqli_query($db,"SELECT * FROM `Souvenir` WHERE `fstate`=$StateCode AND `active`=1");
             if (mysqli_num_rows($getSouvenirs) >= 1) {
                 $n = 0;
                 $i = mysqli_num_rows($getSouvenirs);
-                echo '<div class="st-souvenir">';
-                echo '<b>سوغات</b>';
+                echo '<div class="chip pui-col xs-12 md-8 md-offset-2">';
+                echo '<b>سوغات: </b>';
                 while ($Souvenirs = mysqli_fetch_assoc($getSouvenirs)) {
                     echo "$Souvenirs[name]";
                     $n++;
                     if ($n !== $i) {
-                        echo ' ، ';
+                        echo '، ';
                     }
                 }
-                echo '</div>';
+                echo '</div><div class="cf"></div>';
             }
             ?>
             <?php
@@ -76,7 +80,7 @@ $StateName = getState($State,"name");
                         <button class=\"btn simple secondary modal-close\">بستن</button>
                     </div>
                 </div>
-            </div>";
+            </div><div class=\"cf\"></div>";
                 }
             }
             ?>
@@ -153,6 +157,8 @@ $StateName = getState($State,"name");
                 </div>
             </main>
         </div>
+        <?getButtons()?>
     </div>
-<?=setTitle(getState($State,"name"),1)?>
+<?=setTitle('استان ' . getState($State,"name"),1)?>
+<script src="assets/crispRipple.min.js"></script>
 <?getFooter()?>

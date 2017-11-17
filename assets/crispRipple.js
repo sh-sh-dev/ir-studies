@@ -2,15 +2,20 @@
     'use strict';
     var els = $('.has-crr');
     return els.each(function () {
-        var el = $(this);
-        var color = el.css('background-color');
+        var el = $(this),
+        color = el.css('background-color');
         el.attr('data-crr-hold', 1);
         var data = el.data('crr-hold');
         el.append('<div class="crisp-container" />').click(function(e){
             var container = el.find('.crisp-container');
-            if ( e.target.tagName.toLowerCase() == 'button' || container.find('.crisp-ripple').length > 1 ) {
+			['button', 'a'].map(function(b){
+				if (e.target.tagName.toLowerCase() == b) {
+					return false;
+				}
+			})
+            if ( container.find('.crisp-ripple').length > 1 ) {
                 return false;
-            };
+            }
             data++;
             if ( data == 4 ) data = 1;
             el.attr('data-crr-hold', data);
@@ -18,7 +23,6 @@
                 x: e.pageX - el.offset().left,
                 y: e.pageY - el.offset().top
             },
-            // container = el.find('.crisp-container'),
             crisp = $('<div class="crisp-ripple" />'),
             size = Math.max( el.height(), el.width() ) * 3,
             bg,

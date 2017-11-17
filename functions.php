@@ -85,3 +85,8 @@ function formatted_number($n) {
     }
     return number_format($n);
 }
+
+# this variable should be the value of `data-crr-value` attribute of every `.has-crr` element (like `.home-header`). I CAN'T ARGUE WITH DA FUCKIN PHP
+
+$crr_hex = "#2196f3|#263238";
+

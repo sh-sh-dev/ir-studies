@@ -2,12 +2,12 @@
     'use strict';
     //Initials
     //scroll
-    $('.box-container').scroll(function () {
-        var scrolled = $(this).scrollTop();
-        $('.heroic-header>.content').css({
-            'transform': 'translate3d(0, ' + scrolled/2.25 + 'px, 0)'
-        })
-    })
+//    $('.box-container').scroll(function () {
+//        var scrolled = $(this).scrollTop();
+//        $('.heroic-header>.content').css({
+//            'transform': 'translate3d(0, ' + scrolled/2.25 + 'px, 0)'
+//        })
+//    })
     //sidenav keyboard shortcut
     if ( $('.sidenav').length !== 0 ) {
         $(document).on('keyup', function(e){

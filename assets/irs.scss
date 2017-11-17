@@ -37,8 +37,8 @@
   font-size: 1.3em;
   position: relative;
   z-index: 5;
-  text-shadow: 0 2px 5px rgba(#000, .5);
   & > .content{
+      text-shadow: 0 2px 5px rgba(#000, .5);
     @include responsive(768px, 'max-width'){
       text-align: center;
     };
@@ -57,7 +57,7 @@
   position: relative;
   // margin-bottom: 25px;
   box-shadow: 0 2px 6px rgba(#000, .5);
-  overflow: hidden;
+//  overflow: hidden;
     @include responsive(768px, 'max-width'){
       text-align: center;
     };
@@ -66,7 +66,7 @@
     // background-attachment: fixed;
     position: relative;
     box-shadow: 0 2px 6px rgba(#000, .5);
-    overflow: hidden;
+//    overflow: hidden;
 }
 
 main[role=main]{
@@ -675,8 +675,11 @@ body#page-404{
 }
 
 .buttons{
-    background-color: darken($secondary/2 + $primary/2, 15%);
-    color: #fff;
+//    background-color: darken($secondary/2 + $primary/2, 15%);
+	background-image: linear-gradient(to top, rgba(#000, .95), transparent);
+	background-size: 100% 120%;
+//	background-repeat: no-repeat;
+	background-position: center top;
     height: 40px;
     font-size: 27px;
     display: flex;
@@ -685,12 +688,18 @@ body#page-404{
     align-items: stretch;
     justify-content: space-evenly;
     flex-direction: row-reverse;
-    box-shadow: 0 -2px 4px rgba(#000, .5);
-    position: relative;
-    z-index: 3;
+//    box-shadow: 0 -2px 4px rgba(#000, .5);
+    position: absolute;
+    z-index: 3000;
+	left: 0;
+	right: 0;
+	bottom: 0;
+//	pointer-events: none;
     user-select: none;
     & > a{
+		color: #fff;
         display: flex;
+//		pointer-events: auto;
         align-items: center;
         border-radius: 1000vw;
         justify-content: center;
@@ -701,4 +710,8 @@ body#page-404{
 
 .has-ripple{
     overflow: hidden
+}
+
+.home-header{
+	user-select: none;
 }
