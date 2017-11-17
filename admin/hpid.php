@@ -6,7 +6,7 @@ include '../app.php';
 <body>
 <div class="pui-col md-12">
     <div class="chip">
-        <h3 class="center-align">استان های بدون توضیحات</h3>
+        <h3 class="center-align">استان های دارای جمعیت در توضیحات</h3>
         <?php
         $query = mysqli_query($db,"SELECT * FROM `States` WHERE `description` LIKE '%جمعیت%'");
         if (mysqli_num_rows($query) >= 1) {

@@ -41,6 +41,7 @@ include 'app.php';
                 data-tooltip-container='[data-fs-target=prev]'>keyboard_arrow_left</button>
             </div>
         </div>
+        <?getButtons()?>
     </div>
     <!-- <button class="btn fab lg material-icons" data-modal-target='#help' style="position: fixed;
     z-index: 1000; bottom: 25px; left: 25px; background-color: #333" data-tooltip='راهنمایی' data-tooltip-place='right' id='help-handle'>help</button>

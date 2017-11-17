@@ -49,6 +49,7 @@ include 'app.php';
                 </div>
             </div>
         </div>
+        <?getButtons()?>
     </div>
 <?=setTitle("شناسنامه محصول", 1)?>
 <?getFooter()?>

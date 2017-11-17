@@ -71,7 +71,7 @@ if (isset($_GET["state"]) && ValidState($_GET["state"])) {
     ?>
 <script>
     alert("ویرایش استان " + "<?=$StateName?>");
-    </script>
+</script>
 <?php
 }
 ?>

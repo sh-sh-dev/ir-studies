@@ -48,6 +48,7 @@ include 'app.php';
             </div>
         </div>
     </div>
+    <?getButtons()?>
 </div>
 <?=setTitle("لیست استان ها",1)?>
 <?getFooter()?>
