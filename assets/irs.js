@@ -203,3 +203,6 @@ function openMenu() {
         })
     })
 }(jQuery));
+function openMenu(){
+	$(".sidenav").closest(".pui-nav").find(".sidenav-control").trigger("click")
+}
