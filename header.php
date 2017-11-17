@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?=getSetting('title')?></title>
     <meta name="description" content="<?=getSetting('title')?> | راهنمایی کامل و جامع برای گردشگری در ایران">
-    <meta name="keyword" content="ایران شناسی,irs,ir-studies,مطالعات ایران,اپلیکیشن ایران شناسی,پیورا,اسوه,شایگان شکرالهی,حسین خوانساری">
+    <meta name="keywords" content="ایران شناسی,irs,ir-studies,مطالعات ایران,اپلیکیشن ایران شناسی,پیورا,اسوه,شایگان شکرالهی,حسین خوانساری">
     <meta name="theme-color" content="#546e7a">
     <meta name="msapplication-navbutton-color" content="#546e7a">
     <meta name="apple-mobile-web-app-status-bar-style" content="#546e7a">
