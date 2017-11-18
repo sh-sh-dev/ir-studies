@@ -8,12 +8,12 @@
         var data = el.data('crr-hold');
         el.append('<div class="crisp-container" />').click(function(e){
             var container = el.find('.crisp-container');
-			['button', 'a'].map(function(b){
-				if (e.target.tagName.toLowerCase() == b) {
-					return false;
-				}
-			})
-            if ( container.find('.crisp-ripple').length > 1 ) {
+//			['button', 'a'].map(function(b){
+//				if (e.target.tagName.toLowerCase() == b) {
+//					return false;
+//				}
+//			})
+            if ( e.target.tagName.toLowerCase() == 'a' || e.target.tagName.toLowerCase() == 'button' || container.find('.crisp-ripple').length > 1 ) {
                 return false;
             }
             data++;
