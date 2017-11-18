@@ -15,7 +15,7 @@ $StateName = getState($State,"name");
                     <h3><?=getState($State,"name")?></h3>
                     <span><?=getState($State,"ins_sentense")?></span>
                 </div>
-                <a class="btn fab white lg material-icons" style="margin: 0; position: absolute; bottom: -37.5px; left: 60px; z-index: 50" target="_blank" tabindex="-1" href="https://google.com/search?q=<?= getState($State, "english")?>">public</a>
+                <a class="btn fab white lg material-icons" style="margin: 0; position: absolute; bottom: -37.5px; left: 60px; z-index: 50" target="_blank" tabindex="-1" href="https://google.com/search?q=<?= getState($State, "name")?>">public</a>
             </div>
 			<br><br>
             <div class="chip pui-col xs-12 md-8 md-offset-2" id="state-info">
